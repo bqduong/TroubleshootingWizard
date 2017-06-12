@@ -1,0 +1,72 @@
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.6.1\AeroWizard.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.6.1\AeroWizard.pdb
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.6.1\de\AeroWizard.resources.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.6.1\es\AeroWizard.resources.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.6.1\fr\AeroWizard.resources.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.6.1\Microsoft.VisualStudio.Shell.Immutable.10.0.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.6.1\Microsoft.VisualStudio.Shell.Framework.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.6.1\Microsoft.VisualStudio.GraphModel.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.6.1\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.6.1\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.6.1\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.6.1\System.Threading.Tasks.Dataflow.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.6.1\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.6.1\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.6.1\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.6.1\Microsoft.MSXML.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.csprojResolveAssemblyReference.cache
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.Properties.Resources.resources
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.StepWizardControl.resources
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.WizardControl.resources
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.Properties.Resources.de.resources
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.Properties.Resources.es.resources
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.Properties.Resources.fr.resources
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.csproj.GenerateResource.Cache
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\de\AeroWizard.resources.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\es\AeroWizard.resources.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\fr\AeroWizard.resources.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.pdb
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\AeroWizard.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\AeroWizard.pdb
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\de\AeroWizard.resources.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\es\AeroWizard.resources.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\fr\AeroWizard.resources.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.Shell.Immutable.10.0.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.Shell.Framework.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.GraphModel.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.MSXML.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\AeroWizard.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\AeroWizard.pdb
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\de\AeroWizard.resources.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\es\AeroWizard.resources.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\fr\AeroWizard.resources.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.Shell.Immutable.10.0.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.Shell.Framework.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.GraphModel.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\bin\Debug\v4.5.2\Microsoft.MSXML.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.csprojResolveAssemblyReference.cache
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.Properties.Resources.resources
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.StepWizardControl.resources
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.WizardControl.resources
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.Properties.Resources.de.resources
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.Properties.Resources.es.resources
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.Properties.Resources.fr.resources
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.csproj.GenerateResource.Cache
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\de\AeroWizard.resources.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\es\AeroWizard.resources.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\fr\AeroWizard.resources.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\obj\Debug\AeroWizard.pdb

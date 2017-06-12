@@ -1,0 +1,42 @@
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.csprojResolveAssemblyReference.cache
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.AeroWizardTemplate.resources
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.Main.resources
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.MyStepWizard.resources
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.MyWizard.resources
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.OldStyleWizard.resources
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.Properties.Resources.resources
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.CustomWizardTemplate.resources
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.Win10Wiz.resources
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.TestWizBase.resources
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.csproj.GenerateResource.Cache
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\bin\Debug\TestWizard.exe.config
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\bin\Debug\TestWizard.exe
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\bin\Debug\TestWizard.pdb
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\bin\Debug\AeroWizard.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\bin\Debug\AeroWizard.xml
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\bin\Debug\de\AeroWizard.resources.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\bin\Debug\es\AeroWizard.resources.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\bin\Debug\fr\AeroWizard.resources.dll
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.exe
+C:\Users\bduong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.pdb
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\bin\Debug\TestWizard.exe.config
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\bin\Debug\TestWizard.exe
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\bin\Debug\TestWizard.pdb
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\bin\Debug\AeroWizard.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\bin\Debug\de\AeroWizard.resources.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\bin\Debug\es\AeroWizard.resources.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\bin\Debug\fr\AeroWizard.resources.dll
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.csprojResolveAssemblyReference.cache
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.AeroWizardTemplate.resources
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.Main.resources
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.MyStepWizard.resources
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.MyWizard.resources
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.OldStyleWizard.resources
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.Properties.Resources.resources
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.CustomWizardTemplate.resources
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.Win10Wiz.resources
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.TestWizBase.resources
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.csproj.GenerateResource.Cache
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.exe
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\obj\Debug\TestWizard.pdb
+C:\Users\Bao Duong\Downloads\aerowizard-79780\AeroWizard\TestWizard\bin\Debug\AeroWizard.pdb

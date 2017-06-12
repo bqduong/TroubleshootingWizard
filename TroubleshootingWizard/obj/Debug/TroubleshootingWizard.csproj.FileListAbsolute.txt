@@ -1,0 +1,31 @@
+C:\Users\bduong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\TroubleshootingWizard.exe.config
+C:\Users\bduong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\TroubleshootingWizard.exe
+C:\Users\bduong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\TroubleshootingWizard.pdb
+C:\Users\bduong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.csprojResolveAssemblyReference.cache
+C:\Users\bduong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.Properties.Resources.resources
+C:\Users\bduong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.csproj.GenerateResource.Cache
+C:\Users\bduong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.exe
+C:\Users\bduong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.pdb
+C:\Users\bduong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\AeroWizard.dll
+C:\Users\bduong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\AeroWizard.pdb
+C:\Users\bduong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.InitiumTroubleshoot.resources
+C:\Users\bduong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\de\AeroWizard.resources.dll
+C:\Users\bduong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\es\AeroWizard.resources.dll
+C:\Users\bduong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\fr\AeroWizard.resources.dll
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\TroubleshootingWizard.exe.config
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\TroubleshootingWizard.exe
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\TroubleshootingWizard.pdb
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\AeroWizard.dll
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\AeroWizard.pdb
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\de\AeroWizard.resources.dll
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\es\AeroWizard.resources.dll
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\fr\AeroWizard.resources.dll
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.csprojResolveAssemblyReference.cache
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.InitiumTroubleshoot.resources
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.Properties.Resources.resources
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.csproj.GenerateResource.Cache
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.exe
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.pdb
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\troubleshooting.png
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\complete.png
+C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\calibrate.png
