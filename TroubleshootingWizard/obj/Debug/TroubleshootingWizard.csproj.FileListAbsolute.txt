@@ -29,3 +29,21 @@ C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizar
 C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\troubleshooting.png
 C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\complete.png
 C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\calibrate.png
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\calibrate.png
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\complete.png
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\troubleshooting.png
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\TroubleshootingWizard.exe.config
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\TroubleshootingWizard.exe
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\TroubleshootingWizard.pdb
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\AeroWizard.dll
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\AeroWizard.pdb
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\de\AeroWizard.resources.dll
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\es\AeroWizard.resources.dll
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\fr\AeroWizard.resources.dll
+C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.csprojResolveAssemblyReference.cache
+C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.InitiumTroubleshoot.resources
+C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.Properties.Resources.resources
+C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.csproj.GenerateResource.Cache
+C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.exe
+C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.pdb
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\washStationSeptumChange2.gif

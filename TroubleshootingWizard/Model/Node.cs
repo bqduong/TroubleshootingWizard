@@ -28,5 +28,7 @@ namespace TroubleshootingWizard
         public List<Node> Children { get; set; }
 
         public Node ParentNode { get; set; }
+
+        public string IsExecuteProcess { get; set; }
     }
 }

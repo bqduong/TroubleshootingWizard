@@ -35,25 +35,25 @@ namespace TroubleshootingWizard
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InitiumTroubleshoot));
-            this.wizardPage1 = new AeroWizard.WizardPage();
+            this.wizardPage = new AeroWizard.WizardPage();
             this.troubleshootImage = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.description = new System.Windows.Forms.Label();
             this.wizardControl = new AeroWizard.WizardControl();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.wizardPage1.SuspendLayout();
+            this.wizardPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.troubleshootImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wizardControl)).BeginInit();
             this.SuspendLayout();
             // 
-            // wizardPage1
+            // wizardPage
             // 
-            this.wizardPage1.Controls.Add(this.progressBar1);
-            this.wizardPage1.Controls.Add(this.troubleshootImage);
-            this.wizardPage1.Controls.Add(this.label1);
-            this.wizardPage1.Name = "wizardPage1";
-            this.wizardPage1.Size = new System.Drawing.Size(490, 321);
-            this.wizardPage1.TabIndex = 0;
-            this.wizardPage1.Text = "Page Title";
+            this.wizardPage.Controls.Add(this.progressBar1);
+            this.wizardPage.Controls.Add(this.troubleshootImage);
+            this.wizardPage.Controls.Add(this.description);
+            this.wizardPage.Name = "wizardPage";
+            this.wizardPage.Size = new System.Drawing.Size(490, 321);
+            this.wizardPage.TabIndex = 0;
+            this.wizardPage.Text = "Page Title";
             // 
             // troubleshootImage
             // 
@@ -64,14 +64,14 @@ namespace TroubleshootingWizard
             this.troubleshootImage.TabIndex = 1;
             this.troubleshootImage.TabStop = false;
             // 
-            // label1
+            // description
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label";
+            this.description.AutoSize = true;
+            this.description.Location = new System.Drawing.Point(4, 4);
+            this.description.Name = "description";
+            this.description.Size = new System.Drawing.Size(32, 15);
+            this.description.TabIndex = 0;
+            this.description.Text = "label";
             // 
             // wizardControl
             // 
@@ -81,7 +81,7 @@ namespace TroubleshootingWizard
             this.wizardControl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wizardControl.Location = new System.Drawing.Point(0, 0);
             this.wizardControl.Name = "wizardControl";
-            this.wizardControl.Pages.Add(this.wizardPage1);
+            this.wizardControl.Pages.Add(this.wizardPage);
             this.wizardControl.Size = new System.Drawing.Size(537, 475);
             this.wizardControl.TabIndex = 0;
             this.wizardControl.Title = "Initium Troubleshooting Wizard";
@@ -107,8 +107,8 @@ namespace TroubleshootingWizard
             this.Name = "InitiumTroubleshoot";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.InitiumTroubleshoot_Load);
-            this.wizardPage1.ResumeLayout(false);
-            this.wizardPage1.PerformLayout();
+            this.wizardPage.ResumeLayout(false);
+            this.wizardPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.troubleshootImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wizardControl)).EndInit();
             this.ResumeLayout(false);
@@ -118,9 +118,9 @@ namespace TroubleshootingWizard
 
         #endregion
 
-        private AeroWizard.WizardPage wizardPage1;
+        private AeroWizard.WizardPage wizardPage;
         private AeroWizard.WizardControl wizardControl;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label description;
         private System.Windows.Forms.PictureBox troubleshootImage;
         private System.Windows.Forms.ProgressBar progressBar1;
     }

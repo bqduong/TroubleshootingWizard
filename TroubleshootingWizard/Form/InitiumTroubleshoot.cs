@@ -35,14 +35,12 @@ namespace TroubleshootingWizard
                 {
                     this.wizardControl.FinishButtonText = "Finish";
                 }
-            }
+            }            
 
-            
+            this.wizardPage.Text = this.currentNode.Value.Header;
+            this.description.Text = this.currentNode.Value.Description;
 
-            this.wizardPage1.Text = this.currentNode.Value.Header;
-            this.label1.Text = this.currentNode.Value.Description;
-
-            if(this.wizardPage1.Text == "Recalibrating...please wait")
+            if(this.currentNode.Value.IsExecuteProcess == "true")
             {
                 this.progressBar1.Visible = true;
             }
@@ -82,6 +80,7 @@ namespace TroubleshootingWizard
                             Header = (string)x.Element("header"),
                             Description = (string)x.Element("description"),
                             ImageLink = (string)x.Element("imageLink"),
+                            IsExecuteProcess = (string)x.Element("isExecuteProcess"),
                         };
             nodes.ToList();
 
