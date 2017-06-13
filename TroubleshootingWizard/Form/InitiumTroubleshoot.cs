@@ -12,11 +12,19 @@ namespace TroubleshootingWizard
         private Tree<Node> instructionTree;
 
         private ITreeNode<Node> currentNode;
+
+        private bool testResult;
         public InitiumTroubleshoot()
         {
             InitializeComponent();
+            InitializeData();
+        }
+
+        private void InitializeData()
+        {
             this.instructionTree = this.BuildTree();
-            currentNode = null;
+            this.currentNode = this.instructionTree.Root;
+            this.testResult = true;
         }
 
         private void wizardControl_SelectedPageChanged(object sender, EventArgs e)
@@ -25,19 +33,18 @@ namespace TroubleshootingWizard
             {
                 if ((e as AeroWizard.SelectedPageEventArgs).IsPrevious)
                 {
-                    currentNode = currentNode == null ? this.instructionTree.Root : currentNode.Parent as ITreeNode<Node>;
-                    this.wizardControl.FinishButtonText = "Next";
+                    this.currentNode = this.TraveseUpTree();
+                    this.UpdateUIProperties(this.currentNode, true);
                 }
             }
             else
             {
                 if (this.wizardControl.FinishButtonText != "Finish")
                 {
-                    currentNode = currentNode == null ? this.instructionTree.Root : currentNode.ChildNodes.First() as ITreeNode<Node>;
-                    if (!currentNode.ChildNodes.Any())
-                    {
-                        this.wizardControl.FinishButtonText = "Finish";
-                    }
+                    this.currentNode = this.TraverseDownTree(this.currentNode, this.testResult);
+                    this.UpdateUIProperties(this.currentNode, false);
+                    this.testResult = this.ExecuteInitiumFunctions(this.currentNode);
+
                 }
                 else
                 {
@@ -69,6 +76,56 @@ namespace TroubleshootingWizard
 
         }
 
+        private ITreeNode<Node> TraveseUpTree()
+        {
+            return this.currentNode.Parent as ITreeNode<Node>;
+        }
+
+        private ITreeNode<Node> TraverseDownTree(ITreeNode<Node> node, bool testResultOrNext = true)
+        {
+            if (testResultOrNext)
+            {
+                return this.currentNode.ChildNodes.First() as ITreeNode<Node>;
+            }
+            else
+            {
+                var child = this.currentNode.ChildNodes.ToArray();
+                return this.currentNode.ChildNodes.ToArray()[1] as ITreeNode<Node>;
+            }
+        }
+
+
+
+        private void UpdateUIProperties(ITreeNode<Node> node, bool isPrevious)
+        {
+            if (isPrevious)
+            {
+                this.wizardControl.FinishButtonText = "Next";
+            }
+            else
+            {
+                if (!node.ChildNodes.Any())
+                {
+                    this.wizardControl.FinishButtonText = "Finish";
+                }
+            }
+        }
+
+        private bool ExecuteInitiumFunctions(ITreeNode<Node> node)
+        {
+            var debugTestResult = false;
+            var debugNodeValue = node.Value.Header;
+            var isExecuteProcess = Convert.ToBoolean(node.Value.IsExecuteProcess);
+            if (isExecuteProcess)
+            {
+                //return the results from the system test
+                return debugTestResult;
+            }
+            else
+            {
+                return true;
+            }
+        }
 
         private Tree<Node> BuildTree()
         {

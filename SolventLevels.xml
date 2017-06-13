@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<troubleshoot>
+    <node>
+        <id>0</id>
+        <parentId>-1</parentId>
+        <header>Root Node</header>
+        <description>Root Page - desctription text.</description>
+        <isExecuteProcess>false</isExecuteProcess>
+        <imageLink>Resources\troubleshooting.png</imageLink>
+        <videoLink></videoLink>
+        <children>
+            <node>
+                <id>1</id>
+                <parentId>0</parentId>
+                <header>Check Solvent Bottles</header>
+                <description>Please inspect the solvent bottles.  If the solvent bottles are empty, please contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
+                <isExecuteProcess>false</isExecuteProcess>
+                <imageLink></imageLink>
+                <videoLink></videoLink>
+                <children>     
+                    <node>
+                        <id>1000</id>
+                        <parentId>1</parentId>
+                        <header>Refill Solvents</header>
+                        <description>Follow instructions in manual to refill solvents, then press 'Next' to peform the leak test.</description>
+                        <isExecuteProcess>false</isExecuteProcess>
+                        <imageLink></imageLink>
+                        <videoLink></videoLink>
+                        <children>     
+                            <node>
+                                <id>1001</id>
+                                <parentId>1000</parentId>
+                                <header>Running Leak Test</header>
+                                <description>Please wait.</description>
+                                <isExecuteProcess>true</isExecuteProcess>
+                                <imageLink></imageLink>
+                                <videoLink></videoLink>
+                                <children>     
+                                    <node>
+                                        <id>1002</id>
+                                        <parentId>1001</parentId>
+                                        <header>Passed Leak Test</header>
+                                        <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                        <isExecuteProcess>false</isExecuteProcess>
+                                        <imageLink></imageLink>
+                                        <videoLink></videoLink>
+                                        <children>                                                                        
+                                        </children>
+                                    </node>
+                                    <node>                                        
+                                        <id>1006</id>
+                                        <parentId>1001</parentId>
+                                        <header>Failed Leak Test</header>
+                                        <description>Please tighten fittings on the syringe and press 'Next' to run the leak test again.</description>
+                                        <isExecuteProcess>false</isExecuteProcess>
+                                        <imageLink></imageLink>
+                                        <videoLink></videoLink>
+                                        <children>          
+                                            <node>
+                                                <id>1007</id>
+                                                <parentId>1006</parentId>
+                                                <header>Running Leak Test</header>
+                                                <description>Please wait.</description>
+                                                <isExecuteProcess>true</isExecuteProcess>
+                                                <imageLink></imageLink>
+                                                <videoLink></videoLink>
+                                                <children> 
+                                                    <node>
+                                                        <id>1008</id>
+                                                        <parentId>1007</parentId>
+                                                        <header>Passed</header>
+                                                        <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                                        <isExecuteProcess>false</isExecuteProcess>
+                                                        <imageLink></imageLink>
+                                                        <videoLink></videoLink>
+                                                        <children>           
+                                                        </children>
+                                                    </node> 
+                                                    <node>
+                                                        <id>1010</id>
+                                                        <parentId>1007</parentId>
+                                                        <header>Failed</header>
+                                                        <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
+                                                        <isExecuteProcess>true</isExecuteProcess>
+                                                        <imageLink></imageLink>
+                                                        <videoLink></videoLink>
+                                                        <children>                                                                                 
+                                                        </children>
+                                                    </node>   
+                                                </children>
+                                            </node>    
+                                        </children>
+                                    </node>    
+                                </children>
+                            </node>   
+                        </children>
+                    </node>           
+                </children>
+            </node>
+        </children>
+     </node>
+</troubleshoot>

@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<troubleshoot>
+    <node>
+        <id>0</id>
+        <parentId>-1</parentId>
+        <header>Root Node</header>
+        <description>Root Page - desctription text.</description>
+        <isExecuteProcess>false</isExecuteProcess>
+        <imageLink>Resources\troubleshooting.png</imageLink>
+        <videoLink></videoLink>
+        <children>
+            <node>
+                <id>1</id>
+                <parentId>0</parentId>
+                <header>Replace Septum</header>
+                <description>Follow instructions in manual to replace septum.</description>
+                <isExecuteProcess>false</isExecuteProcess>
+                <imageLink></imageLink>
+                <videoLink></videoLink>
+                <children>     
+                    <node>
+                        <id>1000</id>
+                        <parentId>1</parentId>
+                        <header>Resetting '100ul IP' Septum Use Count</header>
+                        <description>Please wait.</description>
+                        <isExecuteProcess>false</isExecuteProcess>
+                        <imageLink></imageLink>
+                        <videoLink>Resources\264convert.mp4</videoLink>
+                        <children>     
+                            <node>
+                                <id>1001</id>
+                                <parentId>1000</parentId>
+                                <header>Confirm Injection Port Calibration</header>
+                                <description>Please confirm the injection port calibration of the AutoSampler.</description>
+                                <isExecuteProcess>false</isExecuteProcess>
+                                <imageLink></imageLink>
+                                <videoLink></videoLink>
+                                <children>     
+                                    <node>
+                                        <id>1002</id>
+                                        <parentId>1001</parentId>
+                                        <header>Running Syringe-Cell Leak Test</header>
+                                        <description>Please wait.</description>
+                                        <isExecuteProcess>true</isExecuteProcess>
+                                        <imageLink></imageLink>
+                                        <videoLink></videoLink>
+                                        <children>     
+                                            <node>
+                                                <id>1003</id>
+                                                <parentId>1002</parentId>
+                                                <header>Passed</header>
+                                                <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                                <isExecuteProcess>false</isExecuteProcess>
+                                                <imageLink></imageLink>
+                                                <videoLink></videoLink>
+                                                <children>                                                                        
+                                                </children>
+                                            </node>
+                                            <node>
+                                                <id>1004</id>
+                                                <parentId>1002</parentId>
+                                                <header>Reinstall Septum</header>
+                                                <description>Carefully reinstall septum, making sure it is securely pressed into place.</description>
+                                                <isExecuteProcess>false</isExecuteProcess>
+                                                <imageLink></imageLink>
+                                                <videoLink></videoLink>
+                                                <children>  
+                                                    <node>
+                                                        <id>1005</id>
+                                                        <parentId>1004</parentId>
+                                                        <header>Confirm Injection Port Calibration</header>
+                                                        <description>Please confirm the injection port calibration of the AutoSampler.</description>
+                                                        <isExecuteProcess>false</isExecuteProcess>
+                                                        <imageLink></imageLink>
+                                                        <videoLink></videoLink>
+                                                        <children>               
+                                                            <node>
+                                                                <id>1006</id>
+                                                                <parentId>1005</parentId>
+                                                                <header>Running Syringe-Cell Leak Test</header>
+                                                                <description>Please wait.</description>
+                                                                <isExecuteProcess>true</isExecuteProcess>
+                                                                <imageLink></imageLink>
+                                                                <videoLink></videoLink>
+                                                                <children>  
+                                                                    <node>
+                                                                        <id>1007</id>
+                                                                        <parentId>1006</parentId>
+                                                                        <header>Passed</header>
+                                                                        <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                                                        <isExecuteProcess>true</isExecuteProcess>
+                                                                        <imageLink></imageLink>
+                                                                        <videoLink></videoLink>
+                                                                        <children>                                                                                 
+                                                                        </children>
+                                                                    </node>          
+                                                                    <node>
+                                                                        <id>1008</id>
+                                                                        <parentId>1006</parentId>
+                                                                        <header>Failed</header>
+                                                                        <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
+                                                                        <isExecuteProcess>true</isExecuteProcess>
+                                                                        <imageLink></imageLink>
+                                                                        <videoLink></videoLink>
+                                                                        <children>                                                                                 
+                                                                        </children>
+                                                                    </node>    
+                                                                </children>
+                                                            </node>      
+                                                        </children>
+                                                    </node>                                                                                       
+                                                </children>
+                                            </node>                                                                
+                                        </children>
+                                    </node>  
+                                </children>
+                            </node>   
+                        </children>
+                    </node>           
+                </children>
+            </node>
+        </children>
+     </node>
+</troubleshoot>
