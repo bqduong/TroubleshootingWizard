@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -101,19 +102,58 @@ namespace TroubleshootingWizard
             //var descendants = tree.Root.Descendants;
 
             var allNodes = tree.ChildNodes.ToList();
+            var children = tree.ChildNodes.ToList();
+            var subTree = tree.Subtree.ToList();
 
-            foreach (var node in nodes)
-            {
-                foreach (var nod in allNodes)
-                {
-                    if (node.ParentId == (nod as TreeNode<Node>).Value.Id)
-                    {
-                        (nod as TreeNode<Node>).Children.Add(new TreeNode<Node>(node));
-                    }
-                }
-            }
+            this.Build(tree, nodes.ToList());
+
+            //foreach(var child in children)
+            //{
+            //    var parentId = (child as TreeNode<Node>).Value.Id;
+            //    var match = nodes.Where(n => n.ParentId == parentId).ToList();
+            //    foreach(var m in match)
+            //    {
+            //        (child as TreeNode<Node>).Children.Add(new TreeNode<Node>(m));
+            //    }
+            //}
+
+
+            //foreach (var node in nodes)
+            //{
+            //    foreach (var nod in allNodes)
+            //    {
+            //        if (node.ParentId == (nod as TreeNode<Node>).Value.Id)
+            //        {
+            //            (nod as TreeNode<Node>).Children.Add(new TreeNode<Node>(node));
+            //        }
+            //    }
+            //}
 
             return tree;
+        }
+
+        private void Build(TreeNode<Node> node, List<Node> nodes)
+        {
+            //base case
+            var nodeId = (node as TreeNode<Node>).Value.Id;
+            var match = nodes.Where(n => n.ParentId == nodeId).ToList();
+            if (!match.Any())
+            {
+                return;
+            }
+            else
+            {
+                foreach (var m in match)
+                {
+                    (node as TreeNode<Node>).Children.Add(new TreeNode<Node>(m));
+                }
+
+                var children = node.ChildNodes.ToList();
+                foreach (var child in children)
+                {
+                    Build(child as TreeNode<Node>, nodes);
+                }
+            }
         }
     }
 }
