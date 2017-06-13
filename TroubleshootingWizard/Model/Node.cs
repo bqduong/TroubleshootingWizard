@@ -15,7 +15,7 @@ namespace TroubleshootingWizard
         //private List<Node> children;
         //private Node parent;
 
-        public int? Id { get; set; }
+        public int Id { get; set; }
 
         public int ParentId { get; set; }
 
@@ -24,6 +24,8 @@ namespace TroubleshootingWizard
         public string Description { get; set; }
 
         public string ImageLink { get; set; }
+
+        public string VideoLink { get; set; }
 
         public List<Node> Children { get; set; }
 
