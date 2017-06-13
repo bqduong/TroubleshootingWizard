@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -20,9 +21,9 @@ namespace TroubleshootingWizard
 
         private void wizardControl_SelectedPageChanged(object sender, EventArgs e)
         {
-            if((e as AeroWizard.SelectedPageEventArgs) != null)
+            if ((e as AeroWizard.SelectedPageEventArgs) != null)
             {
-                if((e as AeroWizard.SelectedPageEventArgs).IsPrevious)
+                if ((e as AeroWizard.SelectedPageEventArgs).IsPrevious)
                 {
                     currentNode = currentNode == null ? this.instructionTree.Root : currentNode.Parent as ITreeNode<Node>;
                     this.wizardControl.FinishButtonText = "Next";
@@ -30,17 +31,24 @@ namespace TroubleshootingWizard
             }
             else
             {
-                currentNode = currentNode == null ? this.instructionTree.Root : currentNode.ChildNodes.First() as ITreeNode<Node>;
-                if(!currentNode.ChildNodes.Any())
+                if (this.wizardControl.FinishButtonText != "Finish")
                 {
-                    this.wizardControl.FinishButtonText = "Finish";
+                    currentNode = currentNode == null ? this.instructionTree.Root : currentNode.ChildNodes.First() as ITreeNode<Node>;
+                    if (!currentNode.ChildNodes.Any())
+                    {
+                        this.wizardControl.FinishButtonText = "Finish";
+                    }
                 }
-            }            
+                else
+                {
+                    Close();
+                }
+            }
 
             this.wizardPage.Text = this.currentNode.Value.Header;
             this.description.Text = this.currentNode.Value.Description;
 
-            if(this.currentNode.Value.IsExecuteProcess == "true")
+            if (this.currentNode.Value.IsExecuteProcess == "true")
             {
                 this.progressBar1.Visible = true;
             }
@@ -48,7 +56,7 @@ namespace TroubleshootingWizard
             {
                 this.progressBar1.Visible = false;
             }
-            
+
 
             var outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             var logoimage = Path.Combine(outPutDirectory, this.currentNode.Value.ImageLink);
@@ -66,7 +74,7 @@ namespace TroubleshootingWizard
         {
             var loader = new XmlLoader();
             var doc = loader.OpenXmlReturnsXDoc();
-            
+
             //var n = doc.Descendants("node").ToList();
 
             //line below is used for debugging
@@ -101,19 +109,42 @@ namespace TroubleshootingWizard
             //var descendants = tree.Root.Descendants;
 
             var allNodes = tree.ChildNodes.ToList();
+            var children = tree.ChildNodes.ToList();
+            var subTree = tree.Subtree.ToList();
 
-            foreach (var node in nodes)
-            {
-                foreach (var nod in allNodes)
-                {
-                    if (node.ParentId == (nod as TreeNode<Node>).Value.Id)
-                    {
-                        (nod as TreeNode<Node>).Children.Add(new TreeNode<Node>(node));
-                    }
-                }
-            }
+            this.BuildRecursive(tree, nodes.ToList());
+
+            //debug
+            //var updatedRoot = tree.Root;
+            //var firstGen = tree.Root.ChildNodes;
 
             return tree;
+        }
+
+        private void BuildRecursive(TreeNode<Node> node, List<Node> nodes)
+        {
+            //base case
+            var nodeId = (node as TreeNode<Node>).Value.Id;
+            var match = nodes.Where(n => n.ParentId == nodeId).ToList();
+            if (!match.Any())
+            {
+                return;
+            }
+            else
+            {
+                foreach (var m in match)
+                {
+                    (node as TreeNode<Node>).Children.Add(new TreeNode<Node>(m));
+                }
+
+                nodes.RemoveAll(n => match.Exists(m => m.Id == n.Id));
+
+                var children = node.ChildNodes.ToList();
+                foreach (var child in children)
+                {
+                    BuildRecursive(child as TreeNode<Node>, nodes);
+                }
+            }
         }
     }
 }
