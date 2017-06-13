@@ -112,6 +112,7 @@ namespace TroubleshootingWizard
             var children = tree.ChildNodes.ToList();
             var subTree = tree.Subtree.ToList();
 
+<<<<<<< HEAD
             this.BuildRecursive(tree, nodes.ToList());
 
             //debug
@@ -122,6 +123,36 @@ namespace TroubleshootingWizard
         }
 
         private void BuildRecursive(TreeNode<Node> node, List<Node> nodes)
+=======
+            this.Build(tree, nodes.ToList());
+
+            //foreach(var child in children)
+            //{
+            //    var parentId = (child as TreeNode<Node>).Value.Id;
+            //    var match = nodes.Where(n => n.ParentId == parentId).ToList();
+            //    foreach(var m in match)
+            //    {
+            //        (child as TreeNode<Node>).Children.Add(new TreeNode<Node>(m));
+            //    }
+            //}
+
+
+            //foreach (var node in nodes)
+            //{
+            //    foreach (var nod in allNodes)
+            //    {
+            //        if (node.ParentId == (nod as TreeNode<Node>).Value.Id)
+            //        {
+            //            (nod as TreeNode<Node>).Children.Add(new TreeNode<Node>(node));
+            //        }
+            //    }
+            //}
+
+            return tree;
+        }
+
+        private void Build(TreeNode<Node> node, List<Node> nodes)
+>>>>>>> 59d7611f03d0dc4d4759e698033f19796407e5c8
         {
             //base case
             var nodeId = (node as TreeNode<Node>).Value.Id;
@@ -137,12 +168,19 @@ namespace TroubleshootingWizard
                     (node as TreeNode<Node>).Children.Add(new TreeNode<Node>(m));
                 }
 
+<<<<<<< HEAD
                 nodes.RemoveAll(n => match.Exists(m => m.Id == n.Id));
 
                 var children = node.ChildNodes.ToList();
                 foreach (var child in children)
                 {
                     BuildRecursive(child as TreeNode<Node>, nodes);
+=======
+                var children = node.ChildNodes.ToList();
+                foreach (var child in children)
+                {
+                    Build(child as TreeNode<Node>, nodes);
+>>>>>>> 59d7611f03d0dc4d4759e698033f19796407e5c8
                 }
             }
         }
