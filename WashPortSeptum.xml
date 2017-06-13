@@ -25,7 +25,7 @@
                         <description>Follow instructions in manual to replace septum.</description>
                         <isExecuteProcess>false</isExecuteProcess>
                         <imageLink></imageLink>
-                        <videoLink></videoLink>
+                        <videoLink>Resources/Wash Station septum change (existing).avi</videoLink>
                         <children>     
                             <node>
                                 <id>1001</id>

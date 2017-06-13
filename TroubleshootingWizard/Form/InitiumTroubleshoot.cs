@@ -14,6 +14,8 @@ namespace TroubleshootingWizard
         private ITreeNode<Node> currentNode;
 
         private bool testResult;
+
+        private string outPutDirectory; 
         public InitiumTroubleshoot()
         {
             InitializeComponent();
@@ -25,6 +27,7 @@ namespace TroubleshootingWizard
             this.instructionTree = this.BuildTree();
             this.currentNode = this.instructionTree.Root;
             this.testResult = true;
+            this.outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
         }
 
         private void wizardControl_SelectedPageChanged(object sender, EventArgs e)
@@ -33,7 +36,7 @@ namespace TroubleshootingWizard
             {
                 if ((e as AeroWizard.SelectedPageEventArgs).IsPrevious)
                 {
-                    this.currentNode = this.TraveseUpTree();
+                    this.currentNode = this.TraveseUpTree(this.currentNode);
                     this.UpdateUIProperties(this.currentNode, true);
                 }
             }
@@ -52,23 +55,16 @@ namespace TroubleshootingWizard
                 }
             }
 
-            this.wizardPage.Text = this.currentNode.Value.Header;
-            this.description.Text = this.currentNode.Value.Description;
-
-            if (this.currentNode.Value.IsExecuteProcess == "true")
-            {
-                this.progressBar1.Visible = true;
-            }
-            else
-            {
-                this.progressBar1.Visible = false;
-            }
+            //this.wizardPage.Text = this.currentNode.Value.Header;
+            //this.description.Text = this.currentNode.Value.Description;
 
 
-            var outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            var logoimage = Path.Combine(outPutDirectory, this.currentNode.Value.ImageLink);
+            //var outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            //var logoimage = Path.Combine(outPutDirectory, this.currentNode.Value.ImageLink);
 
-            this.troubleshootImage.ImageLocation = logoimage;
+            //this.troubleshootImage.ImageLocation = logoimage;
+
+            this.LoadMedia(this.currentNode);
         }
 
         private void InitiumTroubleshoot_Load(object sender, EventArgs e)
@@ -76,10 +72,38 @@ namespace TroubleshootingWizard
 
         }
 
-        private ITreeNode<Node> TraveseUpTree()
+        private ITreeNode<Node> TraveseUpTree(ITreeNode<Node> node)
         {
-            return this.currentNode.Parent as ITreeNode<Node>;
+            return node.Parent as ITreeNode<Node>;
         }
+
+
+        private void LoadMedia(ITreeNode<Node> node)
+        {
+            if (node.Value.ImageLink != "")
+            {
+                var imageURL = Path.Combine(this.outPutDirectory, node.Value.ImageLink);
+                this.troubleshootImage.ImageLocation = imageURL;
+                this.troubleshootImage.Visible = true;
+            }
+            else
+            {
+                this.troubleshootImage.Visible = false;
+            }
+
+            if (node.Value.VideoLink != "")
+            {
+                var videoURL = Path.Combine(this.outPutDirectory, node.Value.VideoLink);
+                this.axWindowsMediaPlayer.URL = videoURL;
+                this.axWindowsMediaPlayer.Visible = true;
+                this.axWindowsMediaPlayer.uiMode = "none";
+            }
+            else
+            {
+                this.axWindowsMediaPlayer.Visible = false;
+            }
+        }
+
 
         private ITreeNode<Node> TraverseDownTree(ITreeNode<Node> node, bool testResultOrNext = true)
         {
@@ -94,8 +118,6 @@ namespace TroubleshootingWizard
             }
         }
 
-
-
         private void UpdateUIProperties(ITreeNode<Node> node, bool isPrevious)
         {
             if (isPrevious)
@@ -109,6 +131,9 @@ namespace TroubleshootingWizard
                     this.wizardControl.FinishButtonText = "Finish";
                 }
             }
+
+            this.wizardPage.Text = this.currentNode.Value.Header;
+            this.description.Text = this.currentNode.Value.Description;
         }
 
         private bool ExecuteInitiumFunctions(ITreeNode<Node> node)
@@ -116,6 +141,8 @@ namespace TroubleshootingWizard
             var debugTestResult = false;
             var debugNodeValue = node.Value.Header;
             var isExecuteProcess = Convert.ToBoolean(node.Value.IsExecuteProcess);
+            this.SetProgressBarVisisbility(isExecuteProcess);
+
             if (isExecuteProcess)
             {
                 //return the results from the system test
@@ -125,6 +152,11 @@ namespace TroubleshootingWizard
             {
                 return true;
             }
+        }
+
+        private void SetProgressBarVisisbility(bool isVisible)
+        {
+            this.progressBar.Visible = isVisible;
         }
 
         private Tree<Node> BuildTree()
@@ -145,6 +177,7 @@ namespace TroubleshootingWizard
                             Header = (string)x.Element("header"),
                             Description = (string)x.Element("description"),
                             ImageLink = (string)x.Element("imageLink"),
+                            VideoLink = (string)x.Element("videoLink"),
                             IsExecuteProcess = (string)x.Element("isExecuteProcess"),
                         };
             nodes.ToList();

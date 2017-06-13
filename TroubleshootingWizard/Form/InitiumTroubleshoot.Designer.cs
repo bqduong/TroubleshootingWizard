@@ -36,42 +36,42 @@ namespace TroubleshootingWizard
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InitiumTroubleshoot));
             this.wizardPage = new AeroWizard.WizardPage();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.troubleshootImage = new System.Windows.Forms.PictureBox();
             this.description = new System.Windows.Forms.Label();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.axWindowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.wizardControl = new AeroWizard.WizardControl();
             this.glassExtenderProvider1 = new Vanara.Interop.DesktopWindowManager.GlassExtenderProvider();
             this.wizardPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.troubleshootImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wizardControl)).BeginInit();
             this.SuspendLayout();
             // 
             // wizardPage
             // 
-            this.wizardPage.Controls.Add(this.progressBar1);
+            this.wizardPage.Controls.Add(this.progressBar);
             this.wizardPage.Controls.Add(this.troubleshootImage);
             this.wizardPage.Controls.Add(this.description);
-            this.wizardPage.Controls.Add(this.axWindowsMediaPlayer1);
+            this.wizardPage.Controls.Add(this.axWindowsMediaPlayer);
             this.wizardPage.Name = "wizardPage";
-            this.wizardPage.Size = new System.Drawing.Size(1286, 839);
+            this.wizardPage.Size = new System.Drawing.Size(868, 428);
             this.wizardPage.TabIndex = 0;
             this.wizardPage.Text = "Page Title";
             // 
-            // progressBar1
+            // progressBar
             // 
-            this.progressBar1.Location = new System.Drawing.Point(6, 40);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(250, 23);
-            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.progressBar1.TabIndex = 2;
-            this.progressBar1.Visible = false;
+            this.progressBar.Location = new System.Drawing.Point(562, 375);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(250, 23);
+            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.progressBar.TabIndex = 2;
+            this.progressBar.Visible = false;
             // 
             // troubleshootImage
             // 
             this.troubleshootImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.troubleshootImage.Location = new System.Drawing.Point(6, 80);
+            this.troubleshootImage.Location = new System.Drawing.Point(562, 69);
             this.troubleshootImage.Name = "troubleshootImage";
             this.troubleshootImage.Size = new System.Drawing.Size(300, 300);
             this.troubleshootImage.TabIndex = 1;
@@ -86,14 +86,14 @@ namespace TroubleshootingWizard
             this.description.TabIndex = 0;
             this.description.Text = "label";
             // 
-            // axWindowsMediaPlayer1
+            // axWindowsMediaPlayer
             // 
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(318, 80);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(550, 339);
-            this.axWindowsMediaPlayer1.TabIndex = 3;
+            this.axWindowsMediaPlayer.Enabled = true;
+            this.axWindowsMediaPlayer.Location = new System.Drawing.Point(6, 69);
+            this.axWindowsMediaPlayer.Name = "axWindowsMediaPlayer";
+            this.axWindowsMediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer.OcxState")));
+            this.axWindowsMediaPlayer.Size = new System.Drawing.Size(550, 339);
+            this.axWindowsMediaPlayer.TabIndex = 3;
             // 
             // wizardControl
             // 
@@ -104,7 +104,7 @@ namespace TroubleshootingWizard
             this.wizardControl.Location = new System.Drawing.Point(0, 0);
             this.wizardControl.Name = "wizardControl";
             this.wizardControl.Pages.Add(this.wizardPage);
-            this.wizardControl.Size = new System.Drawing.Size(1333, 993);
+            this.wizardControl.Size = new System.Drawing.Size(915, 582);
             this.wizardControl.TabIndex = 0;
             this.wizardControl.Title = "Initium Troubleshooting Wizard";
             this.wizardControl.TitleIcon = ((System.Drawing.Icon)(resources.GetObject("wizardControl.TitleIcon")));
@@ -114,7 +114,7 @@ namespace TroubleshootingWizard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1333, 993);
+            this.ClientSize = new System.Drawing.Size(915, 582);
             this.Controls.Add(this.wizardControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.glassExtenderProvider1.SetGlassMargins(this, new System.Windows.Forms.Padding(0));
@@ -124,7 +124,7 @@ namespace TroubleshootingWizard
             this.wizardPage.ResumeLayout(false);
             this.wizardPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.troubleshootImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wizardControl)).EndInit();
             this.ResumeLayout(false);
 
@@ -137,8 +137,8 @@ namespace TroubleshootingWizard
         private AeroWizard.WizardControl wizardControl;
         private System.Windows.Forms.Label description;
         private System.Windows.Forms.PictureBox troubleshootImage;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBar;
         private Vanara.Interop.DesktopWindowManager.GlassExtenderProvider glassExtenderProvider1;
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer;
     }
 }
