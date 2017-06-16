@@ -36,7 +36,7 @@
                                 <header>Running Leak Test</header>
                                 <description>Please wait.</description>
                                 <isExecuteProcess>true</isExecuteProcess>
-                                <actionCode></actionCode>
+                                <actionCode>0</actionCode>
                                 <imageLink></imageLink>
                                 <videoLink></videoLink>
                                 <children>     
@@ -68,7 +68,7 @@
                                                 <header>Running Leak Test</header>
                                                 <description>Please wait.</description>
                                                 <isExecuteProcess>true</isExecuteProcess>
-                                                <actionCode></actionCode>
+                                                <actionCode>0</actionCode>
                                                 <imageLink></imageLink>
                                                 <videoLink></videoLink>
                                                 <children> 

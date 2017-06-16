@@ -25,8 +25,8 @@
                         <parentId>1</parentId>
                         <header>Resetting '100ul IP' Septum Use Count</header>
                         <description>Please wait.</description>
-                        <isExecuteProcess>false</isExecuteProcess> 
-                        <actionCode></actionCode>
+                        <isExecuteProcess>true</isExecuteProcess> 
+                        <actionCode>8</actionCode>
                         <imageLink></imageLink>
                         <videoLink></videoLink>
                         <children>     

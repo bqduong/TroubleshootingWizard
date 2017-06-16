@@ -35,8 +35,8 @@
                                 <parentId>1000</parentId>
                                 <header>Resetting Wash Port Use Count</header>
                                 <description>Please wait.</description>
-                                <isExecuteProcess>false</isExecuteProcess>
-                                <actionCode></actionCode>
+                                <isExecuteProcess>true</isExecuteProcess>
+                                <actionCode>4</actionCode>
                                 <imageLink></imageLink>
                                 <videoLink></videoLink>
                                 <children>     
@@ -56,7 +56,7 @@
                                                 <header>Running Wash Port Septum Leak Test</header>
                                                 <description>Please wait.</description>
                                                 <isExecuteProcess>true</isExecuteProcess>
-                                                <actionCode></actionCode>
+                                                <actionCode>6</actionCode>
                                                 <imageLink></imageLink>
                                                 <videoLink></videoLink>
                                                 <children>
@@ -98,7 +98,7 @@
                                                                         <header>Running Wash Port Septum Leak Test</header>
                                                                         <description>Please wait.</description>
                                                                         <isExecuteProcess>true</isExecuteProcess>
-                                                                        <actionCode></actionCode>
+                                                                        <actionCode>6</actionCode>
                                                                         <imageLink></imageLink>
                                                                         <videoLink></videoLink>
                                                                         <children>
