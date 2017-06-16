@@ -27,7 +27,8 @@
                         <description>Please wait.</description>
                         <isExecuteProcess>true</isExecuteProcess> 
                         <actionCode>8</actionCode>
-                        <imageLink></imageLink></videoLink>
+                        <imageLink></imageLink>
+                        <videoLink></videoLink>
                         <children>     
                             <node>
                                 <id>1001</id>

@@ -23,14 +23,20 @@ namespace TroubleshootingWizard
         public InitiumTroubleshoot()
         {
             InitializeComponent();
-            InitializeData();
+            //InitializeData();
         }
 
-        private void InitializeData()
+        public InitiumTroubleshoot(string filePath)
+        {
+            InitializeComponent();
+            this.InitializeData(filePath);
+        }
+
+        private void InitializeData(string filePath)
         {
             this.treeUtility = new TreeUtility();
             this.troubleshootingWizardUiService = new WizardUIService();
-            this.instructionTree = treeUtility.BuildTree();
+            this.instructionTree = treeUtility.BuildTree(filePath);
             if (this.instructionTree != null)
             {
                 this.currentNode = instructionTree.Root;

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AeroWizard", "AeroWizard\Ae
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wizard", "Wizard\Wizard.csproj", "{7FC9BAAD-EE6C-462E-8D59-658B9BF8744E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestScenarios", "TestScenarios\TestScenarios.csproj", "{3F5B6B1A-1450-4D18-BD24-95E949FEF168}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7FC9BAAD-EE6C-462E-8D59-658B9BF8744E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FC9BAAD-EE6C-462E-8D59-658B9BF8744E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FC9BAAD-EE6C-462E-8D59-658B9BF8744E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F5B6B1A-1450-4D18-BD24-95E949FEF168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F5B6B1A-1450-4D18-BD24-95E949FEF168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F5B6B1A-1450-4D18-BD24-95E949FEF168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F5B6B1A-1450-4D18-BD24-95E949FEF168}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

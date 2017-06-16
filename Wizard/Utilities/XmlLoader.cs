@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.IO;
+using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 
@@ -47,22 +48,25 @@ namespace Wizard.Utilities
             }
         }
 
-        public XDocument OpenXmlReturnsXDoc()
+        public XDocument OpenXmlReturnsXDoc(string filePath)
         {
-            using (var openFileDialogXML = new OpenFileDialog())
-            {
-                openFileDialogXML.InitialDirectory = "C:\\";
-                openFileDialogXML.Filter = "XML Files|*.xml";
-                openFileDialogXML.RestoreDirectory = true;
+            //using (var openFileDialogXML = new OpenFileDialog())
+            //{
+            //    openFileDialogXML.InitialDirectory = "C:\\";
+            //    openFileDialogXML.Filter = "XML Files|*.xml";
+            //    openFileDialogXML.RestoreDirectory = true;
 
-                if (openFileDialogXML.ShowDialog() == DialogResult.Cancel)
-                {
-                    return null;
-                }
+                //if (openFileDialogXML.ShowDialog() == DialogResult.Cancel)
+                //{
+                //    return null;
+                //}
+                
+               
 
+                var myStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
                 //  The stream will hold the results of opening the XML
-                using (var myStream = openFileDialogXML.OpenFile())
-                {
+                //using (var myStream = openFileDialogXML.OpenFile())
+                //{
                     try
                     {
                         //  Successfully return the XML
@@ -76,8 +80,8 @@ namespace Wizard.Utilities
                         MessageBox.Show("The XML could not be read. " + ex);
                         return null;
                     }
-                }
-            }
+                //}
+            //}
         }
         
         public void LoadXML_Window(object sender, System.EventArgs e)

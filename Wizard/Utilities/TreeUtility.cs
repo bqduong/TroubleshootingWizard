@@ -7,10 +7,10 @@ namespace Wizard.Utilities
 {
     public class TreeUtility
     {
-        public Tree<Node> BuildTree()
+        public Tree<Node> BuildTree(string filePath)
         {
             var loader = new XmlLoader();
-            var doc = loader.OpenXmlReturnsXDoc();
+            var doc = loader.OpenXmlReturnsXDoc(filePath);
 
             if (doc != null)
             {
@@ -70,7 +70,7 @@ namespace Wizard.Utilities
                 else
                 {
                     //needs refactoring 
-                    if (node.ChildNodes.ToArray()[1] as ITreeNode<Node> == null)
+                    if (node.ChildNodes.ToArray().Length == 1)
                     {
                         //if running background process such as: resets
                         return node.ChildNodes.First() as ITreeNode<Node>;
