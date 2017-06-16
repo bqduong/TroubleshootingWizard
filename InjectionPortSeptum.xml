@@ -27,8 +27,7 @@
                         <description>Please wait.</description>
                         <isExecuteProcess>true</isExecuteProcess> 
                         <actionCode>8</actionCode>
-                        <imageLink></imageLink>
-                        <videoLink>Resources\264convert.mp4</videoLink>
+                        <imageLink></imageLink></videoLink>
                         <children>     
                             <node>
                                 <id>1001</id>
