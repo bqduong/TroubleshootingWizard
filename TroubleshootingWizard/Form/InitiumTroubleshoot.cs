@@ -23,12 +23,11 @@ namespace TroubleshootingWizard
         public InitiumTroubleshoot()
         {
             InitializeComponent();
-            //InitializeData();
         }
 
         public InitiumTroubleshoot(string filePath)
         {
-            InitializeComponent();
+            this.InitializeComponent();
             this.InitializeData(filePath);
         }
 
