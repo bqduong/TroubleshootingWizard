@@ -1,31 +1,31 @@
-﻿using System;
+﻿//using System;
 
-namespace TroubleshootingWizard
-{
-    public enum UpDownTraversalType
-    {
-        TopDown,
-        BottomUp
-    }
+//namespace TroubleshootingWizard
+//{
+//    public enum UpDownTraversalType
+//    {
+//        TopDown,
+//        BottomUp
+//    }
 
-    public enum DepthBreadthTraversalType
-    {
-        DepthFirst,
-        BreadthFirst
-    }
+//    public enum DepthBreadthTraversalType
+//    {
+//        DepthFirst,
+//        BreadthFirst
+//    }
 
-    public enum NodeChangeType
-    {
-        NodeAdded,
-        NodeRemoved
-    }
+//    public enum NodeChangeType
+//    {
+//        NodeAdded,
+//        NodeRemoved
+//    }
 
-    public enum NodeRelationType
-    {
-        Ancestor,
-        Parent,
-        Self,
-        Child,
-        Descendant
-    }
-}
+//    public enum NodeRelationType
+//    {
+//        Ancestor,
+//        Parent,
+//        Self,
+//        Child,
+//        Descendant
+//    }
+//}

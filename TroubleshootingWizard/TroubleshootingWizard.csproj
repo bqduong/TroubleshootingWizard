@@ -63,6 +63,7 @@
     <Compile Include="Model\TreeEnums.cs" />
     <Compile Include="Model\TreeNode.cs" />
     <Compile Include="Model\TreeNodeList.cs" />
+    <Compile Include="Services\TroubleshootingWizardUIService.cs" />
     <Compile Include="Utility\XmlLoader.cs" />
     <EmbeddedResource Include="Form\InitiumTroubleshoot.resx">
       <DependentUpon>InitiumTroubleshoot.cs</DependentUpon>
@@ -95,6 +96,10 @@
       <Project>{199c12c4-3eef-4d08-bac3-f2a62bcf969c}</Project>
       <Name>AeroWizard</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Wizard\Wizard.csproj">
+      <Project>{7fc9baad-ee6c-462e-8d59-658b9bf8744e}</Project>
+      <Name>Wizard</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\264Convert.mp4">
@@ -107,6 +112,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\troubleshooting.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Wash Station septum change %28existing%29.avi">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\washStationSeptumChange2.gif">

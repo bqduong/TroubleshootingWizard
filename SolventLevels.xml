@@ -5,7 +5,8 @@
         <parentId>-1</parentId>
         <header>Root Node</header>
         <description>Root Page - desctription text.</description>
-        <isExecuteProcess>false</isExecuteProcess>
+        <isExecuteProcess>false</isExecuteProcess> 
+        <actionCode></actionCode>
         <imageLink>Resources\troubleshooting.png</imageLink>
         <videoLink></videoLink>
         <children>
@@ -14,7 +15,8 @@
                 <parentId>0</parentId>
                 <header>Check Solvent Bottles</header>
                 <description>Please inspect the solvent bottles.  If the solvent bottles are empty, please contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
-                <isExecuteProcess>false</isExecuteProcess>
+                <isExecuteProcess>false</isExecuteProcess> 
+                <actionCode></actionCode>
                 <imageLink></imageLink>
                 <videoLink></videoLink>
                 <children>     
@@ -23,7 +25,8 @@
                         <parentId>1</parentId>
                         <header>Refill Solvents</header>
                         <description>Follow instructions in manual to refill solvents, then press 'Next' to peform the leak test.</description>
-                        <isExecuteProcess>false</isExecuteProcess>
+                        <isExecuteProcess>false</isExecuteProcess> 
+                        <actionCode></actionCode>
                         <imageLink></imageLink>
                         <videoLink></videoLink>
                         <children>     
@@ -33,6 +36,7 @@
                                 <header>Running Leak Test</header>
                                 <description>Please wait.</description>
                                 <isExecuteProcess>true</isExecuteProcess>
+                                <actionCode></actionCode>
                                 <imageLink></imageLink>
                                 <videoLink></videoLink>
                                 <children>     
@@ -41,7 +45,8 @@
                                         <parentId>1001</parentId>
                                         <header>Passed Leak Test</header>
                                         <description>Proceed to the next step in the diagnostic test or start of job.</description>
-                                        <isExecuteProcess>false</isExecuteProcess>
+                                        <isExecuteProcess>false</isExecuteProcess> 
+                                        <actionCode></actionCode>
                                         <imageLink></imageLink>
                                         <videoLink></videoLink>
                                         <children>                                                                        
@@ -52,7 +57,8 @@
                                         <parentId>1001</parentId>
                                         <header>Failed Leak Test</header>
                                         <description>Please tighten fittings on the syringe and press 'Next' to run the leak test again.</description>
-                                        <isExecuteProcess>false</isExecuteProcess>
+                                        <isExecuteProcess>false</isExecuteProcess> 
+                                        <actionCode></actionCode>
                                         <imageLink></imageLink>
                                         <videoLink></videoLink>
                                         <children>          
@@ -62,6 +68,7 @@
                                                 <header>Running Leak Test</header>
                                                 <description>Please wait.</description>
                                                 <isExecuteProcess>true</isExecuteProcess>
+                                                <actionCode></actionCode>
                                                 <imageLink></imageLink>
                                                 <videoLink></videoLink>
                                                 <children> 
@@ -70,7 +77,8 @@
                                                         <parentId>1007</parentId>
                                                         <header>Passed</header>
                                                         <description>Proceed to the next step in the diagnostic test or start of job.</description>
-                                                        <isExecuteProcess>false</isExecuteProcess>
+                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                        <actionCode></actionCode>
                                                         <imageLink></imageLink>
                                                         <videoLink></videoLink>
                                                         <children>           
@@ -82,6 +90,7 @@
                                                         <header>Failed</header>
                                                         <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
                                                         <isExecuteProcess>true</isExecuteProcess>
+                                                        <actionCode></actionCode>
                                                         <imageLink></imageLink>
                                                         <videoLink></videoLink>
                                                         <children>                                                                                 

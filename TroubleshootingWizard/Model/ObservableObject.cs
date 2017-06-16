@@ -1,37 +1,37 @@
-﻿using System;
-using System.ComponentModel;
+﻿//using System;
+//using System.ComponentModel;
 
-namespace TroubleshootingWizard
-{
-    public class ObservableObject : INotifyPropertyChanged
-    {
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        }
+//namespace TroubleshootingWizard
+//{
+//    public class ObservableObject : INotifyPropertyChanged
+//    {
+//        public event PropertyChangedEventHandler PropertyChanged;
+//        protected virtual void OnPropertyChanged(string propertyName)
+//        {
+//            if (PropertyChanged != null)
+//                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+//        }
 
-        protected virtual void Set<T>(string propertyName, ref T backingField, T newValue, Action beforeChange = null, Action afterChange = null)
-        {
-            if (string.IsNullOrEmpty(propertyName))
-                throw new ArgumentException("propertyName");
+//        protected virtual void Set<T>(string propertyName, ref T backingField, T newValue, Action beforeChange = null, Action afterChange = null)
+//        {
+//            if (string.IsNullOrEmpty(propertyName))
+//                throw new ArgumentException("propertyName");
 
-            if (backingField == null && newValue == null)
-                return;
+//            if (backingField == null && newValue == null)
+//                return;
 
-            if (backingField != null && backingField.Equals(newValue))
-                return;
+//            if (backingField != null && backingField.Equals(newValue))
+//                return;
 
-            if (beforeChange != null)
-                beforeChange();
+//            if (beforeChange != null)
+//                beforeChange();
 
-            backingField = newValue;
+//            backingField = newValue;
 
-            OnPropertyChanged(propertyName);
+//            OnPropertyChanged(propertyName);
 
-            if (afterChange != null)
-                afterChange();
-        }
-    }
-}
+//            if (afterChange != null)
+//                afterChange();
+//        }
+//    }
+//}

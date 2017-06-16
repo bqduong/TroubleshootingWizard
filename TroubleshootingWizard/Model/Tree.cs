@@ -1,15 +1,15 @@
-﻿using System;
+﻿//using System;
 
-namespace TroubleshootingWizard
-{
-    public class Tree<T> : TreeNode<T>
-        where T : new()
-    {
-        public Tree() { }
+//namespace TroubleshootingWizard
+//{
+//    public class Tree<T> : TreeNode<T>
+//        where T : new()
+//    {
+//        public Tree() { }
 
-        public Tree(T RootValue)
-        {
-            Value = RootValue;
-        }
-    }
-}
+//        public Tree(T RootValue)
+//        {
+//            Value = RootValue;
+//        }
+//    }
+//}

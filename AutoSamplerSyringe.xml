@@ -5,7 +5,8 @@
         <parentId>-1</parentId>
         <header>Root Node</header>
         <description>Root Page - desctription text.</description>
-        <isExecuteProcess>false</isExecuteProcess>
+        <isExecuteProcess>false</isExecuteProcess> 
+        <actionCode></actionCode>
         <imageLink>Resources\troubleshooting.png</imageLink>
         <videoLink></videoLink>
         <children>
@@ -15,6 +16,7 @@
                 <header>Replace Syringe</header>
                 <description>Follow instructions in manual to replace syringe.</description>
                 <isExecuteProcess>false</isExecuteProcess>
+                <actionCode></actionCode>
                 <imageLink></imageLink>
                 <videoLink></videoLink>
                 <children>     
@@ -23,7 +25,8 @@
                         <parentId>1</parentId>
                         <header>Resetting '100ul IP' Septum Use Count</header>
                         <description>Please wait.</description>
-                        <isExecuteProcess>false</isExecuteProcess>
+                        <isExecuteProcess>false</isExecuteProcess> 
+                        <actionCode></actionCode>
                         <imageLink></imageLink>
                         <videoLink></videoLink>
                         <children>     
@@ -32,7 +35,8 @@
                                 <parentId>1000</parentId>
                                 <header>Check Waste Tube Alignment</header>
                                 <description>Please check the alignment of the waste tube in the splash guard.</description>
-                                <isExecuteProcess>false</isExecuteProcess>
+                                <isExecuteProcess>false</isExecuteProcess> 
+                                <actionCode></actionCode>
                                 <imageLink></imageLink>
                                 <videoLink></videoLink>
                                 <children>     
@@ -41,7 +45,8 @@
                                         <parentId>1001</parentId>
                                         <header>Issues?</header>
                                         <description>Where there any issues during these steps?</description>
-                                        <isExecuteProcess>false</isExecuteProcess>
+                                        <isExecuteProcess>false</isExecuteProcess> 
+                                        <actionCode></actionCode>
                                         <isUserInput></isUserInput>
                                         <imageLink></imageLink>
                                         <videoLink></videoLink>
@@ -51,7 +56,8 @@
                                                 <parentId>1002</parentId>
                                                 <header>Passed</header>
                                                 <description>Proceed to the next step in the diagnostic test or start of job.</description>
-                                                <isExecuteProcess>false</isExecuteProcess>
+                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                <actionCode></actionCode>
                                                 <imageLink></imageLink>
                                                 <videoLink></videoLink>
                                                 <children>                                                                        
@@ -62,7 +68,8 @@
                                                 <parentId>1001</parentId>
                                                 <header>Failed</header>
                                                 <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
-                                                <isExecuteProcess>false</isExecuteProcess>
+                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                <actionCode></actionCode>
                                                 <imageLink></imageLink>
                                                 <videoLink></videoLink>
                                                 <children>                                                                                 

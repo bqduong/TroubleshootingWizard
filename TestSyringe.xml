@@ -5,7 +5,8 @@
         <parentId>-1</parentId>
         <header>Root Node</header>
         <description>Root Page - desctription text.</description>
-        <isExecuteProcess>false</isExecuteProcess>
+        <isExecuteProcess>false</isExecuteProcess> 
+        <actionCode></actionCode>
         <imageLink>Resources\troubleshooting.png</imageLink>
         <videoLink></videoLink>
         <children>
@@ -14,7 +15,8 @@
                 <parentId>0</parentId>
                 <header>Replace Syringe</header>
                 <description>Follow instructions in manual to replace syringe.</description>
-                <isExecuteProcess>false</isExecuteProcess>
+                <isExecuteProcess>false</isExecuteProcess> 
+                <actionCode></actionCode>
                 <imageLink></imageLink>
                 <videoLink></videoLink>
                 <children>     
@@ -23,7 +25,8 @@
                         <parentId>1</parentId>
                         <header>Resetting '100ul IP' Septum Use Count</header>
                         <description>Please wait.</description>
-                        <isExecuteProcess>false</isExecuteProcess>
+                        <isExecuteProcess>false</isExecuteProcess> 
+                        <actionCode></actionCode>
                         <imageLink></imageLink>
                         <videoLink></videoLink>
                         <children>     
@@ -33,6 +36,7 @@
                                 <header>Running Syringe-Cell Leak Test</header>
                                 <description>Please wait.</description>
                                 <isExecuteProcess>true</isExecuteProcess>
+                                <actionCode></actionCode>
                                 <imageLink></imageLink>
                                 <videoLink></videoLink>
                                 <children>     
@@ -41,7 +45,8 @@
                                         <parentId>1001</parentId>
                                         <header>Passed Leak Test</header>
                                         <description>Proceed to the next step of the troubleshooter.</description>
-                                        <isExecuteProcess>false</isExecuteProcess>
+                                        <isExecuteProcess>false</isExecuteProcess> 
+                                        <actionCode></actionCode>
                                         <imageLink></imageLink>
                                         <videoLink></videoLink>
                                         <children>
@@ -50,7 +55,8 @@
                                                 <parentId>1002</parentId>
                                                 <header>Calibrate Test Syringe</header>
                                                 <description>Calibrate test syringe positions using 'Calibrate Syringe' utility.</description>
-                                                <isExecuteProcess>false</isExecuteProcess>
+                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                <actionCode></actionCode>
                                                 <imageLink></imageLink>
                                                 <videoLink></videoLink>
                                                 <children>                 
@@ -59,7 +65,8 @@
                                                         <parentId>1003</parentId>
                                                         <header>Confirm Injection Port Position</header>
                                                         <description>Confirm injection port position of AutoSampler calibration.</description>
-                                                        <isExecuteProcess>false</isExecuteProcess>
+                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                        <actionCode></actionCode>
                                                         <imageLink></imageLink>
                                                         <videoLink></videoLink>
                                                         <children>           
@@ -68,7 +75,8 @@
                                                                 <parentId>1004</parentId>
                                                                 <header>Passed</header>
                                                                 <description>Proceed to the next step in the diagnostic test or start of job.</description>
-                                                                <isExecuteProcess>false</isExecuteProcess>
+                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                <actionCode></actionCode>
                                                                 <imageLink></imageLink>
                                                                 <videoLink></videoLink>
                                                                 <children>                                                                        
@@ -85,7 +93,8 @@
                                         <parentId>1001</parentId>
                                         <header>Failed Leak Test</header>
                                         <description>Please tighten fittings on the syringe and press 'Next' to run the leak test again.</description>
-                                        <isExecuteProcess>false</isExecuteProcess>
+                                        <isExecuteProcess>false</isExecuteProcess> 
+                                        <actionCode></actionCode>
                                         <imageLink></imageLink>
                                         <videoLink></videoLink>
                                         <children>          
@@ -95,6 +104,7 @@
                                                 <header>Running Syringe-Cell Leak Test</header>
                                                 <description>Please wait.</description>
                                                 <isExecuteProcess>true</isExecuteProcess>
+                                                <actionCode></actionCode>
                                                 <imageLink></imageLink>
                                                 <videoLink></videoLink>
                                                 <children> 
@@ -103,7 +113,8 @@
                                                         <parentId>1007</parentId>
                                                         <header>Confirm Injection Port Position</header>
                                                         <description>Confirm injection port position of AutoSampler calibration.</description>
-                                                        <isExecuteProcess>false</isExecuteProcess>
+                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                        <actionCode></actionCode>
                                                         <imageLink></imageLink>
                                                         <videoLink></videoLink>
                                                         <children>           
@@ -112,7 +123,8 @@
                                                                 <parentId>1008</parentId>
                                                                 <header>Passed</header>
                                                                 <description>Proceed to the next step in the diagnostic test or start of job.</description>
-                                                                <isExecuteProcess>false</isExecuteProcess>
+                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                <actionCode></actionCode>
                                                                 <imageLink></imageLink>
                                                                 <videoLink></videoLink>
                                                                 <children>                                                                        
@@ -125,7 +137,8 @@
                                                         <parentId>1007</parentId>
                                                         <header>Failed</header>
                                                         <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
-                                                        <isExecuteProcess>false</isExecuteProcess>
+                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                        <actionCode></actionCode>
                                                         <imageLink></imageLink>
                                                         <videoLink></videoLink>
                                                         <children>                                                                                 

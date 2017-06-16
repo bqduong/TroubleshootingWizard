@@ -5,7 +5,8 @@
         <parentId>-1</parentId>
         <header>Root Node</header>
         <description>Root Page - desctription text.</description>
-        <isExecuteProcess>false</isExecuteProcess>
+        <isExecuteProcess>false</isExecuteProcess> 
+        <actionCode></actionCode>
         <imageLink>Resources\troubleshooting.png</imageLink>
         <videoLink></videoLink>
         <children>
@@ -14,7 +15,8 @@
                 <parentId>0</parentId>
                 <header>Troubleshoot Wash Port</header>
                 <description>Move AutoSampler 50mm to the right (away from wash port).</description>
-                <isExecuteProcess>false</isExecuteProcess>
+                <isExecuteProcess>false</isExecuteProcess> 
+                <actionCode></actionCode>
                 <imageLink></imageLink>
                 <videoLink></videoLink>
                 <children>     
@@ -23,7 +25,8 @@
                         <parentId>1</parentId>
                         <header>Replace Septum</header>
                         <description>Follow instructions in manual to replace septum.</description>
-                        <isExecuteProcess>false</isExecuteProcess>
+                        <isExecuteProcess>false</isExecuteProcess> 
+                        <actionCode></actionCode>
                         <imageLink></imageLink>
                         <videoLink>Resources/Wash Station septum change (existing).avi</videoLink>
                         <children>     
@@ -33,6 +36,7 @@
                                 <header>Resetting Wash Port Use Count</header>
                                 <description>Please wait.</description>
                                 <isExecuteProcess>false</isExecuteProcess>
+                                <actionCode></actionCode>
                                 <imageLink></imageLink>
                                 <videoLink></videoLink>
                                 <children>     
@@ -42,6 +46,7 @@
                                         <header>Confirm Wash Port Calibration</header>
                                         <description>Please confirm the wash port calibration of the AutoSampler.</description>
                                         <isExecuteProcess>false</isExecuteProcess>
+                                        <actionCode></actionCode>
                                         <imageLink></imageLink>
                                         <videoLink></videoLink>
                                         <children>
@@ -51,6 +56,7 @@
                                                 <header>Running Wash Port Septum Leak Test</header>
                                                 <description>Please wait.</description>
                                                 <isExecuteProcess>true</isExecuteProcess>
+                                                <actionCode></actionCode>
                                                 <imageLink></imageLink>
                                                 <videoLink></videoLink>
                                                 <children>
@@ -59,7 +65,8 @@
                                                         <parentId>1005</parentId>
                                                         <header>Passed</header>
                                                         <description>Proceed to the next step in the diagnostic test or start of job.</description>
-                                                        <isExecuteProcess>false</isExecuteProcess>
+                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                        <actionCode></actionCode>
                                                         <imageLink></imageLink>
                                                         <videoLink></videoLink>
                                                         <children>                                                                                 
@@ -70,7 +77,8 @@
                                                         <parentId>1005</parentId>
                                                         <header>Reinstall Septum</header>
                                                         <description>Carefully reinstall septum, making sure it is securely pressed into place.</description>
-                                                        <isExecuteProcess>false</isExecuteProcess>
+                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                        <actionCode></actionCode>
                                                         <imageLink></imageLink>
                                                         <videoLink></videoLink>
                                                         <children>   
@@ -79,7 +87,8 @@
                                                                 <parentId>1003</parentId>
                                                                 <header>Confirm Wash Port Calibration</header>
                                                                 <description>Please confirm the wash port calibration of the AutoSampler.</description>
-                                                                <isExecuteProcess>false</isExecuteProcess>
+                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                <actionCode></actionCode>
                                                                 <imageLink></imageLink>
                                                                 <videoLink></videoLink>
                                                                 <children>     
@@ -89,6 +98,7 @@
                                                                         <header>Running Wash Port Septum Leak Test</header>
                                                                         <description>Please wait.</description>
                                                                         <isExecuteProcess>true</isExecuteProcess>
+                                                                        <actionCode></actionCode>
                                                                         <imageLink></imageLink>
                                                                         <videoLink></videoLink>
                                                                         <children>
@@ -97,7 +107,8 @@
                                                                                 <parentId>1006</parentId>
                                                                                 <header>Passed</header>
                                                                                 <description>Proceed to the next step in the diagnostic test or start of job.</description>
-                                                                                <isExecuteProcess>false</isExecuteProcess>
+                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                <actionCode></actionCode>
                                                                                 <imageLink></imageLink>
                                                                                 <videoLink></videoLink>
                                                                                 <children>                                                                                 
@@ -108,7 +119,8 @@
                                                                                 <parentId>1006</parentId>
                                                                                 <header>Failed</header>
                                                                                 <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
-                                                                                <isExecuteProcess>false</isExecuteProcess>
+                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                <actionCode></actionCode>
                                                                                 <imageLink></imageLink>
                                                                                 <videoLink></videoLink>
                                                                                 <children>                                                                                 
@@ -139,7 +151,7 @@
                 <parentId>0</parentId>
                 <header>Troubleshoot UTI</header>
                 <description>False - desctription text.</description>
-                <isExecuteProcess>false</isExecuteProcess>
+                <isExecuteProcess>false</isExecuteProcess> <actionCode></actionCode>
                 <imageLink></imageLink>
                 <videoLink></videoLink>
                 <children>               
@@ -150,7 +162,7 @@
                 <parentId>0</parentId>
                 <header>Troubleshoot Solvent Leak</header>
                 <description>False - desctription text.</description>
-                <isExecuteProcess>false</isExecuteProcess>
+                <isExecuteProcess>false</isExecuteProcess> <actionCode></actionCode>
                 <imageLink></imageLink>
                 <videoLink></videoLink>
                 <children>               
@@ -161,7 +173,7 @@
                 <parentId>0</parentId>
                 <header>Troubleshoot Syringe-Cell</header>
                 <description>False - desctription text.</description>
-                <isExecuteProcess>false</isExecuteProcess>
+                <isExecuteProcess>false</isExecuteProcess> <actionCode></actionCode>
                 <imageLink></imageLink>
                 <videoLink></videoLink>
                 <children>               
@@ -172,7 +184,7 @@
                 <parentId>0</parentId>
                 <header>Troubleshoot Reservoir-to-Chip Flow</header>
                 <description>False - desctription text.</description>
-                <isExecuteProcess>false</isExecuteProcess>
+                <isExecuteProcess>false</isExecuteProcess> <actionCode></actionCode>
                 <imageLink></imageLink>
                 <videoLink></videoLink>
                 <children>               
@@ -183,7 +195,7 @@
                 <parentId>0</parentId>
                 <header>Troubleshoot Syringe-to-Chip Flow</header>
                 <description>False - desctription text.</description>
-                <isExecuteProcess>false</isExecuteProcess>
+                <isExecuteProcess>false</isExecuteProcess> <actionCode></actionCode>
                 <imageLink></imageLink>
                 <videoLink></videoLink>
                 <children>               
