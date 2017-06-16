@@ -49,91 +49,344 @@
                                         <actionCode></actionCode>
                                         <imageLink></imageLink>
                                         <videoLink></videoLink>
-                                        <children>
+                                        <children> 
                                             <node>
-                                                <id>1005</id>
+                                                <id>200</id>
                                                 <parentId>1002</parentId>
-                                                <header>Running Wash Port Septum Leak Test</header>
-                                                <description>Please wait.</description>
-                                                <isExecuteProcess>true</isExecuteProcess>
-                                                <actionCode>6</actionCode>
+                                                <header>Wash Port Septum Leak Test</header>
+                                                <description>Pump IPA to cleaning port for 30 seconds (P-source 4095; A4, S2, AS open).</description>
+                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                <actionCode></actionCode>
                                                 <imageLink></imageLink>
                                                 <videoLink></videoLink>
                                                 <children>
                                                     <node>
-                                                        <id>1008</id>
-                                                        <parentId>1005</parentId>
-                                                        <header>Passed</header>
-                                                        <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                                        <id>201</id>
+                                                        <parentId>200</parentId>
+                                                        <header>Wash Port Septum Leak Test</header>
+                                                        <description>Is liquid visislbe in the port?</description>
                                                         <isExecuteProcess>false</isExecuteProcess> 
                                                         <actionCode></actionCode>
                                                         <imageLink></imageLink>
                                                         <videoLink></videoLink>
-                                                        <children>                                                                                 
-                                                        </children>
-                                                    </node>  
-                                                    <node>
-                                                        <id>1003</id>
-                                                        <parentId>1005</parentId>
-                                                        <header>Reinstall Septum</header>
-                                                        <description>Carefully reinstall septum, making sure it is securely pressed into place.</description>
-                                                        <isExecuteProcess>false</isExecuteProcess> 
-                                                        <actionCode></actionCode>
-                                                        <imageLink></imageLink>
-                                                        <videoLink></videoLink>
-                                                        <children>   
+                                                        <children>
                                                             <node>
-                                                                <id>1004</id>
-                                                                <parentId>1003</parentId>
-                                                                <header>Confirm Wash Port Calibration</header>
-                                                                <description>Please confirm the wash port calibration of the AutoSampler.</description>
+                                                                <id>202</id>
+                                                                <parentId>201</parentId>
+                                                                <header>Wash Port Septum Leak Test</header>
+                                                                <description>Dry the wash port using compressed air and lint-free wipes.</description>
                                                                 <isExecuteProcess>false</isExecuteProcess> 
                                                                 <actionCode></actionCode>
                                                                 <imageLink></imageLink>
                                                                 <videoLink></videoLink>
-                                                                <children>     
+                                                                <children>       
                                                                     <node>
-                                                                        <id>1006</id>
-                                                                        <parentId>1004</parentId>
-                                                                        <header>Running Wash Port Septum Leak Test</header>
-                                                                        <description>Please wait.</description>
-                                                                        <isExecuteProcess>true</isExecuteProcess>
-                                                                        <actionCode>6</actionCode>
+                                                                        <id>203</id>
+                                                                        <parentId>202</parentId>
+                                                                        <header>Wash Port Septum Leak Test</header>
+                                                                        <description>Lower AutoSampler into the wash port, dry the path, and then return the AutoSampler to its home position.</description>
+                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                        <actionCode></actionCode>
                                                                         <imageLink></imageLink>
                                                                         <videoLink></videoLink>
                                                                         <children>
                                                                             <node>
-                                                                                <id>1007</id>
-                                                                                <parentId>1006</parentId>
-                                                                                <header>Passed</header>
-                                                                                <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                                                                <id>204</id>
+                                                                                <parentId>203</parentId>
+                                                                                <header>Wash Port Septum Leak Test</header>
+                                                                                <description>Dry L4 path for 20 seconds (P-source 4095; A4, A3, DS, L3, L4 open).</description>
                                                                                 <isExecuteProcess>false</isExecuteProcess> 
                                                                                 <actionCode></actionCode>
                                                                                 <imageLink></imageLink>
                                                                                 <videoLink></videoLink>
-                                                                                <children>                                                                                 
-                                                                                </children>
-                                                                            </node>          
+                                                                                <children>
+                                                                                    <node>
+                                                                                        <id>205</id>
+                                                                                        <parentId>204</parentId>
+                                                                                        <header>Wash Port Septum Leak Test</header>
+                                                                                        <description>Move the test syringe plunger forward.  Dry L3 path(backside cleaning) for 20 seconds (P-source 4095; A4, A3, DS, L3, L4 open).</description>
+                                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                                        <actionCode></actionCode>
+                                                                                        <imageLink></imageLink>
+                                                                                        <videoLink></videoLink>
+                                                                                        <children>                 
+                                                                                            <node>
+                                                                                                <id>305</id>
+                                                                                                <parentId>205</parentId>
+                                                                                                <header>Passed</header>
+                                                                                                <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                <actionCode></actionCode>
+                                                                                                <imageLink></imageLink>
+                                                                                                <videoLink></videoLink>
+                                                                                                <children>   
+                                                                                                    <node>
+                                                                                                        <id>306</id>
+                                                                                                        <parentId>305</parentId>
+                                                                                                        <header>Reinstall Septum</header>
+                                                                                                        <description>Carefully reinstall septum, making sure it is securely pressed into place.</description>
+                                                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                        <actionCode></actionCode>
+                                                                                                        <imageLink></imageLink>
+                                                                                                        <videoLink></videoLink>
+                                                                                                        <children>   
+                                                                                                            <node>
+                                                                                                                <id>307</id>
+                                                                                                                <parentId>306</parentId>
+                                                                                                                <header>Confirm Wash Port Calibration</header>
+                                                                                                                <description>Please confirm the wash port calibration of the AutoSampler.</description>
+                                                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                <actionCode></actionCode>
+                                                                                                                <imageLink></imageLink>
+                                                                                                                <videoLink></videoLink>
+                                                                                                                <children>
+                                                                                                                    <node>
+                                                                                                                        <id>308</id>
+                                                                                                                        <parentId>307</parentId>
+                                                                                                                        <header>Wash Port Septum Leak Test</header>
+                                                                                                                        <description>Pump IPA to cleaning port for 30 seconds (P-source 4095; A4, S2, AS open).</description>
+                                                                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                        <actionCode></actionCode>
+                                                                                                                        <imageLink></imageLink>
+                                                                                                                        <videoLink></videoLink>
+                                                                                                                        <children>
+                                                                                                                            <node>
+                                                                                                                                <id>309</id>
+                                                                                                                                <parentId>308</parentId>
+                                                                                                                                <header>Wash Port Septum Leak Test</header>
+                                                                                                                                <description>Is liquid visislbe in the port?</description>
+                                                                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                <actionCode></actionCode>
+                                                                                                                                <imageLink></imageLink>
+                                                                                                                                <videoLink></videoLink>
+                                                                                                                                <children>
+                                                                                                                                    <node>
+                                                                                                                                        <id>310</id>
+                                                                                                                                        <parentId>309</parentId>
+                                                                                                                                        <header>Wash Port Septum Leak Test</header>
+                                                                                                                                        <description>Dry the wash port using compressed air and lint-free wipes.</description>
+                                                                                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                        <actionCode></actionCode>
+                                                                                                                                        <imageLink></imageLink>
+                                                                                                                                        <videoLink></videoLink>
+                                                                                                                                        <children>       
+                                                                                                                                            <node>
+                                                                                                                                                <id>311</id>
+                                                                                                                                                <parentId>310</parentId>
+                                                                                                                                                <header>Wash Port Septum Leak Test</header>
+                                                                                                                                                <description>Lower AutoSampler into the wash port, dry the path, and then return the AutoSampler to its home position.</description>
+                                                                                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                                <actionCode></actionCode>
+                                                                                                                                                <imageLink></imageLink>
+                                                                                                                                                <videoLink></videoLink>
+                                                                                                                                                <children>
+                                                                                                                                                    <node>
+                                                                                                                                                        <id>312</id>
+                                                                                                                                                        <parentId>311</parentId>
+                                                                                                                                                        <header>Wash Port Septum Leak Test</header>
+                                                                                                                                                        <description>Dry L4 path for 20 seconds (P-source 4095; A4, A3, DS, L3, L4 open).</description>
+                                                                                                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                                        <actionCode></actionCode>
+                                                                                                                                                        <imageLink></imageLink>
+                                                                                                                                                        <videoLink></videoLink>
+                                                                                                                                                        <children>
+                                                                                                                                                            <node>
+                                                                                                                                                                <id>313</id>
+                                                                                                                                                                <parentId>312</parentId>
+                                                                                                                                                                <header>Wash Port Septum Leak Test</header>
+                                                                                                                                                                <description>Move the test syringe plunger forward.  Dry L3 path(backside cleaning) for 20 seconds (P-source 4095; A4, A3, DS, L3, L4 open).</description>
+                                                                                                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                                                <actionCode></actionCode>
+                                                                                                                                                                <imageLink></imageLink>
+                                                                                                                                                                <videoLink></videoLink>
+                                                                                                                                                                <children>                 
+                                                                                                                                                                    <node>
+                                                                                                                                                                        <id>314</id>
+                                                                                                                                                                        <parentId>313</parentId>
+                                                                                                                                                                        <header>Passed</header>
+                                                                                                                                                                        <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                                                                                                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                                                        <actionCode></actionCode>
+                                                                                                                                                                        <imageLink></imageLink>
+                                                                                                                                                                        <videoLink></videoLink>
+                                                                                                                                                                        <children>                                                                        
+                                                                                                                                                                        </children>
+                                                                                                                                                                    </node>
+                                                                                                                                                                    <node>
+                                                                                                                                                                        <id>315</id>
+                                                                                                                                                                        <parentId>313</parentId>
+                                                                                                                                                                        <header>Failed</header>
+                                                                                                                                                                        <description>Please replace septum or contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
+                                                                                                                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                                                        <actionCode></actionCode>
+                                                                                                                                                                        <imageLink></imageLink>
+                                                                                                                                                                        <videoLink></videoLink>
+                                                                                                                                                                        <children>                                                                                 
+                                                                                                                                                                        </children>
+                                                                                                                                                                    </node>  
+                                                                                                                                                                </children>   
+                                                                                                                                                            </node>                                                                                                                                                         
+                                                                                                                                                        </children>   
+                                                                                                                                                    </node>                                                        
+                                                                                                                                                </children>   
+                                                                                                                                            </node>                  
+                                                                                                                                        </children>   
+                                                                                                                                    </node> 
+                                                                                                                                    <node>
+                                                                                                                                        <id>500</id>
+                                                                                                                                        <parentId>309</parentId>
+                                                                                                                                        <header>Wash Port Septum Leak Test</header>
+                                                                                                                                        <description>Lower AutoSampler into the wash port, dry the path, and then return the AutoSampler to its home position.</description>
+                                                                                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                        <actionCode></actionCode>
+                                                                                                                                        <imageLink></imageLink>
+                                                                                                                                        <videoLink></videoLink>
+                                                                                                                                        <children>
+                                                                                                                                            <node>
+                                                                                                                                                <id>501</id>
+                                                                                                                                                <parentId>500</parentId>
+                                                                                                                                                <header>Wash Port Septum Leak Test</header>
+                                                                                                                                                <description>Dry L4 path for 20 seconds (P-source 4095; A4, A3, DS, L3, L4 open).</description>
+                                                                                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                                <actionCode></actionCode>
+                                                                                                                                                <imageLink></imageLink>
+                                                                                                                                                <videoLink></videoLink>
+                                                                                                                                                <children>
+                                                                                                                                                    <node>
+                                                                                                                                                        <id>502</id>
+                                                                                                                                                        <parentId>501</parentId>
+                                                                                                                                                        <header>Wash Port Septum Leak Test</header>
+                                                                                                                                                        <description>Move the test syringe plunger forward.  Dry L3 path(backside cleaning) for 20 seconds (P-source 4095; A4, A3, DS, L3, L4 open).</description>
+                                                                                                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                                        <actionCode></actionCode>
+                                                                                                                                                        <imageLink></imageLink>
+                                                                                                                                                        <videoLink></videoLink>
+                                                                                                                                                        <children>                 
+                                                                                                                                                            <node>
+                                                                                                                                                                <id>503</id>
+                                                                                                                                                                <parentId>502</parentId>
+                                                                                                                                                                <header>Passed</header>
+                                                                                                                                                                <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                                                                                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                                                <actionCode></actionCode>
+                                                                                                                                                                <imageLink></imageLink>
+                                                                                                                                                                <videoLink></videoLink>
+                                                                                                                                                                <children>                                                                        
+                                                                                                                                                                </children>
+                                                                                                                                                            </node>
+                                                                                                                                                            <node>
+                                                                                                                                                                <id>502</id>
+                                                                                                                                                                <parentId>504</parentId>
+                                                                                                                                                                <header>Failed</header>
+                                                                                                                                                                <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
+                                                                                                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                                                <actionCode></actionCode>
+                                                                                                                                                                <imageLink></imageLink>
+                                                                                                                                                                <videoLink></videoLink>
+                                                                                                                                                                <children>                                                                                 
+                                                                                                                                                                </children>
+                                                                                                                                                            </node>  
+                                                                                                                                                        </children>   
+                                                                                                                                                    </node>                                                 
+                                                                                                                                                </children>   
+                                                                                                                                            </node>                                                        
+                                                                                                                                        </children>   
+                                                                                                                                    </node> 
+                                                                                                                                </children>   
+                                                                                                                            </node>               
+                                                                                                                        </children>   
+                                                                                                                    </node>
+                                                                                                                </children>
+                                                                                                            </node>
+                                                                                                        </children>
+                                                                                                    </node>
+                                                                                                </children>
+                                                                                            </node>
+                                                                                            <node>
+                                                                                                <id>400</id>
+                                                                                                <parentId>205</parentId>
+                                                                                                <header>Failed</header>
+                                                                                                <description>Please replace septum or contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
+                                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                <actionCode></actionCode>
+                                                                                                <imageLink></imageLink>
+                                                                                                <videoLink></videoLink>
+                                                                                                <children>                                                                                 
+                                                                                                </children>
+                                                                                            </node>  
+                                                                                        </children>   
+                                                                                    </node> 
+                                                                                
+                                                                                </children>   
+                                                                            </node>                                                        
+                                                                        </children>   
+                                                                    </node>                  
+                                                                </children>   
+                                                            </node> 
+                                                            <node>
+                                                                <id>600</id>
+                                                                <parentId>201</parentId>
+                                                                <header>Wash Port Septum Leak Test</header>
+                                                                <description>Lower AutoSampler into the wash port, dry the path, and then return the AutoSampler to its home position.</description>
+                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                <actionCode></actionCode>
+                                                                <imageLink></imageLink>
+                                                                <videoLink></videoLink>
+                                                                <children>
+                                                                    <node>
+                                                                        <id>601</id>
+                                                                        <parentId>600</parentId>
+                                                                        <header>Wash Port Septum Leak Test</header>
+                                                                        <description>Dry L4 path for 20 seconds (P-source 4095; A4, A3, DS, L3, L4 open).</description>
+                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                        <actionCode></actionCode>
+                                                                        <imageLink></imageLink>
+                                                                        <videoLink></videoLink>
+                                                                        <children>
                                                                             <node>
-                                                                                <id>1011</id>
-                                                                                <parentId>1006</parentId>
-                                                                                <header>Failed</header>
-                                                                                <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
+                                                                                <id>602</id>
+                                                                                <parentId>601</parentId>
+                                                                                <header>Wash Port Septum Leak Test</header>
+                                                                                <description>Move the test syringe plunger forward.  Dry L3 path(backside cleaning) for 20 seconds (P-source 4095; A4, A3, DS, L3, L4 open).</description>
                                                                                 <isExecuteProcess>false</isExecuteProcess> 
                                                                                 <actionCode></actionCode>
                                                                                 <imageLink></imageLink>
                                                                                 <videoLink></videoLink>
-                                                                                <children>                                                                                 
-                                                                                </children>
-                                                                            </node>                                                                             
-                                                                        </children>
-                                                                    </node>                                                                             
-                                                                </children>
-                                                            </node>                                                                        
-                                                        </children>
-                                                    </node>      
-                                                </children>
-                                            </node>                                                         
+                                                                                <children>                 
+                                                                                    <node>
+                                                                                        <id>603</id>
+                                                                                        <parentId>602</parentId>
+                                                                                        <header>Passed</header>
+                                                                                        <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                                        <actionCode></actionCode>
+                                                                                        <imageLink></imageLink>
+                                                                                        <videoLink></videoLink>
+                                                                                        <children>                                                                        
+                                                                                        </children>
+                                                                                    </node>
+                                                                                    <node>
+                                                                                        <id>604</id>
+                                                                                        <parentId>602</parentId>
+                                                                                        <header>Failed</header>
+                                                                                        <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
+                                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                                        <actionCode></actionCode>
+                                                                                        <imageLink></imageLink>
+                                                                                        <videoLink></videoLink>
+                                                                                        <children>                                                                                 
+                                                                                        </children>
+                                                                                    </node>  
+                                                                                </children>   
+                                                                            </node>                                                 
+                                                                        </children>   
+                                                                    </node>                                                        
+                                                                </children>   
+                                                            </node> 
+                                                        </children>   
+                                                    </node>               
+                                                </children>   
+                                            </node>                                                   
                                         </children>
                                     </node>  
                                 </children>
@@ -145,59 +398,3 @@
         </children>
     </node>
 </troubleshoot>
-
-            <!--<node>
-                <id>2</id>
-                <parentId>0</parentId>
-                <header>Troubleshoot UTI</header>
-                <description>False - desctription text.</description>
-                <isExecuteProcess>false</isExecuteProcess> <actionCode></actionCode>
-                <imageLink></imageLink>
-                <videoLink></videoLink>
-                <children>               
-                </children>
-            </node>
-            <node>
-                <id>3</id>
-                <parentId>0</parentId>
-                <header>Troubleshoot Solvent Leak</header>
-                <description>False - desctription text.</description>
-                <isExecuteProcess>false</isExecuteProcess> <actionCode></actionCode>
-                <imageLink></imageLink>
-                <videoLink></videoLink>
-                <children>               
-                </children>
-            </node>
-            <node>
-                <id>4</id>
-                <parentId>0</parentId>
-                <header>Troubleshoot Syringe-Cell</header>
-                <description>False - desctription text.</description>
-                <isExecuteProcess>false</isExecuteProcess> <actionCode></actionCode>
-                <imageLink></imageLink>
-                <videoLink></videoLink>
-                <children>               
-                </children>
-            </node>
-            <node>
-                <id>5</id>
-                <parentId>0</parentId>
-                <header>Troubleshoot Reservoir-to-Chip Flow</header>
-                <description>False - desctription text.</description>
-                <isExecuteProcess>false</isExecuteProcess> <actionCode></actionCode>
-                <imageLink></imageLink>
-                <videoLink></videoLink>
-                <children>               
-                </children>
-            </node>
-            <node>
-                <id>6</id>
-                <parentId>0</parentId>
-                <header>Troubleshoot Syringe-to-Chip Flow</header>
-                <description>False - desctription text.</description>
-                <isExecuteProcess>false</isExecuteProcess> <actionCode></actionCode>
-                <imageLink></imageLink>
-                <videoLink></videoLink>
-                <children>               
-                </children>
-            </node>-->
