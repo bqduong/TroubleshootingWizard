@@ -41,13 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\DiagnosticHelperMethodEnums.cs" />
     <Compile Include="Interfaces\ITreeNode.cs" />
     <Compile Include="Interfaces\ITreeNodeAware.cs" />
     <Compile Include="Interfaces\ITreeNodeList.cs" />
     <Compile Include="Models\Node.cs" />
     <Compile Include="Models\ObservableObject.cs" />
     <Compile Include="Models\Tree.cs" />
-    <Compile Include="Models\TreeEnums.cs" />
+    <Compile Include="Enums\TreeEnums.cs" />
     <Compile Include="Models\TreeNode.cs" />
     <Compile Include="Models\TreeNodeList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
