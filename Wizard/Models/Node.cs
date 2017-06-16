@@ -20,9 +20,5 @@ namespace Wizard.Models
 
         public string VideoLink { get; set; }
 
-        //public List<Node> Children { get; set; }
-
-        //public Node ParentNode { get; set; }
-
     }
 }

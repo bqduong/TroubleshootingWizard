@@ -52,7 +52,7 @@
     <Compile Include="Models\TreeNodeList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\WizardUIService.cs" />
-    <Compile Include="Utilities\TreeBuilder.cs" />
+    <Compile Include="Utilities\TreeUtility.cs" />
     <Compile Include="Utilities\XmlLoader.cs" />
   </ItemGroup>
   <ItemGroup />

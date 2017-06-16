@@ -1,20 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Wizard.Interfaces;
 using Wizard.Models;
 
 namespace Wizard.Utilities
 {
-    public class TreeBuilder
+    public class TreeUtility
     {
         public Tree<Node> BuildTree()
         {
             var loader = new XmlLoader();
             var doc = loader.OpenXmlReturnsXDoc();
-
-            //var n = doc.Descendants("node").ToList();
-
-            //line below is used for debugging
-            //var xmlNodes = from e in doc.Descendants("book") select new Node { Description = e.Element("author").Value }; 
 
             var nodes = from x in doc.Descendants("node")
                 select new Node
@@ -57,6 +53,24 @@ namespace Wizard.Utilities
             //var firstGen = tree.Root.ChildNodes;
 
             return tree;
+        }
+
+        public ITreeNode<Node> TraverseDownTree(ITreeNode<Node> node, bool testResultOrNext = true)
+        {
+            if (testResultOrNext)
+            {
+                return node.ChildNodes.First() as ITreeNode<Node>;
+            }
+            else
+            {
+                var child = node.ChildNodes.ToArray();
+                return node.ChildNodes.ToArray()[1] as ITreeNode<Node>;
+            }
+        }
+
+        public ITreeNode<Node> TraveseUpTree(ITreeNode<Node> node)
+        {
+            return node.Parent as ITreeNode<Node>;
         }
 
         private void BuildRecursive(TreeNode<Node> node, List<Node> nodes)

@@ -53,6 +53,6 @@ C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.c
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.exe
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.pdb
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.csprojResolveAssemblyReference.cache
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\Wash Station septum change (existing).avi
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Wizard.dll
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Wizard.pdb
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\Wash Station septum change (existing).mp4

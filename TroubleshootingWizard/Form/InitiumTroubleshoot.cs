@@ -15,6 +15,8 @@ namespace TroubleshootingWizard
     {
         private Tree<Node> instructionTree;
 
+        private TreeUtility treeUtility;
+
         private ITreeNode<Node> currentNode;
 
         private bool testResult;
@@ -30,8 +32,9 @@ namespace TroubleshootingWizard
 
         private void InitializeData()
         {
+            this.treeUtility = new TreeUtility();
             this.troubleshootingWizardUiService = new WizardUIService();
-            this.instructionTree = new TreeBuilder().BuildTree();
+            this.instructionTree = treeUtility.BuildTree();
             this.currentNode = instructionTree.Root;
             this.testResult = true;
             this.outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
@@ -43,7 +46,7 @@ namespace TroubleshootingWizard
             {
                 if ((e as AeroWizard.SelectedPageEventArgs).IsPrevious)
                 {
-                    this.currentNode = this.TraveseUpTree(this.currentNode);
+                    this.currentNode = this.treeUtility.TraveseUpTree(this.currentNode);
                     this.UpdateUIProperties(this.currentNode, true);
                 }
             }
@@ -51,7 +54,7 @@ namespace TroubleshootingWizard
             {
                 if (this.wizardControl.FinishButtonText != "Finish")
                 {
-                    this.currentNode = this.TraverseDownTree(this.currentNode, this.testResult);
+                    this.currentNode = this.treeUtility.TraverseDownTree(this.currentNode, this.testResult);
                     this.UpdateUIProperties(this.currentNode, false);
                     this.testResult = this.ExecuteInitiumFunctions(this.currentNode);
 
@@ -79,10 +82,10 @@ namespace TroubleshootingWizard
 
         }
 
-        private ITreeNode<Node> TraveseUpTree(ITreeNode<Node> node)
-        {
-            return node.Parent as ITreeNode<Node>;
-        }
+        //private ITreeNode<Node> TraveseUpTree(ITreeNode<Node> node)
+        //{
+        //    return node.Parent as ITreeNode<Node>;
+        //}
 
 
         private void LoadMedia(ITreeNode<Node> node)
@@ -112,18 +115,18 @@ namespace TroubleshootingWizard
         }
 
 
-        private ITreeNode<Node> TraverseDownTree(ITreeNode<Node> node, bool testResultOrNext = true)
-        {
-            if (testResultOrNext)
-            {
-                return this.currentNode.ChildNodes.First() as ITreeNode<Node>;
-            }
-            else
-            {
-                var child = this.currentNode.ChildNodes.ToArray();
-                return this.currentNode.ChildNodes.ToArray()[1] as ITreeNode<Node>;
-            }
-        }
+        //private ITreeNode<Node> TraverseDownTree(ITreeNode<Node> node, bool testResultOrNext = true)
+        //{
+        //    if (testResultOrNext)
+        //    {
+        //        return this.currentNode.ChildNodes.First() as ITreeNode<Node>;
+        //    }
+        //    else
+        //    {
+        //        var child = this.currentNode.ChildNodes.ToArray();
+        //        return this.currentNode.ChildNodes.ToArray()[1] as ITreeNode<Node>;
+        //    }
+        //}
 
         private void UpdateUIProperties(ITreeNode<Node> node, bool isPrevious)
         {

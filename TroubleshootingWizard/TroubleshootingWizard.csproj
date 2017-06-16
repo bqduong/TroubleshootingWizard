@@ -114,7 +114,7 @@
     <Content Include="Resources\troubleshooting.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Wash Station septum change %28existing%29.avi">
+    <Content Include="Resources\Wash Station septum change %28existing%29.mp4">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\washStationSeptumChange2.gif">
