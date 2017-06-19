@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
+using AeroWizard;
 using Wizard.Interfaces;
 using Wizard.Models;
 using Wizard.Services;
@@ -42,6 +43,9 @@ namespace TroubleshootingWizard
                 this.testResult = true;
                 this.outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             }
+
+            this.wizardPage.ShowNo = false;
+            this.wizardPage.ShowYes = false;
         }
 
         private void wizardControl_SelectedPageChanged(object sender, EventArgs e)
@@ -51,7 +55,7 @@ namespace TroubleshootingWizard
                 if ((e as AeroWizard.SelectedPageEventArgs).IsPrevious)
                 {
                     this.currentNode = this.treeUtility.TraveseUpTree(this.currentNode);
-                    this.UpdateUIProperties(this.currentNode, true);
+                    this.UpdateUIDependencies(this.currentNode, true);
                 }
             }
             else
@@ -59,7 +63,7 @@ namespace TroubleshootingWizard
                 if (this.wizardControl.FinishButtonText != "Finish")
                 {
                     this.currentNode = this.treeUtility.TraverseDownTree(this.currentNode, this.testResult);
-                    this.UpdateUIProperties(this.currentNode, false);
+                    this.UpdateUIDependencies(this.currentNode, false);
                     this.testResult = this.ExecuteInitiumFunctions(this.currentNode);
 
                 }
@@ -84,7 +88,7 @@ namespace TroubleshootingWizard
                 }
             }
         }
-
+        
         private void InitiumTroubleshoot_Load(object sender, EventArgs e)
         {
 
@@ -116,19 +120,39 @@ namespace TroubleshootingWizard
             }
         }
 
-        private void UpdateUIProperties(ITreeNode<Node> node, bool isPrevious)
+        private void UpdateUIDependencies(ITreeNode<Node> node, bool isPrevious)
         {
             if (node != null)
             {
-                if (isPrevious)
+                if (this.currentNode.Value.IsYesNo == "true" || this.currentNode.Value.IsYesNo != null)
                 {
-                    this.wizardControl.FinishButtonText = "Next";
+                    this.wizardPage.ShowNo = true;
+                    this.wizardPage.ShowYes = true;
+                    this.wizardPage.ShowCancel = false;
+                    this.wizardPage.ShowNext = false;
                 }
                 else
                 {
-                    if (!node.ChildNodes.Any())
+                    this.wizardPage.ShowNo = false;
+                    this.wizardPage.ShowYes = false;
+                    this.wizardPage.ShowCancel = true;
+                    this.wizardPage.ShowNext = true;
+                    if (isPrevious)
                     {
-                        this.wizardControl.FinishButtonText = "Finish";
+                        this.wizardControl.FinishButtonText = "Next";
+                        this.wizardControl.CancelButtonText = "Cancel";
+                    }
+                    else
+                    {
+                        if (!node.ChildNodes.Any())
+                        {
+                            this.wizardControl.FinishButtonText = "Finish";
+                        }
+                        else
+                        {
+                            this.wizardControl.CancelButtonText = "Cancel";
+                            this.wizardControl.FinishButtonText = "Next";
+                        }
                     }
                 }
 

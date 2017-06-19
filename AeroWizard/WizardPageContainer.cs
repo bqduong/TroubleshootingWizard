@@ -39,7 +39,7 @@ namespace AeroWizard
 		private WizardPage selectedPage;
 		private bool showProgressInTaskbarIcon;
 		private NativeMethods.ITaskbarList4 taskbar;
-		private ButtonBase backButton, cancelButton, nextButton;
+		private ButtonBase backButton, cancelButton, nextButton, yesButton, noButton;
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="Control"/> class.
@@ -162,11 +162,27 @@ namespace AeroWizard
 			internal set { SetCmdButtonState(CancelButton, value); }
 		}
 
-		/// <summary>
-		/// Gets or sets the cancel button text.
-		/// </summary>
-		/// <value>The cancel button text.</value>
-		[Category("Wizard"), Localizable(true), Description("The cancel button text")]
+        [Browsable(false),
+         DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public WizardCommandButtonState YesButtonState
+        {
+            get { return GetCmdButtonState(YesButton); }
+            internal set { SetCmdButtonState(YesButton, value); }
+        }
+
+        [Browsable(false),
+         DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public WizardCommandButtonState NoButtonState
+        {
+            get { return GetCmdButtonState(NoButton); }
+            internal set { SetCmdButtonState(NoButton, value); }
+        }
+
+        /// <summary>
+        /// Gets or sets the cancel button text.
+        /// </summary>
+        /// <value>The cancel button text.</value>
+        [Category("Wizard"), Localizable(true), Description("The cancel button text")]
 		public string CancelButtonText
 		{
 			get { return GetCmdButtonText(CancelButton); }
@@ -211,12 +227,44 @@ namespace AeroWizard
 			}
 		}
 
-		/// <summary>
-		/// Gets or sets the shield icon on the next button.
-		/// </summary>
-		/// <value><c>true</c> if Next button should display a shield; otherwise, <c>false</c>.</value>
-		/// <exception cref="PlatformNotSupportedException">Setting a UAF shield on a button only works on Vista and later versions of Windows.</exception>
-		[DefaultValue(false), Category("Wizard"), Description("Show a shield icon on the next button")]
+        [Category("Wizard"), Description("Button used to command forward wizard flow.")]
+        public ButtonBase YesButton
+        {
+            get { return yesButton; }
+            set
+            {
+                if (yesButton != null)
+                    yesButton.Click -= yesButton_Click;
+                if (value != null)
+                {
+                    yesButton = value;
+                    yesButton.Click += yesButton_Click;
+                }
+            }
+        }
+
+        [Category("Wizard"), Description("Button used to command forward wizard flow.")]
+        public ButtonBase NoButton
+        {
+            get { return noButton; }
+            set
+            {
+                if (noButton != null)
+                    noButton.Click -= noButton_Click;
+                if (value != null)
+                {
+                    noButton = value;
+                    noButton.Click += noButton_Click;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the shield icon on the next button.
+        /// </summary>
+        /// <value><c>true</c> if Next button should display a shield; otherwise, <c>false</c>.</value>
+        /// <exception cref="PlatformNotSupportedException">Setting a UAF shield on a button only works on Vista and later versions of Windows.</exception>
+        [DefaultValue(false), Category("Wizard"), Description("Show a shield icon on the next button")]
 		public Boolean NextButtonShieldEnabled
 		{
 			get { return nextButtonShieldEnabled; }
@@ -568,7 +616,11 @@ namespace AeroWizard
 				{
 					CancelButtonState = selectedPage.ShowCancel ? (selectedPage.AllowCancel && !this.IsDesignMode() ? WizardCommandButtonState.Enabled : WizardCommandButtonState.Disabled) : WizardCommandButtonState.Hidden;
 					NextButtonState = selectedPage.ShowNext ? (selectedPage.AllowNext ? WizardCommandButtonState.Enabled : WizardCommandButtonState.Disabled) : WizardCommandButtonState.Hidden;
-					if (selectedPage.IsFinishPage || IsLastPage(SelectedPage))
+
+				    YesButtonState = selectedPage.ShowYes ? (selectedPage.AllowYes && !this.IsDesignMode() ? WizardCommandButtonState.Enabled : WizardCommandButtonState.Disabled) : WizardCommandButtonState.Hidden;
+				    NoButtonState = selectedPage.ShowNo ? (selectedPage.AllowNo ? WizardCommandButtonState.Enabled : WizardCommandButtonState.Disabled) : WizardCommandButtonState.Hidden;
+
+                    if (selectedPage.IsFinishPage || IsLastPage(SelectedPage))
 						SetCmdButtonText(NextButton, FinishButtonText);
 					else
 						SetCmdButtonText(NextButton, NextButtonText);
@@ -652,7 +704,17 @@ namespace AeroWizard
 			NextPage();
 		}
 
-		private void Pages_AddItem(object sender, EventedList<WizardPage>.ListChangedEventArgs<WizardPage> e)
+        private void yesButton_Click(object sender, EventArgs e)
+        {
+            NextPage();
+        }
+
+        private void noButton_Click(object sender, EventArgs e)
+        {
+            NextPage();
+        }
+
+        private void Pages_AddItem(object sender, EventedList<WizardPage>.ListChangedEventArgs<WizardPage> e)
 		{
 			Pages_AddItemHandler(e.Item, !initializing);
 		}

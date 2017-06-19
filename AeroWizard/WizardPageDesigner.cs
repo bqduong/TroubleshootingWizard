@@ -118,7 +118,21 @@ namespace AeroWizard.Design
 				get { return Component.ShowNext; }
 				set { Component.ShowNext = value; }
 			}
-		}
+
+		    [DesignerActionProperty("Yes Button Visible", 2, Category = "Buttons")]
+		    public bool ShowYes
+            {
+		        get { return Component.ShowYes; }
+		        set { Component.ShowYes = value; }
+		    }
+
+		    [DesignerActionProperty("No Button Visible", 4, Category = "Behavior")]
+		    public bool ShowNo
+            {
+		        get { return Component.ShowNo; }
+		        set { Component.ShowNo = value; }
+		    }
+        }
 	}
 
 

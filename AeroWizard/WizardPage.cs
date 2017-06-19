@@ -13,8 +13,9 @@ namespace AeroWizard
 	[ToolboxItem(false)]
 	public partial class WizardPage : Control
 	{
-		private bool allowCancel = true, allowNext = true, allowBack = true;
+		private bool allowCancel = true, allowNext = true, allowBack = true, allowYes = true, allowNo = true;
 		private bool showCancel = true, showNext = true, suppress;
+	    private bool showYes = true, showNo = true;
 		private bool isFinishPage;
 		private string helpText;
 
@@ -102,13 +103,37 @@ namespace AeroWizard
 			}
 		}
 
-		/// <summary>
-		/// Gets or sets the help text. When value is not <c>null</c>, a help link will be displayed at the bottom left of the content area. When clicked, the <see cref="OnHelpClicked"/> method will call the <see cref="HelpClicked"/> event.
-		/// </summary>
-		/// <value>
-		/// The help text to display.
-		/// </value>
-		[DefaultValue(null), Category("Appearance"), Description("Help text to display on hyperlink at bottom left of content area.")]
+	    [DefaultValue(true), Category("Behavior"), Description("Indicates whether to enable the Yes button")]
+	    public virtual bool AllowYes
+	    {
+	        get { return allowYes; }
+	        set
+	        {
+	            if (allowYes == value) return;
+	            allowYes = value;
+	            UpdateOwner();
+	        }
+	    }
+
+	    [DefaultValue(true), Category("Behavior"), Description("Indicates whether to enable the No button")]
+	    public virtual bool AllowNo
+	    {
+	        get { return allowNo; }
+	        set
+	        {
+	            if (allowNo == value) return;
+	            allowNo = value;
+	            UpdateOwner();
+	        }
+	    }
+
+        /// <summary>
+        /// Gets or sets the help text. When value is not <c>null</c>, a help link will be displayed at the bottom left of the content area. When clicked, the <see cref="OnHelpClicked"/> method will call the <see cref="HelpClicked"/> event.
+        /// </summary>
+        /// <value>
+        /// The help text to display.
+        /// </value>
+        [DefaultValue(null), Category("Appearance"), Description("Help text to display on hyperlink at bottom left of content area.")]
 		public string HelpText
 		{
 			get { return helpText; }
@@ -181,7 +206,7 @@ namespace AeroWizard
 		}
 
 		/// <summary>
-		/// Gets or sets a value indicating whether to show the Next/Finish button. If both <see cref="ShowCancel"/> and <see cref="ShowNext"/> are <c>false</c>, then the bottom command area will not be shown.
+		/// Gets or sets a value indicating whether to show the Next/Finish button. If both <see cref="ShowNext"/> and <see cref="ShowNext"/> are <c>false</c>, then the bottom command area will not be shown.
 		/// </summary>
 		/// <value><c>true</c> if Next/Finish button should be shown; otherwise, <c>false</c>.</value>
 		[DefaultValue(true), Category("Behavior"), Description("Indicates whether to show the Next/Finish button")]
@@ -196,14 +221,38 @@ namespace AeroWizard
 			}
 		}
 
-		/// <summary>
-		/// Gets or sets the height and width of the control.
-		/// </summary>
-		/// <value></value>
-		/// <returns>
-		/// The <see cref="T:System.Drawing.Size"/> that represents the height and width of the control in pixels.
-		/// </returns>
-		[Browsable(false)]
+	    [DefaultValue(true), Category("Behavior"), Description("Indicates whether to show the Yes button")]
+	    public virtual bool ShowYes
+	    {
+	        get { return showYes; }
+	        set
+	        {
+	            if (showYes == value) return;
+	            showYes = value;
+	            UpdateOwner();
+	        }
+	    }
+
+	    [DefaultValue(true), Category("Behavior"), Description("Indicates whether to show the No button")]
+	    public virtual bool ShowNo
+	    {
+	        get { return showNo; }
+	        set
+	        {
+	            if (showNo == value) return;
+	            showNo = value;
+	            UpdateOwner();
+	        }
+	    }
+
+        /// <summary>
+        /// Gets or sets the height and width of the control.
+        /// </summary>
+        /// <value></value>
+        /// <returns>
+        /// The <see cref="T:System.Drawing.Size"/> that represents the height and width of the control in pixels.
+        /// </returns>
+        [Browsable(false)]
 		public new System.Drawing.Size Size { get { return base.Size; } set { base.Size = value; } }
 
 		/// <summary>

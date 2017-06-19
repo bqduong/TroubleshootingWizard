@@ -25,6 +25,7 @@ namespace Wizard.Utilities
                         VideoLink = (string)x.Element("videoLink"),
                         IsExecuteProcess = (string)x.Element("isExecuteProcess"),
                         ActionCode = (string)x.Element("actionCode"),
+                        IsYesNo = (string)x.Element("isYesNo")
                     };
                 nodes.ToList();
 

@@ -20,5 +20,6 @@ namespace Wizard.Models
 
         public string VideoLink { get; set; }
 
+        public string IsYesNo { get; set; }
     }
 }
