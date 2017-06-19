@@ -86,6 +86,7 @@ namespace AeroWizard
 		[Category("Property Changed"), Description("Occurs when the SelectedPage property has changed.")]
 		public event EventHandler SelectedPageChanged;
         public event PropertyChangedEventHandler PropertyChanged;
+        public event EventHandler SelectedPageChangedUsingNo;
 
         /// <summary>
         /// Gets or sets the button assigned to control backing up through the pages.
@@ -508,6 +509,14 @@ namespace AeroWizard
 			}
 		}
 
+        public virtual void NextPageUsingNo(WizardPage nextPage = null, bool skipCommit = false)
+        {
+            pageHistory.Push(SelectedPage);
+            OnPropertyChanged("SelectedPage");
+            OnSelectedPageChangedUsingNo();
+            UpdateUIDependencies();
+        }
+
         // Create the OnPropertyChanged method to raise the event
         protected void OnPropertyChanged(string name)
         {
@@ -593,10 +602,16 @@ namespace AeroWizard
 			SelectedPageChanged?.Invoke(this, EventArgs.Empty);
 		}
 
-		/// <summary>
-		/// Updates the buttons and taskbar according to current sequence and history.
-		/// </summary>
-		protected internal void UpdateUIDependencies()
+        protected void OnSelectedPageChangedUsingNo()
+        {
+            SelectedPageChangedUsingNo?.Invoke(this, EventArgs.Empty);
+        }
+
+
+        /// <summary>
+        /// Updates the buttons and taskbar according to current sequence and history.
+        /// </summary>
+        protected internal void UpdateUIDependencies()
 		{
 			System.Diagnostics.Debug.WriteLine($"UpdBtn: hstCnt={pageHistory.Count},pgIdx={SelectedPageIndex}:{Pages.Count},isFin={selectedPage != null && selectedPage.IsFinishPage}");
 			if (selectedPage == null)
@@ -711,7 +726,7 @@ namespace AeroWizard
 
         private void noButton_Click(object sender, EventArgs e)
         {
-            NextPage();
+            NextPageUsingNo();
         }
 
         private void Pages_AddItem(object sender, EventedList<WizardPage>.ListChangedEventArgs<WizardPage> e)

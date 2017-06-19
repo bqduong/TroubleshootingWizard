@@ -88,6 +88,29 @@ namespace TroubleshootingWizard
                 }
             }
         }
+
+        private void wizardControl_SelectedPageChanged2(object sender, EventArgs e)
+        {
+            this.testResult = false;
+            this.currentNode = this.treeUtility.TraverseDownTree(this.currentNode, this.testResult);
+            this.UpdateUIDependencies(this.currentNode, false);
+            this.testResult = this.ExecuteInitiumFunctions(this.currentNode);
+            try
+            {
+                this.LoadMedia(this.currentNode);
+            }
+            catch (Exception ex)
+            {
+                try
+                {
+                    Close();
+                }
+                catch (Exception exc)
+                {
+                    Console.WriteLine(exc.Message);
+                }
+            }
+        }
         
         private void InitiumTroubleshoot_Load(object sender, EventArgs e)
         {

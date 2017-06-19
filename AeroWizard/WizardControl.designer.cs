@@ -1,4 +1,5 @@
-﻿using System.Net.Mime;
+﻿using System;
+using System.Net.Mime;
 
 namespace AeroWizard
 {
@@ -121,6 +122,7 @@ namespace AeroWizard
             this.pageContainer.Cancelling += new System.ComponentModel.CancelEventHandler(this.pageContainer_Cancelling);
             this.pageContainer.Finished += new System.EventHandler(this.pageContainer_Finished);
             this.pageContainer.SelectedPageChanged += new System.EventHandler(this.pageContainer_SelectedPageChanged);
+            this.pageContainer.SelectedPageChangedUsingNo += new EventHandler(this.pageContainer_SelectedPageChangedUsingNo);
             // 
             // backButton
             // 

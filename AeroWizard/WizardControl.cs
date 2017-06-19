@@ -86,6 +86,8 @@ namespace AeroWizard
 		[Category("Property Changed"), Description("Occurs when the SelectedPage property has changed.")]
 		public event EventHandler SelectedPageChanged;
 
+	    public event EventHandler SelectedPageChangedUsingNo;
+
 		/// <summary>
 		/// Gets or sets the state of the back button.
 		/// </summary>
@@ -506,7 +508,12 @@ namespace AeroWizard
 			SelectedPageChanged?.Invoke(this, EventArgs.Empty);
 		}
 
-		private void CloseForm(DialogResult dlgResult)
+	    protected void OnSelectedPageChangedUsingNo()
+	    {
+	        SelectedPageChangedUsingNo?.Invoke(this, EventArgs.Empty);
+	    }
+
+        private void CloseForm(DialogResult dlgResult)
 		{
 			var form = FindForm();
 			if (form != null)
@@ -672,7 +679,22 @@ namespace AeroWizard
             }                
 		}
 
-		private void Pages_ItemAdded(object sender, System.Collections.Generic.EventedList<WizardPage>.ListChangedEventArgs<WizardPage> e)
+	    private void pageContainer_SelectedPageChangedUsingNo(object sender, EventArgs e)
+	    {
+	        if (pageContainer.SelectedPage != null)
+	            HeaderText = pageContainer.SelectedPage.Text;
+
+	        if ((e as AeroWizard.SelectedPageEventArgs) != null)
+	        {
+	            SelectedPageChangedUsingNo.Invoke(this, new SelectedPageEventArgs { IsPrevious = true });
+	        }
+	        else
+	        {
+	            OnSelectedPageChangedUsingNo();
+	        }
+	    }
+
+        private void Pages_ItemAdded(object sender, System.Collections.Generic.EventedList<WizardPage>.ListChangedEventArgs<WizardPage> e)
 		{
 			e.Item.TextChanged += Page_TextChanged;
 		}

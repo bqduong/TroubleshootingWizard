@@ -109,6 +109,7 @@ namespace TroubleshootingWizard
             this.wizardControl.Title = "Initium Troubleshooting Wizard";
             this.wizardControl.TitleIcon = ((System.Drawing.Icon)(resources.GetObject("wizardControl.TitleIcon")));
             this.wizardControl.SelectedPageChanged += new System.EventHandler(this.wizardControl_SelectedPageChanged);
+            this.wizardControl.SelectedPageChangedUsingNo += new System.EventHandler(this.wizardControl_SelectedPageChanged2);
             // 
             // InitiumTroubleshoot
             // 
