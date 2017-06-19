@@ -14,7 +14,7 @@
                 <id>1</id>
                 <parentId>0</parentId>
                 <header>Replace Syringe</header>
-                <description>Follow instructions in manual to replace syringe.</description>
+                <description>Follow the instructions in the manual to replace syringe.</description>
                 <isExecuteProcess>false</isExecuteProcess> 
                 <actionCode></actionCode>
                 <imageLink></imageLink>

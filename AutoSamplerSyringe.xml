@@ -14,7 +14,7 @@
                 <id>1</id>
                 <parentId>0</parentId>
                 <header>Replace Syringe</header>
-                <description>Follow instructions in manual to replace syringe.</description>
+                <description>Follow the instructions in the manual to replace syringe.</description>
                 <isExecuteProcess>false</isExecuteProcess>
                 <actionCode></actionCode>
                 <imageLink></imageLink>
@@ -50,7 +50,20 @@
                                         <isUserInput></isUserInput>
                                         <imageLink></imageLink>
                                         <videoLink></videoLink>
+                                        <isYesNo>true</isYesNo>
                                         <children>     
+                                            <node>
+                                                <id>1004</id>
+                                                <parentId>1002</parentId>
+                                                <header>Failed</header>
+                                                <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
+                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                <actionCode></actionCode>
+                                                <imageLink></imageLink>
+                                                <videoLink></videoLink>
+                                                <children>                                                                                 
+                                                </children>
+                                            </node>   
                                             <node>
                                                 <id>1003</id>
                                                 <parentId>1002</parentId>
@@ -62,19 +75,7 @@
                                                 <videoLink></videoLink>
                                                 <children>                                                                        
                                                 </children>
-                                            </node>
-                                            <node>
-                                                <id>1004</id>
-                                                <parentId>1001</parentId>
-                                                <header>Failed</header>
-                                                <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
-                                                <isExecuteProcess>false</isExecuteProcess> 
-                                                <actionCode></actionCode>
-                                                <imageLink></imageLink>
-                                                <videoLink></videoLink>
-                                                <children>                                                                                 
-                                                </children>
-                                            </node>                                                                
+                                            </node>                                                             
                                         </children>
                                     </node>  
                                 </children>

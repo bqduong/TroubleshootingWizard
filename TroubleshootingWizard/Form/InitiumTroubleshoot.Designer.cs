@@ -54,10 +54,12 @@ namespace TroubleshootingWizard
             this.wizardPage.Controls.Add(this.troubleshootImage);
             this.wizardPage.Controls.Add(this.description);
             this.wizardPage.Controls.Add(this.axWindowsMediaPlayer);
+            this.wizardPage.HelpText = "";
             this.wizardPage.Name = "wizardPage";
             this.wizardPage.Size = new System.Drawing.Size(868, 428);
             this.wizardPage.TabIndex = 0;
             this.wizardPage.Text = "Page Title";
+            this.wizardPage.HelpClicked += new System.EventHandler(this.wizardControl_loadManualClicked);
             // 
             // progressBar
             // 
@@ -81,6 +83,7 @@ namespace TroubleshootingWizard
             // 
             this.description.AutoSize = true;
             this.description.Location = new System.Drawing.Point(3, 0);
+            this.description.MaximumSize = new System.Drawing.Size(850, 60);
             this.description.Name = "description";
             this.description.Size = new System.Drawing.Size(32, 15);
             this.description.TabIndex = 0;
@@ -98,6 +101,7 @@ namespace TroubleshootingWizard
             // wizardControl
             // 
             this.wizardControl.BackColor = System.Drawing.Color.White;
+            this.wizardControl.CancelButtonText = "&No";
             this.wizardControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.wizardControl.FinishButtonText = "Next";
             this.wizardControl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -111,7 +111,12 @@ namespace TroubleshootingWizard
                 }
             }
         }
-        
+
+        private void wizardControl_loadManualClicked(object sender, System.EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"C:\TroubleshootingWizard\DiagnosticHelperStates.pdf");
+        }
+
         private void InitiumTroubleshoot_Load(object sender, EventArgs e)
         {
 
@@ -140,6 +145,15 @@ namespace TroubleshootingWizard
             else
             {
                 this.axWindowsMediaPlayer.Visible = false;
+            }
+
+            if (node.Value.PdfLink != null)
+            {
+                this.wizardPage.HelpText = "Open Initium Manual (PDF)";
+            }
+            else
+            {
+                this.wizardPage.HelpText = "";
             }
         }
 

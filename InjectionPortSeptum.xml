@@ -14,7 +14,7 @@
                 <id>1</id>
                 <parentId>0</parentId>
                 <header>Replace Septum</header>
-                <description>Follow instructions in manual to replace septum.</description>
+                <description>Follow the instructions in the manual to replace septum.</description>
                 <isExecuteProcess>false</isExecuteProcess> 
                 <actionCode></actionCode>
                 <imageLink></imageLink>
