@@ -17,7 +17,7 @@
                 <description>Follow the instructions in the manual to replace septum.</description>
                 <isExecuteProcess>false</isExecuteProcess> 
                 <actionCode></actionCode>
-                <imageLink></imageLink>
+                <imageLink>Resources\septum.PNG</imageLink>
                 <videoLink></videoLink>
                 <pdfLink></pdfLink>
                 <children>     

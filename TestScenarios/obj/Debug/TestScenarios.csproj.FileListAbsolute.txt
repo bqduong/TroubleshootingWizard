@@ -1,18 +1,12 @@
-C:\TroubleshootingWizard\TestScenarios\bin\Debug\TestScenarios.exe.config
-C:\TroubleshootingWizard\TestScenarios\bin\Debug\TestScenarios.exe
-C:\TroubleshootingWizard\TestScenarios\bin\Debug\TestScenarios.pdb
-C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.TestCases.resources
-C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.Properties.Resources.resources
-C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.csproj.GenerateResource.Cache
-C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.exe
-C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.pdb
-C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.csprojResolveAssemblyReference.cache
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\264Convert.mp4
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\calibrate.png
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\complete.png
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\troubleshooting.png
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\Wash Station septum change (existing).mp4
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\washStationSeptumChange2.gif
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\TestScenarios.exe.config
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\TestScenarios.exe
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\TestScenarios.pdb
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\TroubleshootingWizard.exe
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Wizard.dll
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\AeroWizard.dll
@@ -25,3 +19,14 @@ C:\TroubleshootingWizard\TestScenarios\bin\Debug\AeroWizard.pdb
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\de\AeroWizard.resources.dll
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\es\AeroWizard.resources.dll
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\fr\AeroWizard.resources.dll
+C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.csprojResolveAssemblyReference.cache
+C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.TestCases.resources
+C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.Properties.Resources.resources
+C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.csproj.GenerateResource.Cache
+C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.exe
+C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.pdb
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\autoSamplerSyringeInstall.PNG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\fillSolvents.PNG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\septum.PNG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\syringeInstall.PNG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\tightenFittings.PNG

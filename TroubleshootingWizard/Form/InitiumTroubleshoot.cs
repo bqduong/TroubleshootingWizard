@@ -249,7 +249,7 @@ namespace TroubleshootingWizard
 
         private void SetProgressBarVisisbility(bool isVisible)
         {
-            this.progressBar.Visible = isVisible;
+            //this.progressBar.Visible = isVisible;
         }
     }
 }

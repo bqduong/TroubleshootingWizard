@@ -38,7 +38,6 @@ namespace TroubleshootingWizard
             this.wizardPage = new AeroWizard.WizardPage();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.troubleshootImage = new System.Windows.Forms.PictureBox();
             this.description = new System.Windows.Forms.Label();
             this.axWindowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
@@ -54,7 +53,6 @@ namespace TroubleshootingWizard
             // 
             this.wizardPage.Controls.Add(this.radioButton2);
             this.wizardPage.Controls.Add(this.radioButton1);
-            this.wizardPage.Controls.Add(this.progressBar);
             this.wizardPage.Controls.Add(this.troubleshootImage);
             this.wizardPage.Controls.Add(this.description);
             this.wizardPage.Controls.Add(this.axWindowsMediaPlayer);
@@ -91,15 +89,6 @@ namespace TroubleshootingWizard
             this.radioButton1.Visible = false;
             this.radioButton1.Click += new System.EventHandler(this.wizardControl_enableNext);
             // 
-            // progressBar
-            // 
-            this.progressBar.Location = new System.Drawing.Point(156, 375);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(250, 23);
-            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.progressBar.TabIndex = 2;
-            this.progressBar.Visible = false;
-            // 
             // troubleshootImage
             // 
             this.troubleshootImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -113,7 +102,7 @@ namespace TroubleshootingWizard
             // 
             this.description.AutoSize = true;
             this.description.Location = new System.Drawing.Point(3, 0);
-            this.description.MaximumSize = new System.Drawing.Size(850, 60);
+            this.description.MaximumSize = new System.Drawing.Size(550, 60);
             this.description.Name = "description";
             this.description.Size = new System.Drawing.Size(32, 15);
             this.description.TabIndex = 0;
@@ -172,7 +161,6 @@ namespace TroubleshootingWizard
         private AeroWizard.WizardControl wizardControl;
         private System.Windows.Forms.Label description;
         private System.Windows.Forms.PictureBox troubleshootImage;
-        private System.Windows.Forms.ProgressBar progressBar;
         private Vanara.Interop.DesktopWindowManager.GlassExtenderProvider glassExtenderProvider1;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer;
         private System.Windows.Forms.RadioButton radioButton2;

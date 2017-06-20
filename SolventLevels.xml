@@ -27,7 +27,7 @@
                         <description>Follow the instructions in manual to refill solvents, then press 'Next' to peform the leak test.</description>
                         <isExecuteProcess>false</isExecuteProcess> 
                         <actionCode></actionCode>
-                        <imageLink></imageLink>
+                        <imageLink>Resources\fillSolvents.PNG</imageLink>
                         <videoLink></videoLink>
                         <pdfLink></pdfLink>
                         <children>     
@@ -60,7 +60,7 @@
                                         <description>Please tighten the fittings on the syringe and press 'Next' to run the leak test again.</description>
                                         <isExecuteProcess>false</isExecuteProcess> 
                                         <actionCode></actionCode>
-                                        <imageLink></imageLink>
+                                        <imageLink>Resources\tightenFittings.PNG</imageLink>
                                         <videoLink></videoLink>
                                         <children>          
                                             <node>

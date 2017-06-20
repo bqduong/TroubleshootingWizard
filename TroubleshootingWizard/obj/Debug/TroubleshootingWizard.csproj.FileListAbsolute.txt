@@ -33,17 +33,21 @@ C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\264Convert.mp
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\calibrate.png
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\complete.png
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\troubleshooting.png
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\Wash Station septum change (existing).mp4
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\washStationSeptumChange2.gif
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\TroubleshootingWizard.exe.config
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\TroubleshootingWizard.exe
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\TroubleshootingWizard.pdb
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\AeroWizard.dll
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Wizard.dll
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\AeroWizard.pdb
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Wizard.pdb
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\de\AeroWizard.resources.dll
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\es\AeroWizard.resources.dll
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\fr\AeroWizard.resources.dll
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Interop.WMPLib.dll
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\AxInterop.WMPLib.dll
+C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.csprojResolveAssemblyReference.cache
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\Interop.WMPLib.dll
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\AxInterop.WMPLib.dll
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.csproj.ResolveComReference.cache
@@ -52,7 +56,8 @@ C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.P
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.csproj.GenerateResource.Cache
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.exe
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.pdb
-C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.csprojResolveAssemblyReference.cache
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Wizard.dll
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Wizard.pdb
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\Wash Station septum change (existing).mp4
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\autoSamplerSyringeInstall.PNG
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\fillSolvents.PNG
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\septum.PNG
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\syringeInstall.PNG
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\tightenFittings.PNG

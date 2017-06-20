@@ -17,7 +17,7 @@
                 <description>Follow the instructions in the manual to replace syringe.</description>
                 <isExecuteProcess>false</isExecuteProcess>
                 <actionCode></actionCode>
-                <imageLink></imageLink>
+                <imageLink>Resources\autoSamplerSyringeInstall.PNG</imageLink>
                 <videoLink></videoLink>
                 <pdfLink></pdfLink>
                 <children>     
