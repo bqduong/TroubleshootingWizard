@@ -25,133 +25,145 @@
                         <id>1000</id>
                         <parentId>1</parentId>
                         <header>Please select a replaced part below:</header>
-                        <description>Please wait.</description>
+                        <description></description>
                         <isExecuteProcess>false</isExecuteProcess> 
-                        <actionCode>8</actionCode>
+                        <actionCode></actionCode>
                         <imageLink></imageLink>
                         <videoLink></videoLink>
                         <selectable>100ul Test Syringe, 100ul IP</selectable>
-                        <children>     
+                        <children>
                             <node>
-                                <id>1001</id>
+                                <id>4000</id>
                                 <parentId>1000</parentId>
-                                <header>Running Syringe-Cell Leak Test</header>
-                                <description>Please wait.</description>
-                                <isExecuteProcess>true</isExecuteProcess>
-                                <actionCode>10</actionCode>
+                                <header>Resetting count.</header>
+                                <description></description>
+                                <isExecuteProcess>false</isExecuteProcess> 
+                                <actionCode>8</actionCode>
                                 <imageLink></imageLink>
                                 <videoLink></videoLink>
                                 <children>     
                                     <node>
-                                        <id>1002</id>
-                                        <parentId>1001</parentId>
-                                        <header>Passed Leak Test</header>
-                                        <description>Proceed to the next step of the troubleshooter.</description>
-                                        <isExecuteProcess>false</isExecuteProcess> 
-                                        <actionCode></actionCode>
+                                        <id>1001</id>
+                                        <parentId>4000</parentId>
+                                        <header>Running Syringe-Cell Leak Test</header>
+                                        <description>Please wait.</description>
+                                        <isExecuteProcess>true</isExecuteProcess>
+                                        <actionCode>10</actionCode>
                                         <imageLink></imageLink>
                                         <videoLink></videoLink>
-                                        <children>
+                                        <children>     
                                             <node>
-                                                <id>1003</id>
-                                                <parentId>1002</parentId>
-                                                <header>Calibrate Test Syringe</header>
-                                                <description>Calibrate test syringe positions using 'Calibrate Syringe' utility.</description>
+                                                <id>1002</id>
+                                                <parentId>1001</parentId>
+                                                <header>Passed Leak Test</header>
+                                                <description>Proceed to the next step of the troubleshooter.</description>
                                                 <isExecuteProcess>false</isExecuteProcess> 
                                                 <actionCode></actionCode>
                                                 <imageLink></imageLink>
                                                 <videoLink></videoLink>
-                                                <children>                 
+                                                <children>
                                                     <node>
-                                                        <id>1004</id>
-                                                        <parentId>1003</parentId>
-                                                        <header>Confirm Injection Port Position</header>
-                                                        <description>Confirm injection port position of AutoSampler calibration.</description>
+                                                        <id>1003</id>
+                                                        <parentId>1002</parentId>
+                                                        <header>Calibrate Test Syringe</header>
+                                                        <description>Calibrate test syringe positions using 'Calibrate Syringe' utility.</description>
                                                         <isExecuteProcess>false</isExecuteProcess> 
                                                         <actionCode></actionCode>
                                                         <imageLink></imageLink>
                                                         <videoLink></videoLink>
-                                                        <children>           
+                                                        <children>                 
                                                             <node>
-                                                                <id>1005</id>
-                                                                <parentId>1004</parentId>
-                                                                <header>Passed</header>
-                                                                <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                                                <id>1004</id>
+                                                                <parentId>1003</parentId>
+                                                                <header>Confirm Injection Port Position</header>
+                                                                <description>Confirm injection port position of AutoSampler calibration.</description>
                                                                 <isExecuteProcess>false</isExecuteProcess> 
                                                                 <actionCode></actionCode>
                                                                 <imageLink></imageLink>
                                                                 <videoLink></videoLink>
-                                                                <children>                                                                        
+                                                                <children>           
+                                                                    <node>
+                                                                        <id>1005</id>
+                                                                        <parentId>1004</parentId>
+                                                                        <header>Passed</header>
+                                                                        <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                        <actionCode></actionCode>
+                                                                        <imageLink></imageLink>
+                                                                        <videoLink></videoLink>
+                                                                        <children>                                                                        
+                                                                        </children>
+                                                                    </node>
                                                                 </children>
-                                                            </node>
+                                                            </node>  
                                                         </children>
                                                     </node>  
                                                 </children>
-                                            </node>  
-                                        </children>
-                                    </node>
-                                    <node>                                        
-                                        <id>1006</id>
-                                        <parentId>1001</parentId>
-                                        <header>Failed Leak Test</header>
-                                        <description>Please tighten fittings on the syringe and press 'Next' to run the leak test again.</description>
-                                        <isExecuteProcess>false</isExecuteProcess> 
-                                        <actionCode></actionCode>
-                                        <imageLink></imageLink>
-                                        <videoLink></videoLink>
-                                        <children>          
-                                            <node>
-                                                <id>1007</id>
-                                                <parentId>1006</parentId>
-                                                <header>Running Syringe-Cell Leak Test</header>
-                                                <description>Please wait.</description>
-                                                <isExecuteProcess>true</isExecuteProcess>
-                                                <actionCode>10</actionCode>
+                                            </node>
+                                            <node>                                        
+                                                <id>1006</id>
+                                                <parentId>1001</parentId>
+                                                <header>Failed Leak Test</header>
+                                                <description>Please tighten fittings on the syringe and press 'Next' to run the leak test again.</description>
+                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                <actionCode></actionCode>
                                                 <imageLink></imageLink>
                                                 <videoLink></videoLink>
-                                                <children> 
+                                                <children>          
                                                     <node>
-                                                        <id>1008</id>
-                                                        <parentId>1007</parentId>
-                                                        <header>Confirm Injection Port Position</header>
-                                                        <description>Confirm injection port position of AutoSampler calibration.</description>
-                                                        <isExecuteProcess>false</isExecuteProcess> 
-                                                        <actionCode></actionCode>
+                                                        <id>1007</id>
+                                                        <parentId>1006</parentId>
+                                                        <header>Running Syringe-Cell Leak Test</header>
+                                                        <description>Please wait.</description>
+                                                        <isExecuteProcess>true</isExecuteProcess>
+                                                        <actionCode>10</actionCode>
                                                         <imageLink></imageLink>
                                                         <videoLink></videoLink>
-                                                        <children>           
+                                                        <children> 
                                                             <node>
-                                                                <id>1009</id>
-                                                                <parentId>1008</parentId>
-                                                                <header>Passed</header>
-                                                                <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                                                <id>1008</id>
+                                                                <parentId>1007</parentId>
+                                                                <header>Confirm Injection Port Position</header>
+                                                                <description>Confirm injection port position of AutoSampler calibration.</description>
                                                                 <isExecuteProcess>false</isExecuteProcess> 
                                                                 <actionCode></actionCode>
                                                                 <imageLink></imageLink>
                                                                 <videoLink></videoLink>
-                                                                <children>                                                                        
+                                                                <children>           
+                                                                    <node>
+                                                                        <id>1009</id>
+                                                                        <parentId>1008</parentId>
+                                                                        <header>Passed</header>
+                                                                        <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                        <actionCode></actionCode>
+                                                                        <imageLink></imageLink>
+                                                                        <videoLink></videoLink>
+                                                                        <children>                                                                        
+                                                                        </children>
+                                                                    </node>
                                                                 </children>
-                                                            </node>
+                                                            </node> 
+                                                            <node>
+                                                                <id>1010</id>
+                                                                <parentId>1007</parentId>
+                                                                <header>Failed</header>
+                                                                <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
+                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                <actionCode></actionCode>
+                                                                <imageLink></imageLink>
+                                                                <videoLink></videoLink>
+                                                                <children>                                                                                 
+                                                                </children>
+                                                            </node>   
                                                         </children>
-                                                    </node> 
-                                                    <node>
-                                                        <id>1010</id>
-                                                        <parentId>1007</parentId>
-                                                        <header>Failed</header>
-                                                        <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
-                                                        <isExecuteProcess>false</isExecuteProcess> 
-                                                        <actionCode></actionCode>
-                                                        <imageLink></imageLink>
-                                                        <videoLink></videoLink>
-                                                        <children>                                                                                 
-                                                        </children>
-                                                    </node>   
+                                                    </node>    
                                                 </children>
                                             </node>    
                                         </children>
-                                    </node>    
+                                    </node>   
                                 </children>
-                            </node>   
+                            </node>                           
                         </children>
                     </node>           
                 </children>

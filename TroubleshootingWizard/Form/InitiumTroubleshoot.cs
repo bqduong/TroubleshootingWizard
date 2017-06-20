@@ -20,6 +20,7 @@ namespace TroubleshootingWizard
         private bool testResult;
         private string outPutDirectory;
         private WizardUIService troubleshootingWizardUiService;
+        private string radioOptionValue;
 
         public InitiumTroubleshoot()
         {
@@ -115,6 +116,13 @@ namespace TroubleshootingWizard
         private void wizardControl_enableNext(object sender, EventArgs e)
         {
             this.wizardPage.AllowNext = true;
+            this.radioOptionValue = (sender as RadioButton).Text;
+        }
+        
+        private void wizardControl_executeBackgroundFunction(object sender, EventArgs e)
+        {
+            this.troubleshootingWizardUiService.RunDiagHelperMethod(
+                (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS), this.currentNode.Value.ActionCode));
         }
 
         private void wizardControl_loadManualClicked(object sender, System.EventArgs e)

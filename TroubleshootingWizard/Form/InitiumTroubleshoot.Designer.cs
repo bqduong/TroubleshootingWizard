@@ -36,14 +36,14 @@ namespace TroubleshootingWizard
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InitiumTroubleshoot));
             this.wizardPage = new AeroWizard.WizardPage();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.troubleshootImage = new System.Windows.Forms.PictureBox();
             this.description = new System.Windows.Forms.Label();
             this.axWindowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.wizardControl = new AeroWizard.WizardControl();
             this.glassExtenderProvider1 = new Vanara.Interop.DesktopWindowManager.GlassExtenderProvider();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.wizardPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.troubleshootImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer)).BeginInit();
@@ -60,14 +60,40 @@ namespace TroubleshootingWizard
             this.wizardPage.Controls.Add(this.axWindowsMediaPlayer);
             this.wizardPage.HelpText = "";
             this.wizardPage.Name = "wizardPage";
-            this.wizardPage.Size = new System.Drawing.Size(868, 428);
+            this.wizardPage.Size = new System.Drawing.Size(596, 428);
             this.wizardPage.TabIndex = 0;
             this.wizardPage.Text = "Page Title";
             this.wizardPage.HelpClicked += new System.EventHandler(this.wizardControl_loadManualClicked);
             // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(15, 69);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(94, 19);
+            this.radioButton2.TabIndex = 6;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.Visible = false;
+            this.radioButton2.Click += new System.EventHandler(this.wizardControl_enableNext);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(15, 44);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(94, 19);
+            this.radioButton1.TabIndex = 5;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.Visible = false;
+            this.radioButton1.Click += new System.EventHandler(this.wizardControl_enableNext);
+            // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(562, 375);
+            this.progressBar.Location = new System.Drawing.Point(156, 375);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(250, 23);
             this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
@@ -77,9 +103,9 @@ namespace TroubleshootingWizard
             // troubleshootImage
             // 
             this.troubleshootImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.troubleshootImage.Location = new System.Drawing.Point(562, 69);
+            this.troubleshootImage.Location = new System.Drawing.Point(6, 69);
             this.troubleshootImage.Name = "troubleshootImage";
-            this.troubleshootImage.Size = new System.Drawing.Size(300, 300);
+            this.troubleshootImage.Size = new System.Drawing.Size(550, 300);
             this.troubleshootImage.TabIndex = 1;
             this.troubleshootImage.TabStop = false;
             // 
@@ -112,44 +138,18 @@ namespace TroubleshootingWizard
             this.wizardControl.Location = new System.Drawing.Point(0, 0);
             this.wizardControl.Name = "wizardControl";
             this.wizardControl.Pages.Add(this.wizardPage);
-            this.wizardControl.Size = new System.Drawing.Size(915, 582);
+            this.wizardControl.Size = new System.Drawing.Size(643, 582);
             this.wizardControl.TabIndex = 0;
             this.wizardControl.Title = "Initium Troubleshooting Wizard";
             this.wizardControl.TitleIcon = ((System.Drawing.Icon)(resources.GetObject("wizardControl.TitleIcon")));
             this.wizardControl.SelectedPageChanged += new System.EventHandler(this.wizardControl_SelectedPageChanged);
             this.wizardControl.SelectedPageChangedUsingNo += new System.EventHandler(this.wizardControl_SelectedPageChanged2);
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(15, 44);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(94, 19);
-            this.radioButton1.TabIndex = 5;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.Visible = false;
-            this.radioButton1.Click += new System.EventHandler(this.wizardControl_enableNext);
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(15, 69);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(94, 19);
-            this.radioButton2.TabIndex = 6;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.Visible = false;
-            this.radioButton2.Click += new System.EventHandler(this.wizardControl_enableNext);
-            // 
             // InitiumTroubleshoot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(915, 582);
+            this.ClientSize = new System.Drawing.Size(643, 582);
             this.Controls.Add(this.wizardControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.glassExtenderProvider1.SetGlassMargins(this, new System.Windows.Forms.Padding(0));
