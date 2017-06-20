@@ -112,6 +112,11 @@ namespace TroubleshootingWizard
             }
         }
 
+        private void wizardControl_enableNext(object sender, EventArgs e)
+        {
+            this.wizardPage.AllowNext = true;
+        }
+
         private void wizardControl_loadManualClicked(object sender, System.EventArgs e)
         {
             System.Diagnostics.Process.Start(@"C:\TroubleshootingWizard\DiagnosticHelperStates.pdf");
@@ -191,6 +196,22 @@ namespace TroubleshootingWizard
                             this.wizardControl.FinishButtonText = "Next";
                         }
                     }
+                }
+
+                if (this.currentNode.Value.Selectable != null)
+                {
+                    this.wizardPage.AllowNext = false;
+                    var selectionValues = this.currentNode.Value.Selectable.Split(',');
+                    this.radioButton1.Visible = true;
+                    this.radioButton2.Visible = true;
+                    this.radioButton1.Text = selectionValues[0];
+                    this.radioButton2.Text = selectionValues[1];
+                }
+                else
+                {
+                    this.wizardPage.AllowNext = true;
+                    this.radioButton1.Visible = false;
+                    this.radioButton2.Visible = false;
                 }
 
                 this.wizardPage.Text = this.currentNode.Value.Header;

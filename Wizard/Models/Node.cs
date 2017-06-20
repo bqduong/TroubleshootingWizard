@@ -23,5 +23,7 @@ namespace Wizard.Models
         public string IsYesNo { get; set; }
 
         public string PdfLink { get; set; }
+
+        public string Selectable { get; set; }
     }
 }

@@ -42,6 +42,8 @@ namespace TroubleshootingWizard
             this.axWindowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.wizardControl = new AeroWizard.WizardControl();
             this.glassExtenderProvider1 = new Vanara.Interop.DesktopWindowManager.GlassExtenderProvider();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.wizardPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.troubleshootImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer)).BeginInit();
@@ -50,6 +52,8 @@ namespace TroubleshootingWizard
             // 
             // wizardPage
             // 
+            this.wizardPage.Controls.Add(this.radioButton2);
+            this.wizardPage.Controls.Add(this.radioButton1);
             this.wizardPage.Controls.Add(this.progressBar);
             this.wizardPage.Controls.Add(this.troubleshootImage);
             this.wizardPage.Controls.Add(this.description);
@@ -115,6 +119,32 @@ namespace TroubleshootingWizard
             this.wizardControl.SelectedPageChanged += new System.EventHandler(this.wizardControl_SelectedPageChanged);
             this.wizardControl.SelectedPageChangedUsingNo += new System.EventHandler(this.wizardControl_SelectedPageChanged2);
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(15, 44);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(94, 19);
+            this.radioButton1.TabIndex = 5;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.Visible = false;
+            this.radioButton1.Click += new System.EventHandler(this.wizardControl_enableNext);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(15, 69);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(94, 19);
+            this.radioButton2.TabIndex = 6;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.Visible = false;
+            this.radioButton2.Click += new System.EventHandler(this.wizardControl_enableNext);
+            // 
             // InitiumTroubleshoot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,5 +175,7 @@ namespace TroubleshootingWizard
         private System.Windows.Forms.ProgressBar progressBar;
         private Vanara.Interop.DesktopWindowManager.GlassExtenderProvider glassExtenderProvider1;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }

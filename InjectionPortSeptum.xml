@@ -19,6 +19,7 @@
                 <actionCode></actionCode>
                 <imageLink></imageLink>
                 <videoLink></videoLink>
+                <pdfLink></pdfLink>
                 <children>     
                     <node>
                         <id>1000</id>

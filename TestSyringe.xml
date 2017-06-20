@@ -19,16 +19,18 @@
                 <actionCode></actionCode>
                 <imageLink></imageLink>
                 <videoLink></videoLink>
+                <pdfLink></pdfLink>
                 <children>     
                     <node>
                         <id>1000</id>
                         <parentId>1</parentId>
-                        <header>Resetting '100ul IP' Septum Use Count</header>
+                        <header>Please select a replaced part below:</header>
                         <description>Please wait.</description>
-                        <isExecuteProcess>true</isExecuteProcess> 
+                        <isExecuteProcess>false</isExecuteProcess> 
                         <actionCode>8</actionCode>
                         <imageLink></imageLink>
                         <videoLink></videoLink>
+                        <selectable>100ul Test Syringe, 100ul IP</selectable>
                         <children>     
                             <node>
                                 <id>1001</id>
