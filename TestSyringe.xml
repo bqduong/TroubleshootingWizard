@@ -37,7 +37,7 @@
                                 <parentId>1000</parentId>
                                 <header>Resetting count.</header>
                                 <description></description>
-                                <isExecuteProcess>false</isExecuteProcess> 
+                                <isExecuteProcess>true</isExecuteProcess> 
                                 <actionCode>8</actionCode>
                                 <imageLink></imageLink>
                                 <videoLink></videoLink>

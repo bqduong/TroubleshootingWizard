@@ -29,6 +29,8 @@ namespace TroubleshootingWizard
         private readonly string _cancelText = "Cancel";
         private readonly string _noneText = "none";
         private readonly string _trueText = "true";
+        private readonly string _testSyringe = "100ul Test Syringe";
+        private readonly string _ip = "100ul IP";
         private readonly char _splitChar = ',';
 
         public InitiumTroubleshoot()
@@ -263,9 +265,29 @@ namespace TroubleshootingWizard
                     this.ToggleButtonState(false);
                     this.SetProgressBarVisisbility(true);
 
-                    this._testResult = _troubleshootingWizardUiService.RunDiagHelperMethod(
-                        (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS),
-                                                                            node.Value.ActionCode));
+                    if (this._radioOptionValue != this._emptyString)
+                    {
+                        if (this._radioOptionValue == this._testSyringe)
+                        {
+                            this._testResult = _troubleshootingWizardUiService.RunDiagHelperMethod(
+                                (Wizard.Enums.DIAG_HELPER_METHODS) Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS),
+                                    node.Value.ActionCode));
+                        }
+                        else
+                        {
+                            //IP replaced
+                            this._testResult = _troubleshootingWizardUiService.RunDiagHelperMethod(
+                                (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS),
+                                    node.Value.ActionCode));
+                        }
+                        
+                    }
+                    else
+                    {
+                        this._testResult = _troubleshootingWizardUiService.RunDiagHelperMethod(
+                            (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS),
+                                node.Value.ActionCode));
+                    }
 
                     this.EnvokeNextPage();
                     this.ToggleButtonState(true);
