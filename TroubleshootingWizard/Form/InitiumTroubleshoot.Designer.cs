@@ -34,6 +34,7 @@ namespace TroubleshootingWizard
         /// </summary>
         private void InitializeComponent()
         {
+            this.ControlBox = false;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InitiumTroubleshoot));
             this.wizardPage = new AeroWizard.WizardPage();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -142,6 +143,8 @@ namespace TroubleshootingWizard
             this.Controls.Add(this.wizardControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.glassExtenderProvider1.SetGlassMargins(this, new System.Windows.Forms.Padding(0));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "InitiumTroubleshoot";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.InitiumTroubleshoot_Load);

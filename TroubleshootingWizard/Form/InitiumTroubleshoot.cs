@@ -14,13 +14,13 @@ namespace TroubleshootingWizard
 {
     public partial class InitiumTroubleshoot : Form
     {
-        private Tree<Node> instructionTree;
-        private TreeUtility treeUtility;
-        private ITreeNode<Node> currentNode;
-        private bool testResult;
-        private string outPutDirectory;
-        private WizardUIService troubleshootingWizardUiService;
-        private string radioOptionValue;
+        private Tree<Node> _instructionTree;
+        private TreeUtility _treeUtility;
+        private ITreeNode<Node> _currentNode;
+        private bool _testResult;
+        private string _outPutDirectory;
+        private string _radioOptionValue;
+        private WizardUIService _troubleshootingWizardUiService;
 
         public InitiumTroubleshoot()
         {
@@ -33,20 +33,21 @@ namespace TroubleshootingWizard
             this.InitializeData(filePath);
         }
 
+        private bool IsFinish => this.wizardControl.FinishButtonText != "Finish";
+
         private void InitializeData(string filePath)
         {
-            this.treeUtility = new TreeUtility();
-            this.troubleshootingWizardUiService = new WizardUIService();
-            this.instructionTree = treeUtility.BuildTree(filePath);
-            if (this.instructionTree != null)
+            this._treeUtility = new TreeUtility();
+            this._troubleshootingWizardUiService = new WizardUIService();
+            this._instructionTree = _treeUtility.BuildTree(filePath);
+            if (this._instructionTree != null)
             {
-                this.currentNode = instructionTree.Root;
-                this.testResult = true;
-                this.outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+                this._currentNode = _instructionTree.Root;
+                this._testResult = true;
+                this._outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             }
 
-            this.wizardPage.ShowNo = false;
-            this.wizardPage.ShowYes = false;
+            this.ToggleYesNoState(false);
         }
 
         private void wizardControl_SelectedPageChanged(object sender, EventArgs e)
@@ -55,18 +56,19 @@ namespace TroubleshootingWizard
             {
                 if ((e as AeroWizard.SelectedPageEventArgs).IsPrevious)
                 {
-                    this.currentNode = this.treeUtility.TraveseUpTree(this.currentNode);
-                    this.UpdateUIDependencies(this.currentNode, true);
+                    this._currentNode = this._treeUtility.TraveseUpTree(this._currentNode);
+                    this.UpdateUIDependencies(this._currentNode, true);
+                    this.ExecuteInitiumFunctions(this._currentNode);
                 }
             }
             else
             {
-                if (this.wizardControl.FinishButtonText != "Finish")
+                if (this.IsFinish)
                 {
-                    this.currentNode = this.treeUtility.TraverseDownTree(this.currentNode, this.testResult);
-                    this.UpdateUIDependencies(this.currentNode, false);
-                    this.testResult = this.ExecuteInitiumFunctions(this.currentNode);
-
+                    this._currentNode = this._treeUtility.TraverseDownTree(this._currentNode, this._testResult);
+                    this.UpdateUIDependencies(this._currentNode, false);
+                    this.ExecuteInitiumFunctions(this._currentNode);
+                    this.wizardPage.AllowBack = false;
                 }
                 else
                 {
@@ -75,7 +77,7 @@ namespace TroubleshootingWizard
             }
             try
             {
-                this.LoadMedia(this.currentNode);
+                this.LoadMedia(this._currentNode);
             }
             catch (Exception ex)
             {
@@ -92,13 +94,13 @@ namespace TroubleshootingWizard
 
         private void wizardControl_SelectedPageChanged2(object sender, EventArgs e)
         {
-            this.testResult = false;
-            this.currentNode = this.treeUtility.TraverseDownTree(this.currentNode, this.testResult);
-            this.UpdateUIDependencies(this.currentNode, false);
-            this.testResult = this.ExecuteInitiumFunctions(this.currentNode);
+            this._testResult = false;
+            this._currentNode = this._treeUtility.TraverseDownTree(this._currentNode, this._testResult);
+            this.UpdateUIDependencies(this._currentNode, false);
+            this.ExecuteInitiumFunctions(this._currentNode);
             try
             {
-                this.LoadMedia(this.currentNode);
+                this.LoadMedia(this._currentNode);
             }
             catch (Exception ex)
             {
@@ -116,13 +118,13 @@ namespace TroubleshootingWizard
         private void wizardControl_enableNext(object sender, EventArgs e)
         {
             this.wizardPage.AllowNext = true;
-            this.radioOptionValue = (sender as RadioButton).Text;
+            this._radioOptionValue = (sender as RadioButton).Text;
         }
         
         private void wizardControl_executeBackgroundFunction(object sender, EventArgs e)
         {
-            this.troubleshootingWizardUiService.RunDiagHelperMethod(
-                (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS), this.currentNode.Value.ActionCode));
+            this._troubleshootingWizardUiService.RunDiagHelperMethod(
+                (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS), this._currentNode.Value.ActionCode));
         }
 
         private void wizardControl_loadManualClicked(object sender, System.EventArgs e)
@@ -137,9 +139,16 @@ namespace TroubleshootingWizard
 
         private void LoadMedia(ITreeNode<Node> node)
         {
+            this.TryLoadImage(node);
+            this.TryLoadVideo(node);
+            this.TryLoadPdf(node);
+        }
+
+        private void TryLoadImage(ITreeNode<Node> node)
+        {
             if (node.Value.ImageLink != "")
             {
-                var imageURL = Path.Combine(this.outPutDirectory, node.Value.ImageLink);
+                var imageURL = Path.Combine(this._outPutDirectory, node.Value.ImageLink);
                 this.troubleshootImage.ImageLocation = imageURL;
                 this.troubleshootImage.Visible = true;
             }
@@ -147,10 +156,13 @@ namespace TroubleshootingWizard
             {
                 this.troubleshootImage.Visible = false;
             }
-
+        }
+        
+        private void TryLoadVideo(ITreeNode<Node> node)
+        {
             if (node.Value.VideoLink != "")
             {
-                var videoURL = Path.Combine(this.outPutDirectory, node.Value.VideoLink);
+                var videoURL = Path.Combine(this._outPutDirectory, node.Value.VideoLink);
                 this.axWindowsMediaPlayer.URL = videoURL;
                 this.axWindowsMediaPlayer.Visible = true;
                 this.axWindowsMediaPlayer.uiMode = "none";
@@ -159,92 +171,120 @@ namespace TroubleshootingWizard
             {
                 this.axWindowsMediaPlayer.Visible = false;
             }
+        }
 
-            if (node.Value.PdfLink != null)
-            {
-                this.wizardPage.HelpText = "Open Initium Manual (PDF)";
-            }
-            else
-            {
-                this.wizardPage.HelpText = "";
-            }
+        private void TryLoadPdf(ITreeNode<Node> node)
+        {
+            this.wizardPage.HelpText = node.Value.PdfLink != null ? "Open Initium Manual (PDF)" : "";
         }
 
         private void UpdateUIDependencies(ITreeNode<Node> node, bool isPrevious)
         {
             if (node != null)
             {
-                if (this.currentNode.Value.IsYesNo == "true" || this.currentNode.Value.IsYesNo != null)
+                if (this._currentNode.Value.IsYesNo == "true" || this._currentNode.Value.IsYesNo != null)
                 {
-                    this.wizardPage.ShowNo = true;
-                    this.wizardPage.ShowYes = true;
-                    this.wizardPage.ShowCancel = false;
-                    this.wizardPage.ShowNext = false;
+                    this.ToggleYesNoState(true);
                 }
                 else
                 {
-                    this.wizardPage.ShowNo = false;
-                    this.wizardPage.ShowYes = false;
-                    this.wizardPage.ShowCancel = true;
-                    this.wizardPage.ShowNext = true;
-                    if (isPrevious)
-                    {
-                        this.wizardControl.FinishButtonText = "Next";
-                        this.wizardControl.CancelButtonText = "Cancel";
-                    }
-                    else
-                    {
-                        if (!node.ChildNodes.Any())
-                        {
-                            this.wizardControl.FinishButtonText = "Finish";
-                        }
-                        else
-                        {
-                            this.wizardControl.CancelButtonText = "Cancel";
-                            this.wizardControl.FinishButtonText = "Next";
-                        }
-                    }
+                    this.ToggleYesNoState(false);
+                    this.UpdateButtonText(node, isPrevious);
                 }
 
-                if (this.currentNode.Value.Selectable != null)
+                if (this._currentNode.Value.Selectable != null)
                 {
                     this.wizardPage.AllowNext = false;
-                    var selectionValues = this.currentNode.Value.Selectable.Split(',');
-                    this.radioButton1.Visible = true;
-                    this.radioButton2.Visible = true;
+                    var selectionValues = this._currentNode.Value.Selectable.Split(',');
+                    this.ToggleRadioButtonVisibility(true);
                     this.radioButton1.Text = selectionValues[0];
                     this.radioButton2.Text = selectionValues[1];
                 }
                 else
                 {
                     this.wizardPage.AllowNext = true;
-                    this.radioButton1.Visible = false;
-                    this.radioButton2.Visible = false;
+                    this.ToggleRadioButtonVisibility(false);
                 }
 
-                this.wizardPage.Text = this.currentNode.Value.Header;
-                this.description.Text = this.currentNode.Value.Description;
+                this.UpdatePageText();
             }
         }
 
-        private bool ExecuteInitiumFunctions(ITreeNode<Node> node)
+        private void UpdatePageText()
+        {
+            this.wizardPage.Text = this._currentNode.Value.Header;
+            this.description.Text = this._currentNode.Value.Description;
+        }
+
+        private void UpdateButtonText(ITreeNode<Node> node, bool isPrevious)
+        {
+            if (isPrevious)
+            {
+                this.wizardControl.FinishButtonText = "Next";
+                this.wizardControl.CancelButtonText = "Cancel";
+            }
+            else
+            {
+                if (!node.ChildNodes.Any())
+                {
+                    this.wizardControl.FinishButtonText = "Finish";
+                }
+                else
+                {
+                    this.wizardControl.CancelButtonText = "Cancel";
+                    this.wizardControl.FinishButtonText = "Next";
+                }
+            }
+        }
+
+        private void ExecuteInitiumFunctions(ITreeNode<Node> node)
         {
             if (node != null)
             {
                 var isExecuteProcess = Convert.ToBoolean(node.Value.IsExecuteProcess);
-                this.SetProgressBarVisisbility(isExecuteProcess);
-
                 if (isExecuteProcess)
                 {
-                    return troubleshootingWizardUiService.RunDiagHelperMethod(
+                    this.ToggleButtonState(false);
+                    this.SetProgressBarVisisbility(true);
+
+                    this._testResult = _troubleshootingWizardUiService.RunDiagHelperMethod(
                         (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS), node.Value.ActionCode));
+
+                    this.EnvokeNextPage();
+                    this.ToggleButtonState(true);
                 }
                 else
                 {
-                    return true;
+                    this.SetProgressBarVisisbility(false);
+                    this._testResult = true;
                 }
             }
-            return true;
+            this._testResult = true;
+        }
+
+        private void EnvokeNextPage()
+        {
+            this.wizardControl_SelectedPageChanged(null, null);
+        }
+
+        private void ToggleRadioButtonVisibility(bool isVisible)
+        {
+            this.radioButton1.Visible = isVisible;
+            this.radioButton2.Visible = isVisible;
+        }
+
+        private void ToggleYesNoState(bool isYesNo)
+        {
+            this.wizardPage.ShowNo = isYesNo;
+            this.wizardPage.ShowYes = isYesNo;
+            this.wizardPage.ShowCancel = !isYesNo;
+            this.wizardPage.ShowNext = !isYesNo;
+        }
+
+        private void ToggleButtonState(bool isEnabled)
+        {
+            this.wizardPage.AllowNext = isEnabled;
+            this.wizardPage.AllowBack = isEnabled;
         }
 
         private void SetProgressBarVisisbility(bool isVisible)
