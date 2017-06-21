@@ -21,6 +21,15 @@ namespace TroubleshootingWizard
         private string _outPutDirectory;
         private string _radioOptionValue;
         private WizardUIService _troubleshootingWizardUiService;
+        private readonly string _pdfPath = @"C:\ProgramData\InitiumGui\help\904001.2-VROC initium Manual.pdf";
+        private readonly string _emptyString = "";
+        private readonly string _pdfLinkText = "Open Initium Manual (PDF)";
+        private readonly string _finishText = "Finish";
+        private readonly string _nextText = "Next";
+        private readonly string _cancelText = "Cancel";
+        private readonly string _noneText = "none";
+        private readonly string _trueText = "true";
+        private readonly char _splitChar = ',';
 
         public InitiumTroubleshoot()
         {
@@ -33,7 +42,7 @@ namespace TroubleshootingWizard
             this.InitializeData(filePath);
         }
 
-        private bool IsFinish => this.wizardControl.FinishButtonText != "Finish";
+        private bool IsFinish => this.wizardControl.FinishButtonText != this._finishText;
 
         private void InitializeData(string filePath)
         {
@@ -124,12 +133,13 @@ namespace TroubleshootingWizard
         private void wizardControl_executeBackgroundFunction(object sender, EventArgs e)
         {
             this._troubleshootingWizardUiService.RunDiagHelperMethod(
-                (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS), this._currentNode.Value.ActionCode));
+                (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS), 
+                                                                    this._currentNode.Value.ActionCode));
         }
 
         private void wizardControl_loadManualClicked(object sender, System.EventArgs e)
         {
-            System.Diagnostics.Process.Start(@"C:\TroubleshootingWizard\DiagnosticHelperStates.pdf");
+            System.Diagnostics.Process.Start(this._pdfPath);
         }
 
         private void InitiumTroubleshoot_Load(object sender, EventArgs e)
@@ -146,7 +156,7 @@ namespace TroubleshootingWizard
 
         private void TryLoadImage(ITreeNode<Node> node)
         {
-            if (node.Value.ImageLink != "")
+            if (node.Value.ImageLink != this._emptyString)
             {
                 var imageURL = Path.Combine(this._outPutDirectory, node.Value.ImageLink);
                 this.troubleshootImage.ImageLocation = imageURL;
@@ -157,15 +167,15 @@ namespace TroubleshootingWizard
                 this.troubleshootImage.Visible = false;
             }
         }
-        
+
         private void TryLoadVideo(ITreeNode<Node> node)
         {
-            if (node.Value.VideoLink != "")
+            if (node.Value.VideoLink != this._emptyString)
             {
                 var videoURL = Path.Combine(this._outPutDirectory, node.Value.VideoLink);
                 this.axWindowsMediaPlayer.URL = videoURL;
                 this.axWindowsMediaPlayer.Visible = true;
-                this.axWindowsMediaPlayer.uiMode = "none";
+                this.axWindowsMediaPlayer.uiMode = this._noneText;
             }
             else
             {
@@ -175,7 +185,7 @@ namespace TroubleshootingWizard
 
         private void TryLoadPdf(ITreeNode<Node> node)
         {
-            this.wizardPage.HelpText = node.Value.PdfLink != null ? "Open Initium Manual (PDF)" : "";
+            this.wizardPage.HelpText = node.Value.PdfLink != null ? _pdfLinkText : this._emptyString;
         }
 
         private void UpdateUIDependencies(ITreeNode<Node> node, bool isPrevious)
@@ -192,10 +202,9 @@ namespace TroubleshootingWizard
             if (this._currentNode.Value.Selectable != null)
             {
                 this.wizardPage.AllowNext = false;
-                var selectionValues = this._currentNode.Value.Selectable.Split(',');
+                var selectionValues = this._currentNode.Value.Selectable.Split(this._splitChar);
                 this.ToggleRadioButtonVisibility(true);
-                this.radioButton1.Text = selectionValues[0];
-                this.radioButton2.Text = selectionValues[1];
+                this.AssignLabelsToRadioButtons(selectionValues);
             }
             else
             {
@@ -204,9 +213,15 @@ namespace TroubleshootingWizard
             }
         }
 
+        private void AssignLabelsToRadioButtons(string[] selectionValues)
+        {
+            this.radioButton1.Text = selectionValues[0];
+            this.radioButton2.Text = selectionValues[1];
+        }
+
         private void UpdateYesNoUIDependencies(ITreeNode<Node> node, bool isPrevious)
         {
-            if (this._currentNode.Value.IsYesNo == "true" || this._currentNode.Value.IsYesNo != null)
+            if (this._currentNode.Value.IsYesNo == this._trueText || this._currentNode.Value.IsYesNo != null)
             {
                 this.ToggleYesNoState(true);
             }
@@ -225,25 +240,17 @@ namespace TroubleshootingWizard
 
         private void UpdateButtonText(ITreeNode<Node> node, bool isPrevious)
         {
-            if (isPrevious)
+            this.wizardControl.FinishButtonText = isPrevious
+                ? this.wizardControl.FinishButtonText = this._nextText
+                : !node.ChildNodes.Any()
+                    ? this._finishText
+                    : this._nextText;
+
+            if (!node.ChildNodes.Any())
             {
-                this.wizardControl.FinishButtonText = "Next";
-                this.wizardControl.CancelButtonText = "Cancel";
+                this.wizardPage.IsFinishPage = true;
             }
-            else
-            {
-                if (!node.ChildNodes.Any())
-                {
-                    this.wizardPage.IsFinishPage = true;
-                    this.wizardControl.FinishButtonText = "Finish";
-                    this.wizardControl.CancelButtonText = "Cancel";
-                }
-                else
-                {
-                    this.wizardControl.FinishButtonText = "Next";
-                    this.wizardControl.CancelButtonText = "Cancel";
-                }
-            }
+            this.wizardControl.CancelButtonText = this._cancelText;
         }
 
         private void ExecuteInitiumFunctions(ITreeNode<Node> node)
@@ -257,7 +264,8 @@ namespace TroubleshootingWizard
                     this.SetProgressBarVisisbility(true);
 
                     this._testResult = _troubleshootingWizardUiService.RunDiagHelperMethod(
-                        (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS), node.Value.ActionCode));
+                        (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS),
+                                                                            node.Value.ActionCode));
 
                     this.EnvokeNextPage();
                     this.ToggleButtonState(true);
@@ -292,8 +300,18 @@ namespace TroubleshootingWizard
 
         private void ToggleButtonState(bool isEnabled)
         {
-            this.wizardPage.AllowNext = isEnabled;
-            this.wizardPage.AllowBack = isEnabled;
+            if (isEnabled)
+            {
+                this.wizardPage.AllowCancel = false;
+                this.wizardPage.AllowNext = isEnabled;
+                this.wizardPage.AllowBack = isEnabled;
+                this.wizardPage.AllowCancel = true;
+            }
+            else
+            {
+                this.wizardPage.AllowNext = isEnabled;
+                this.wizardPage.AllowBack = isEnabled;
+            }
         }
 
         private void SetProgressBarVisisbility(bool isVisible)
