@@ -55,7 +55,7 @@ namespace TestScenarios
 
         private void uti_Click(object sender, EventArgs e)
         {
-            InitiumTroubleshoot wizard = new InitiumTroubleshoot("C:\\TroubleshootingWizard\\UTI.xml");
+            InitiumTroubleshoot wizard = new InitiumTroubleshoot("C:\\TroubleshootingWizard\\ReplaceChip.xml");
             wizard.ShowDialog();
         }
     }
