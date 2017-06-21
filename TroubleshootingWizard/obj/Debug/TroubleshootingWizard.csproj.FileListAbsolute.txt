@@ -61,3 +61,4 @@ C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\fillSolvents.
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\septum.PNG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\syringeInstall.PNG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\tightenFittings.PNG
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\vrocChip.PNG

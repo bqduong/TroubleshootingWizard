@@ -30,3 +30,4 @@ C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\fillSolvents.PNG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\septum.PNG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\syringeInstall.PNG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\tightenFittings.PNG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\vrocChip.PNG

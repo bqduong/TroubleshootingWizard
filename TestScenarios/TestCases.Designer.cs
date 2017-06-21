@@ -34,6 +34,7 @@
             this.InjectionPortSeptum = new System.Windows.Forms.Button();
             this.AutoSamplerSyringe = new System.Windows.Forms.Button();
             this.TestSyringe = new System.Windows.Forms.Button();
+            this.ReplaceChip = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SolventLevels
@@ -84,13 +85,24 @@
             this.TestSyringe.TabIndex = 4;
             this.TestSyringe.Text = "Test Syringe";
             this.TestSyringe.UseVisualStyleBackColor = true;
-            this.TestSyringe.Click += new System.EventHandler(this.testSyrine_Click);
+            this.TestSyringe.Click += new System.EventHandler(this.testSyringe_Click);
+            // 
+            // UTI
+            // 
+            this.ReplaceChip.Location = new System.Drawing.Point(368, 69);
+            this.ReplaceChip.Name = "ReplaceChip";
+            this.ReplaceChip.Size = new System.Drawing.Size(155, 41);
+            this.ReplaceChip.TabIndex = 5;
+            this.ReplaceChip.Text = "Replace Chip";
+            this.ReplaceChip.UseVisualStyleBackColor = true;
+            this.ReplaceChip.Click += new System.EventHandler(this.uti_Click);
             // 
             // TestCases
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(537, 122);
+            this.Controls.Add(this.ReplaceChip);
             this.Controls.Add(this.TestSyringe);
             this.Controls.Add(this.AutoSamplerSyringe);
             this.Controls.Add(this.InjectionPortSeptum);
@@ -111,6 +123,7 @@
         private System.Windows.Forms.Button InjectionPortSeptum;
         private System.Windows.Forms.Button AutoSamplerSyringe;
         private System.Windows.Forms.Button TestSyringe;
+        private System.Windows.Forms.Button ReplaceChip;
     }
 }
 

@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<troubleshoot>
+    <node>
+        <id>0</id>
+        <parentId>-1</parentId>
+        <header>Root Node</header>
+        <description>Root Page - desctription text.</description>
+        <isExecuteProcess>false</isExecuteProcess> 
+        <actionCode></actionCode>
+        <imageLink>Resources\troubleshooting.png</imageLink>
+        <videoLink></videoLink>
+        <children>
+            <node>
+                <id>1</id>
+                <parentId>0</parentId>
+                <header>Replace VROC Chip</header>
+                <description>Follow the instructions in the manual to replace VROC Chip.</description>
+                <isExecuteProcess>false</isExecuteProcess>
+                <actionCode></actionCode>
+                <imageLink>Resources\vrocChip.PNG</imageLink>
+                <videoLink></videoLink>
+                <pdfLink></pdfLink>
+                <children>     
+                    <!--<node>
+                        <id>1000</id>
+                        <parentId>1</parentId>
+                        <header>Resetting '100ul IP' Septum Use Count</header>
+                        <description>Please wait.</description>
+                        <isExecuteProcess>true</isExecuteProcess> 
+                        <actionCode>8</actionCode>
+                        <imageLink></imageLink>
+                        <videoLink></videoLink>
+                        <children>     
+                            <node>
+                                <id>1001</id>
+                                <parentId>1000</parentId>
+                                <header>Check Waste Tube Alignment</header>
+                                <description>Please check the alignment of the waste tube in the splash guard.</description>
+                                <isExecuteProcess>false</isExecuteProcess> 
+                                <actionCode></actionCode>
+                                <imageLink></imageLink>
+                                <videoLink></videoLink>
+                                <children>     
+                                    <node>
+                                        <id>1002</id>
+                                        <parentId>1001</parentId>
+                                        <header>Issues?</header>
+                                        <description>Where there any issues during these steps?</description>
+                                        <isExecuteProcess>false</isExecuteProcess> 
+                                        <actionCode></actionCode>
+                                        <isUserInput></isUserInput>
+                                        <imageLink></imageLink>
+                                        <videoLink></videoLink>
+                                        <isYesNo>true</isYesNo>
+                                        <children>     
+                                            <node>
+                                                <id>1004</id>
+                                                <parentId>1002</parentId>
+                                                <header>Failed</header>
+                                                <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
+                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                <actionCode></actionCode>
+                                                <imageLink></imageLink>
+                                                <videoLink></videoLink>
+                                                <children>                                                                                 
+                                                </children>
+                                            </node>   
+                                            <node>
+                                                <id>1003</id>
+                                                <parentId>1002</parentId>
+                                                <header>Passed</header>
+                                                <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                <actionCode></actionCode>
+                                                <imageLink></imageLink>
+                                                <videoLink></videoLink>
+                                                <children>                                                                        
+                                                </children>
+                                            </node>                                                             
+                                        </children>
+                                    </node>  
+                                </children>
+                            </node>   
+                        </children>
+                    </node>           -->
+                </children>
+            </node>
+        </children>
+     </node>
+</troubleshoot>

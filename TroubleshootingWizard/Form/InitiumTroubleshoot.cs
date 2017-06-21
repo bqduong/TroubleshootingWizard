@@ -180,33 +180,40 @@ namespace TroubleshootingWizard
 
         private void UpdateUIDependencies(ITreeNode<Node> node, bool isPrevious)
         {
-            if (node != null)
+            if (node == null) return;
+
+            this.UpdateYesNoUIDependencies(node, isPrevious);
+            this.UpdateRadioButtonUIDependencies();
+            this.UpdatePageText();
+        }
+
+        private void UpdateRadioButtonUIDependencies()
+        {
+            if (this._currentNode.Value.Selectable != null)
             {
-                if (this._currentNode.Value.IsYesNo == "true" || this._currentNode.Value.IsYesNo != null)
-                {
-                    this.ToggleYesNoState(true);
-                }
-                else
-                {
-                    this.ToggleYesNoState(false);
-                    this.UpdateButtonText(node, isPrevious);
-                }
+                this.wizardPage.AllowNext = false;
+                var selectionValues = this._currentNode.Value.Selectable.Split(',');
+                this.ToggleRadioButtonVisibility(true);
+                this.radioButton1.Text = selectionValues[0];
+                this.radioButton2.Text = selectionValues[1];
+            }
+            else
+            {
+                this.wizardPage.AllowNext = true;
+                this.ToggleRadioButtonVisibility(false);
+            }
+        }
 
-                if (this._currentNode.Value.Selectable != null)
-                {
-                    this.wizardPage.AllowNext = false;
-                    var selectionValues = this._currentNode.Value.Selectable.Split(',');
-                    this.ToggleRadioButtonVisibility(true);
-                    this.radioButton1.Text = selectionValues[0];
-                    this.radioButton2.Text = selectionValues[1];
-                }
-                else
-                {
-                    this.wizardPage.AllowNext = true;
-                    this.ToggleRadioButtonVisibility(false);
-                }
-
-                this.UpdatePageText();
+        private void UpdateYesNoUIDependencies(ITreeNode<Node> node, bool isPrevious)
+        {
+            if (this._currentNode.Value.IsYesNo == "true" || this._currentNode.Value.IsYesNo != null)
+            {
+                this.ToggleYesNoState(true);
+            }
+            else
+            {
+                this.ToggleYesNoState(false);
+                this.UpdateButtonText(node, isPrevious);
             }
         }
 
@@ -227,12 +234,14 @@ namespace TroubleshootingWizard
             {
                 if (!node.ChildNodes.Any())
                 {
+                    this.wizardPage.IsFinishPage = true;
                     this.wizardControl.FinishButtonText = "Finish";
+                    this.wizardControl.CancelButtonText = "Cancel";
                 }
                 else
                 {
-                    this.wizardControl.CancelButtonText = "Cancel";
                     this.wizardControl.FinishButtonText = "Next";
+                    this.wizardControl.CancelButtonText = "Cancel";
                 }
             }
         }

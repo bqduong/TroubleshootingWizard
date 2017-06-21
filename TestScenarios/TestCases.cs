@@ -47,9 +47,15 @@ namespace TestScenarios
             wizard.ShowDialog();
         }
 
-        private void testSyrine_Click(object sender, EventArgs e)
+        private void testSyringe_Click(object sender, EventArgs e)
         {
             InitiumTroubleshoot wizard = new InitiumTroubleshoot("C:\\TroubleshootingWizard\\TestSyringe.xml");
+            wizard.ShowDialog();
+        }
+
+        private void uti_Click(object sender, EventArgs e)
+        {
+            InitiumTroubleshoot wizard = new InitiumTroubleshoot("C:\\TroubleshootingWizard\\UTI.xml");
             wizard.ShowDialog();
         }
     }
