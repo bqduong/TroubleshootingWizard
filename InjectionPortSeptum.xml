@@ -17,7 +17,7 @@
                 <description>Follow the instructions in the manual to replace septum.</description>
                 <isExecuteProcess>false</isExecuteProcess> 
                 <actionCode></actionCode>
-                <imageLink>Resources\septum.PNG</imageLink>
+                <imageLink>Resources\injectionPortSeptum.JPG</imageLink>
                 <videoLink></videoLink>
                 <pdfLink></pdfLink>
                 <children>     
@@ -70,7 +70,7 @@
                                                 <description>Carefully reinstall septum, making sure it is securely pressed into place.</description>
                                                 <isExecuteProcess>false</isExecuteProcess> 
                                                 <actionCode></actionCode>
-                                                <imageLink></imageLink>
+                                                <imageLink>Resources\injectionPortSeptum.JPG</imageLink>
                                                 <videoLink></videoLink>
                                                 <children>  
                                                     <node>

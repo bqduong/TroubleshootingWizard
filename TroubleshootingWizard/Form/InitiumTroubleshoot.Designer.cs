@@ -34,7 +34,6 @@ namespace TroubleshootingWizard
         /// </summary>
         private void InitializeComponent()
         {
-            this.ControlBox = false;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InitiumTroubleshoot));
             this.wizardPage = new AeroWizard.WizardPage();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -93,9 +92,10 @@ namespace TroubleshootingWizard
             // troubleshootImage
             // 
             this.troubleshootImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.troubleshootImage.Location = new System.Drawing.Point(6, 69);
+            this.troubleshootImage.Location = new System.Drawing.Point(6, 44);
             this.troubleshootImage.Name = "troubleshootImage";
-            this.troubleshootImage.Size = new System.Drawing.Size(550, 300);
+            this.troubleshootImage.Size = new System.Drawing.Size(550, 336);
+            this.troubleshootImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.troubleshootImage.TabIndex = 1;
             this.troubleshootImage.TabStop = false;
             // 
@@ -140,6 +140,7 @@ namespace TroubleshootingWizard
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(643, 582);
+            this.ControlBox = false;
             this.Controls.Add(this.wizardControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.glassExtenderProvider1.SetGlassMargins(this, new System.Windows.Forms.Padding(0));

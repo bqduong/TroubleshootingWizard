@@ -31,3 +31,10 @@ C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\septum.PNG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\syringeInstall.PNG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\tightenFittings.PNG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\vrocChip.PNG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\autoSamplerSyringe.JPG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\testSyringe.JPG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\chipExchangeC.jpg
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\solventBottles.JPG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\testSyringeAssembly.JPG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\injectionPortSeptum.JPG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\wasteTubeC.JPG

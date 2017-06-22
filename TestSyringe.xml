@@ -17,7 +17,7 @@
                 <description>Follow the instructions in the manual to replace syringe.</description>
                 <isExecuteProcess>false</isExecuteProcess> 
                 <actionCode></actionCode>
-                <imageLink>Resources\syringeInstall.PNG</imageLink>
+                <imageLink>Resources\testSyringe.JPG</imageLink>
                 <videoLink></videoLink>
                 <pdfLink></pdfLink>
                 <children>     
@@ -107,7 +107,7 @@
                                                 <description>Please tighten fittings on the syringe and press 'Next' to run the leak test again.</description>
                                                 <isExecuteProcess>false</isExecuteProcess> 
                                                 <actionCode></actionCode>
-                                                <imageLink>Resources\tightenFittings.PNG</imageLink>
+                                                <imageLink>Resources\testSyringeAssembly.JPG</imageLink>
                                                 <videoLink></videoLink>
                                                 <children>          
                                                     <node>
