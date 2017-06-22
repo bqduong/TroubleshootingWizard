@@ -17,7 +17,7 @@
                 <description>If the solvent bottles are not empty, please contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)  Otherwise, please inspect the solvent bottles and press 'Next'.</description>
                 <isExecuteProcess>false</isExecuteProcess> 
                 <actionCode></actionCode>
-                <imageLink>Resources\solventBottles.JPG</imageLink>
+                <imageLink>Resources\initium.JPG</imageLink>
                 <videoLink></videoLink>
                 <children>     
                     <node>

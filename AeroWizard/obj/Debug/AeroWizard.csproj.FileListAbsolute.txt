@@ -85,7 +85,6 @@ C:\TroubleshootingWizard\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.Text
 C:\TroubleshootingWizard\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.Shell.Interop.8.0.dll
 C:\TroubleshootingWizard\AeroWizard\bin\Debug\v4.5.2\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
 C:\TroubleshootingWizard\AeroWizard\bin\Debug\v4.5.2\Microsoft.MSXML.dll
-C:\TroubleshootingWizard\AeroWizard\obj\Debug\AeroWizard.csprojResolveAssemblyReference.cache
 C:\TroubleshootingWizard\AeroWizard\obj\Debug\AeroWizard.Properties.Resources.resources
 C:\TroubleshootingWizard\AeroWizard\obj\Debug\AeroWizard.StepWizardControl.resources
 C:\TroubleshootingWizard\AeroWizard\obj\Debug\AeroWizard.WizardControl.resources

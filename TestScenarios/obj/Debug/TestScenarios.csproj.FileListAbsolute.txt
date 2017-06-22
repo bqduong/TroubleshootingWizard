@@ -38,3 +38,4 @@ C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\solventBottles.JPG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\testSyringeAssembly.JPG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\injectionPortSeptum.JPG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\wasteTubeC.JPG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\initium.JPG

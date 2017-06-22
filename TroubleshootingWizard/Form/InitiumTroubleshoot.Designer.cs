@@ -58,7 +58,7 @@ namespace TroubleshootingWizard
             this.wizardPage.Controls.Add(this.axWindowsMediaPlayer);
             this.wizardPage.HelpText = "";
             this.wizardPage.Name = "wizardPage";
-            this.wizardPage.Size = new System.Drawing.Size(596, 428);
+            this.wizardPage.Size = new System.Drawing.Size(689, 541);
             this.wizardPage.TabIndex = 0;
             this.wizardPage.Text = "Page Title";
             this.wizardPage.HelpClicked += new System.EventHandler(this.wizardControl_loadManualClicked);
@@ -94,7 +94,7 @@ namespace TroubleshootingWizard
             this.troubleshootImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.troubleshootImage.Location = new System.Drawing.Point(6, 44);
             this.troubleshootImage.Name = "troubleshootImage";
-            this.troubleshootImage.Size = new System.Drawing.Size(550, 336);
+            this.troubleshootImage.Size = new System.Drawing.Size(640, 480);
             this.troubleshootImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.troubleshootImage.TabIndex = 1;
             this.troubleshootImage.TabStop = false;
@@ -128,7 +128,7 @@ namespace TroubleshootingWizard
             this.wizardControl.Location = new System.Drawing.Point(0, 0);
             this.wizardControl.Name = "wizardControl";
             this.wizardControl.Pages.Add(this.wizardPage);
-            this.wizardControl.Size = new System.Drawing.Size(643, 582);
+            this.wizardControl.Size = new System.Drawing.Size(736, 695);
             this.wizardControl.TabIndex = 0;
             this.wizardControl.Title = "Initium Troubleshooting Wizard";
             this.wizardControl.TitleIcon = ((System.Drawing.Icon)(resources.GetObject("wizardControl.TitleIcon")));
@@ -139,7 +139,7 @@ namespace TroubleshootingWizard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(643, 582);
+            this.ClientSize = new System.Drawing.Size(736, 695);
             this.ControlBox = false;
             this.Controls.Add(this.wizardControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
