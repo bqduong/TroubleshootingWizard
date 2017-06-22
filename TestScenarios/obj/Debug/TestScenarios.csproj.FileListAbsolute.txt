@@ -1,8 +1,3 @@
-C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\264Convert.mp4
-C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\calibrate.png
-C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\complete.png
-C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\troubleshooting.png
-C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\Wash Station septum change (existing).mp4
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\washStationSeptumChange2.gif
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\TestScenarios.exe.config
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\TestScenarios.exe
@@ -25,12 +20,6 @@ C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.Properties.Resour
 C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.csproj.GenerateResource.Cache
 C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.exe
 C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.pdb
-C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\autoSamplerSyringeInstall.PNG
-C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\fillSolvents.PNG
-C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\septum.PNG
-C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\syringeInstall.PNG
-C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\tightenFittings.PNG
-C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\vrocChip.PNG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\autoSamplerSyringe.JPG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\testSyringe.JPG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\chipExchangeC.jpg

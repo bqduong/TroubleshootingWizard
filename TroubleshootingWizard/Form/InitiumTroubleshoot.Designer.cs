@@ -140,7 +140,7 @@ namespace TroubleshootingWizard
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 695);
-            this.ControlBox = false;
+            this.ControlBox = true;
             this.Controls.Add(this.wizardControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.glassExtenderProvider1.SetGlassMargins(this, new System.Windows.Forms.Padding(0));

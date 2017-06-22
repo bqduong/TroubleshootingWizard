@@ -29,23 +29,12 @@ C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizar
 C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\troubleshooting.png
 C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\complete.png
 C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\calibrate.png
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\264Convert.mp4
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\autoSamplerSyringe.JPG
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\autoSamplerSyringeInstall.PNG
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\calibrate.png
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\chipExchangeC.jpg
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\complete.png
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\fillSolvents.PNG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\injectionPortSeptum.JPG
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\septum.PNG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\solventBottles.JPG
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\syringeInstall.PNG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\testSyringe.JPG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\testSyringeAssembly.JPG
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\tightenFittings.PNG
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\troubleshooting.png
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\vrocChip.PNG
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\Wash Station septum change (existing).mp4
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\washStationSeptumChange2.gif
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\wasteTubeC.JPG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\TroubleshootingWizard.exe.config
