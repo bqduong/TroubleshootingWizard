@@ -38,6 +38,7 @@ namespace TroubleshootingWizard
             this.wizardPage = new AeroWizard.WizardPage();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.troubleshootImage = new System.Windows.Forms.PictureBox();
             this.description = new System.Windows.Forms.Label();
             this.axWindowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
@@ -53,6 +54,7 @@ namespace TroubleshootingWizard
             // 
             this.wizardPage.Controls.Add(this.radioButton2);
             this.wizardPage.Controls.Add(this.radioButton1);
+            this.wizardPage.Controls.Add(this.progressBar);
             this.wizardPage.Controls.Add(this.troubleshootImage);
             this.wizardPage.Controls.Add(this.description);
             this.wizardPage.Controls.Add(this.axWindowsMediaPlayer);
@@ -88,6 +90,15 @@ namespace TroubleshootingWizard
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.Visible = false;
             this.radioButton1.Click += new System.EventHandler(this.wizardControl_enableNext);
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(205, 250);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(250, 23);
+            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.progressBar.TabIndex = 2;
+            this.progressBar.Visible = false;
             // 
             // troubleshootImage
             // 
@@ -140,7 +151,6 @@ namespace TroubleshootingWizard
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 695);
-            this.ControlBox = true;
             this.Controls.Add(this.wizardControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.glassExtenderProvider1.SetGlassMargins(this, new System.Windows.Forms.Padding(0));
@@ -165,6 +175,7 @@ namespace TroubleshootingWizard
         private AeroWizard.WizardControl wizardControl;
         private System.Windows.Forms.Label description;
         private System.Windows.Forms.PictureBox troubleshootImage;
+        private System.Windows.Forms.ProgressBar progressBar;
         private Vanara.Interop.DesktopWindowManager.GlassExtenderProvider glassExtenderProvider1;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer;
         private System.Windows.Forms.RadioButton radioButton2;

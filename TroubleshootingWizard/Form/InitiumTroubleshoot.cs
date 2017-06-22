@@ -303,7 +303,7 @@ namespace TroubleshootingWizard
 
         private void EnvokeNextPage()
         {
-            this.wizardControl_SelectedPageChanged(null, null);
+            //this.wizardControl_SelectedPageChanged(null, null);
         }
 
         private void ToggleRadioButtonVisibility(bool isVisible)
@@ -338,7 +338,7 @@ namespace TroubleshootingWizard
 
         private void SetProgressBarVisisbility(bool isVisible)
         {
-            //this.progressBar.Visible = isVisible;
+            this.progressBar.Visible = isVisible;
         }
     }
 }
