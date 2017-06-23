@@ -29,12 +29,15 @@ C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizar
 C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\troubleshooting.png
 C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\complete.png
 C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\calibrate.png
+C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\Interop.WMPLib.dll
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\autoSamplerSyringe.JPG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\chipExchangeC.jpg
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\flow.gif
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\initium.JPG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\injectionPortSeptum.JPG
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\leak.gif
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\solventBottles.JPG
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\systemDiagram.JPG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\testSyringe.JPG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\testSyringeAssembly.JPG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\washStationSeptumChange2.gif
@@ -49,10 +52,8 @@ C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Wizard.pdb
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\de\AeroWizard.resources.dll
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\es\AeroWizard.resources.dll
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\fr\AeroWizard.resources.dll
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Interop.WMPLib.dll
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\AxInterop.WMPLib.dll
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.csprojResolveAssemblyReference.cache
-C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\Interop.WMPLib.dll
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\AxInterop.WMPLib.dll
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.csproj.ResolveComReference.cache
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.InitiumTroubleshoot.resources
@@ -60,4 +61,5 @@ C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.P
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.csproj.GenerateResource.Cache
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.exe
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.pdb
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\leak.gif
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Interop.WMPLib.dll
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\washPortSeptum.JPG
