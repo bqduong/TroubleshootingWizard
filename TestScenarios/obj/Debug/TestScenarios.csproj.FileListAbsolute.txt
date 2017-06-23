@@ -28,3 +28,5 @@ C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\testSyringeAssembly.J
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\injectionPortSeptum.JPG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\wasteTubeC.JPG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\initium.JPG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\flow.gif
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\leak.gif

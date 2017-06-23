@@ -31,6 +31,8 @@ C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizar
 C:\Users\Bao Duong\Desktop\WizardTest\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\calibrate.png
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\autoSamplerSyringe.JPG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\chipExchangeC.jpg
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\flow.gif
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\initium.JPG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\injectionPortSeptum.JPG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\solventBottles.JPG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\testSyringe.JPG
@@ -58,4 +60,4 @@ C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.P
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.csproj.GenerateResource.Cache
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.exe
 C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.pdb
-C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\initium.JPG
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\leak.gif

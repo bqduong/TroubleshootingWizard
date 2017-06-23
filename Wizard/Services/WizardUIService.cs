@@ -41,6 +41,7 @@ namespace Wizard.Services
                     return random.NextDouble() > 0.5;
                 case DIAG_HELPER_METHODS.RUN_SYRINGE_CELL_PATH_LEAK_TEST:
                     return random.NextDouble() > 0.5;
+                    return true;
                 case DIAG_HELPER_METHODS.RESET_TEST_SYRINGE_COUNT:
                     return random.NextDouble() > 0.5;
                 default:

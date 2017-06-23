@@ -48,7 +48,7 @@
                                         <description>Please wait.</description>
                                         <isExecuteProcess>true</isExecuteProcess>
                                         <actionCode>10</actionCode>
-                                        <imageLink></imageLink>
+                                        <imageLink>Resources\leak.gif</imageLink>
                                         <videoLink></videoLink>
                                         <children>     
                                             <node>
@@ -90,7 +90,7 @@
                                                                 <description>Please wait.</description>
                                                                 <isExecuteProcess>true</isExecuteProcess>
                                                                 <actionCode>10</actionCode>
-                                                                <imageLink></imageLink>
+                                                                <imageLink>Resources\leak.gif</imageLink>
                                                                 <videoLink></videoLink>
                                                                 <children>  
                                                                     <node>

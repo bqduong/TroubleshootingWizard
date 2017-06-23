@@ -63,32 +63,31 @@ namespace TroubleshootingWizard
 
         private void wizardControl_SelectedPageChanged(object sender, EventArgs e)
         {
-            if ((e as AeroWizard.SelectedPageEventArgs) != null)
+            try
             {
-                if ((e as AeroWizard.SelectedPageEventArgs).IsPrevious)
+                if ((e as AeroWizard.SelectedPageEventArgs) != null)
                 {
-                    this._currentNode = this._treeUtility.TraveseUpTree(this._currentNode);
-                    this.UpdateUIDependencies(this._currentNode, true);
-                    this.ExecuteInitiumFunctions(this._currentNode);
-                }
-            }
-            else
-            {
-                if (this.IsFinish)
-                {
-                    this._currentNode = this._treeUtility.TraverseDownTree(this._currentNode, this._testResult);
-                    this.UpdateUIDependencies(this._currentNode, false);
-                    this.ExecuteInitiumFunctions(this._currentNode);
-                    this.wizardPage.AllowBack = false;
+                    if ((e as AeroWizard.SelectedPageEventArgs).IsPrevious)
+                    {
+                        this._currentNode = this._treeUtility.TraveseUpTree(this._currentNode);
+                        this.UpdateUIDependencies(this._currentNode, true);
+                        this.ExecuteInitiumFunctions(this._currentNode);
+                    }
                 }
                 else
                 {
-                    Close();
+                    if (this.IsFinish)
+                    {
+                        this._currentNode = this._treeUtility.TraverseDownTree(this._currentNode, this._testResult);
+                        this.UpdateUIDependencies(this._currentNode, false);
+                        this.ExecuteInitiumFunctions(this._currentNode);
+                        this.wizardPage.AllowBack = false;
+                    }
+                    else
+                    {
+                        Close();
+                    }
                 }
-            }
-            try
-            {
-                this.LoadMedia(this._currentNode);
             }
             catch (Exception ex)
             {
@@ -193,7 +192,7 @@ namespace TroubleshootingWizard
         private void UpdateUIDependencies(ITreeNode<Node> node, bool isPrevious)
         {
             if (node == null) return;
-
+            this.LoadMedia(node);
             this.UpdateYesNoUIDependencies(node, isPrevious);
             this.UpdateRadioButtonUIDependencies();
             this.UpdatePageText();
@@ -303,7 +302,7 @@ namespace TroubleshootingWizard
 
         private void EnvokeNextPage()
         {
-            //this.wizardControl_SelectedPageChanged(null, null);
+            this.wizardControl_SelectedPageChanged(null, null);
         }
 
         private void ToggleRadioButtonVisibility(bool isVisible)

@@ -35,29 +35,29 @@ namespace TroubleshootingWizard
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InitiumTroubleshoot));
-            this.wizardPage = new AeroWizard.WizardPage();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.progressBar = new System.Windows.Forms.ProgressBar();
-            this.troubleshootImage = new System.Windows.Forms.PictureBox();
-            this.description = new System.Windows.Forms.Label();
-            this.axWindowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
-            this.wizardControl = new AeroWizard.WizardControl();
             this.glassExtenderProvider1 = new Vanara.Interop.DesktopWindowManager.GlassExtenderProvider();
+            this.wizardPage = new AeroWizard.WizardPage();
+            this.axWindowsMediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
+            this.description = new System.Windows.Forms.Label();
+            this.troubleshootImage = new System.Windows.Forms.PictureBox();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.wizardControl = new AeroWizard.WizardControl();
             this.wizardPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.troubleshootImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.troubleshootImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wizardControl)).BeginInit();
             this.SuspendLayout();
             // 
             // wizardPage
             // 
+            this.wizardPage.Controls.Add(this.axWindowsMediaPlayer);
             this.wizardPage.Controls.Add(this.radioButton2);
             this.wizardPage.Controls.Add(this.radioButton1);
             this.wizardPage.Controls.Add(this.progressBar);
             this.wizardPage.Controls.Add(this.troubleshootImage);
             this.wizardPage.Controls.Add(this.description);
-            this.wizardPage.Controls.Add(this.axWindowsMediaPlayer);
             this.wizardPage.HelpText = "";
             this.wizardPage.Name = "wizardPage";
             this.wizardPage.Size = new System.Drawing.Size(689, 541);
@@ -65,18 +65,43 @@ namespace TroubleshootingWizard
             this.wizardPage.Text = "Page Title";
             this.wizardPage.HelpClicked += new System.EventHandler(this.wizardControl_loadManualClicked);
             // 
-            // radioButton2
+            // axWindowsMediaPlayer
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(15, 69);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(94, 19);
-            this.radioButton2.TabIndex = 6;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.Visible = false;
-            this.radioButton2.Click += new System.EventHandler(this.wizardControl_enableNext);
+            this.axWindowsMediaPlayer.Enabled = true;
+            this.axWindowsMediaPlayer.Location = new System.Drawing.Point(6, 44);
+            this.axWindowsMediaPlayer.Name = "axWindowsMediaPlayer";
+            this.axWindowsMediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer.OcxState")));
+            this.axWindowsMediaPlayer.Size = new System.Drawing.Size(640, 480);
+            this.axWindowsMediaPlayer.TabIndex = 3;
+            // 
+            // description
+            // 
+            this.description.AutoSize = true;
+            this.description.Location = new System.Drawing.Point(3, 0);
+            this.description.MaximumSize = new System.Drawing.Size(550, 60);
+            this.description.Name = "description";
+            this.description.Size = new System.Drawing.Size(32, 15);
+            this.description.TabIndex = 0;
+            this.description.Text = "label";
+            // 
+            // troubleshootImage
+            // 
+            this.troubleshootImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.troubleshootImage.Location = new System.Drawing.Point(6, 44);
+            this.troubleshootImage.Name = "troubleshootImage";
+            this.troubleshootImage.Size = new System.Drawing.Size(640, 480);
+            this.troubleshootImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.troubleshootImage.TabIndex = 1;
+            this.troubleshootImage.TabStop = false;
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(207, 482);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(250, 23);
+            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.progressBar.TabIndex = 2;
+            this.progressBar.Visible = false;
             // 
             // radioButton1
             // 
@@ -91,43 +116,18 @@ namespace TroubleshootingWizard
             this.radioButton1.Visible = false;
             this.radioButton1.Click += new System.EventHandler(this.wizardControl_enableNext);
             // 
-            // progressBar
+            // radioButton2
             // 
-            this.progressBar.Location = new System.Drawing.Point(205, 250);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(250, 23);
-            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.progressBar.TabIndex = 2;
-            this.progressBar.Visible = false;
-            // 
-            // troubleshootImage
-            // 
-            this.troubleshootImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.troubleshootImage.Location = new System.Drawing.Point(6, 44);
-            this.troubleshootImage.Name = "troubleshootImage";
-            this.troubleshootImage.Size = new System.Drawing.Size(640, 480);
-            this.troubleshootImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.troubleshootImage.TabIndex = 1;
-            this.troubleshootImage.TabStop = false;
-            // 
-            // description
-            // 
-            this.description.AutoSize = true;
-            this.description.Location = new System.Drawing.Point(3, 0);
-            this.description.MaximumSize = new System.Drawing.Size(550, 60);
-            this.description.Name = "description";
-            this.description.Size = new System.Drawing.Size(32, 15);
-            this.description.TabIndex = 0;
-            this.description.Text = "label";
-            // 
-            // axWindowsMediaPlayer
-            // 
-            this.axWindowsMediaPlayer.Enabled = true;
-            this.axWindowsMediaPlayer.Location = new System.Drawing.Point(6, 69);
-            this.axWindowsMediaPlayer.Name = "axWindowsMediaPlayer";
-            this.axWindowsMediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer.OcxState")));
-            this.axWindowsMediaPlayer.Size = new System.Drawing.Size(550, 339);
-            this.axWindowsMediaPlayer.TabIndex = 3;
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(15, 69);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(94, 19);
+            this.radioButton2.TabIndex = 6;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.Visible = false;
+            this.radioButton2.Click += new System.EventHandler(this.wizardControl_enableNext);
             // 
             // wizardControl
             // 
@@ -161,8 +161,8 @@ namespace TroubleshootingWizard
             this.Load += new System.EventHandler(this.InitiumTroubleshoot_Load);
             this.wizardPage.ResumeLayout(false);
             this.wizardPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.troubleshootImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.troubleshootImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wizardControl)).EndInit();
             this.ResumeLayout(false);
 
@@ -170,15 +170,14 @@ namespace TroubleshootingWizard
 
 
         #endregion
-
-        private AeroWizard.WizardPage wizardPage;
-        private AeroWizard.WizardControl wizardControl;
-        private System.Windows.Forms.Label description;
-        private System.Windows.Forms.PictureBox troubleshootImage;
-        private System.Windows.Forms.ProgressBar progressBar;
         private Vanara.Interop.DesktopWindowManager.GlassExtenderProvider glassExtenderProvider1;
+        private AeroWizard.WizardPage wizardPage;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.PictureBox troubleshootImage;
+        private System.Windows.Forms.Label description;
+        private AeroWizard.WizardControl wizardControl;
     }
 }
