@@ -30,7 +30,7 @@
                         <actionCode></actionCode>
                         <imageLink></imageLink>
                         <videoLink></videoLink>
-                        <selectable>100ul Test Syringe, 100ul IP</selectable>
+                        <selectable>Pluger, Syringe Assembly</selectable>
                         <children>
                             <node>
                                 <id>4000</id>
@@ -49,7 +49,7 @@
                                         <description>Please wait.</description>
                                         <isExecuteProcess>true</isExecuteProcess>
                                         <actionCode>10</actionCode>
-                                        <imageLink></imageLink>
+                                        <imageLink>Resources\syringeLeakTest.gif</imageLink>
                                         <videoLink></videoLink>
                                         <children>     
                                             <node>
@@ -79,7 +79,7 @@
                                                                 <description>Confirm injection port position of AutoSampler calibration.</description>
                                                                 <isExecuteProcess>false</isExecuteProcess> 
                                                                 <actionCode></actionCode>
-                                                                <imageLink></imageLink>
+                                                                <imageLink>Resources\injectionPortPosition.JPG</imageLink>
                                                                 <videoLink></videoLink>
                                                                 <children>           
                                                                     <node>
@@ -117,7 +117,7 @@
                                                         <description>Please wait.</description>
                                                         <isExecuteProcess>true</isExecuteProcess>
                                                         <actionCode>10</actionCode>
-                                                        <imageLink></imageLink>
+                                                        <imageLink>Resources\syringeLeakTest.gif</imageLink>
                                                         <videoLink></videoLink>
                                                         <children> 
                                                             <node>
@@ -127,7 +127,7 @@
                                                                 <description>Confirm injection port position of AutoSampler calibration.</description>
                                                                 <isExecuteProcess>false</isExecuteProcess> 
                                                                 <actionCode></actionCode>
-                                                                <imageLink></imageLink>
+                                                                <imageLink>Resources\injectionPortPosition.JPG</imageLink>
                                                                 <videoLink></videoLink>
                                                                 <children>           
                                                                     <node>

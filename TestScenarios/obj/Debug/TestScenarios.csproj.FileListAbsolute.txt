@@ -3,7 +3,6 @@ C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\chipExchangeC.jpg
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\flow.gif
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\initium.JPG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\injectionPortSeptum.JPG
-C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\leak.gif
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\solventBottles.JPG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\systemDiagram.JPG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\testSyringe.JPG
@@ -32,3 +31,11 @@ C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.exe
 C:\TroubleshootingWizard\TestScenarios\obj\Debug\TestScenarios.pdb
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\washPortSeptum.JPG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Interop.WMPLib.dll
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\autoSamplerCalibration.JPG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\chipExchangeGif.gif
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\injectionPortPosition.JPG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\leakTest.JPG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\testSyringeChangeout.gif
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\testSyringeSeptumChange.gif
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\syringeLeakTest.gif
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\washPortASCalibration.JPG

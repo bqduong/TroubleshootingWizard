@@ -17,7 +17,7 @@
                 <description>Follow the instructions in the manual to replace septum.</description>
                 <isExecuteProcess>false</isExecuteProcess> 
                 <actionCode></actionCode>
-                <imageLink>Resources\injectionPortSeptum.JPG</imageLink>
+                <imageLink>Resources\testSyringeSeptumChange.gif</imageLink>
                 <videoLink></videoLink>
                 <pdfLink></pdfLink>
                 <children>     
@@ -38,7 +38,7 @@
                                 <description>Please confirm the injection port calibration of the AutoSampler.</description>
                                 <isExecuteProcess>false</isExecuteProcess> 
                                 <actionCode></actionCode>
-                                <imageLink></imageLink>
+                                <imageLink>Resources\injectionPortPosition.JPG</imageLink>
                                 <videoLink></videoLink>
                                 <children>     
                                     <node>
@@ -48,7 +48,7 @@
                                         <description>Please wait.</description>
                                         <isExecuteProcess>true</isExecuteProcess>
                                         <actionCode>10</actionCode>
-                                        <imageLink>Resources\leak.gif</imageLink>
+                                        <imageLink>Resources\syringeLeakTest.gif</imageLink>
                                         <videoLink></videoLink>
                                         <children>     
                                             <node>
@@ -80,7 +80,7 @@
                                                         <description>Please confirm the injection port calibration of the AutoSampler.</description>
                                                         <isExecuteProcess>false</isExecuteProcess> 
                                                         <actionCode></actionCode>
-                                                        <imageLink></imageLink>
+                                                        <imageLink>Resources\injectionPortPosition.JPG</imageLink>
                                                         <videoLink></videoLink>
                                                         <children>               
                                                             <node>
@@ -90,7 +90,7 @@
                                                                 <description>Please wait.</description>
                                                                 <isExecuteProcess>true</isExecuteProcess>
                                                                 <actionCode>10</actionCode>
-                                                                <imageLink>Resources\leak.gif</imageLink>
+                                                                <imageLink>Resources\syringeLeakTest.gif</imageLink>
                                                                 <videoLink></videoLink>
                                                                 <children>  
                                                                     <node>
