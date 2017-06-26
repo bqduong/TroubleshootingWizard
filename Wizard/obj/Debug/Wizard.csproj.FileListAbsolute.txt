@@ -2,4 +2,3 @@ C:\TroubleshootingWizard\Wizard\bin\Debug\Wizard.dll
 C:\TroubleshootingWizard\Wizard\bin\Debug\Wizard.pdb
 C:\TroubleshootingWizard\Wizard\obj\Debug\Wizard.dll
 C:\TroubleshootingWizard\Wizard\obj\Debug\Wizard.pdb
-C:\TroubleshootingWizard\Wizard\obj\Debug\Wizard.csprojResolveAssemblyReference.cache

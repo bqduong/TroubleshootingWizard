@@ -97,4 +97,3 @@ C:\TroubleshootingWizard\AeroWizard\obj\Debug\es\AeroWizard.resources.dll
 C:\TroubleshootingWizard\AeroWizard\obj\Debug\fr\AeroWizard.resources.dll
 C:\TroubleshootingWizard\AeroWizard\obj\Debug\AeroWizard.dll
 C:\TroubleshootingWizard\AeroWizard\obj\Debug\AeroWizard.pdb
-C:\TroubleshootingWizard\AeroWizard\obj\Debug\AeroWizard.csprojResolveAssemblyReference.cache
