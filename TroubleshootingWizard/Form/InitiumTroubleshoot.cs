@@ -304,7 +304,6 @@ namespace TroubleshootingWizard
                     this._testResult = true;
                 }
             }
-            this._testResult = true;
         }
 
         private void EnvokeNextPage()
