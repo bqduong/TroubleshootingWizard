@@ -22,7 +22,7 @@ namespace TroubleshootingWizard
         private string _radioOptionValue;
         private WizardUIService _troubleshootingWizardUiService;
         private readonly string _pdfReader = @"C:\ProgramData\InitiumGui\help\SumatraPDF.exe";
-        private readonly string _pdfPath = @"C:\ProgramData\InitiumGui\help\test.pdf";
+        private readonly string _pdfPath = @"C:\ProgramData\InitiumGui\help\904001.2-VROC initium Manual.pdf";
         private readonly string _emptyString = "";
         private readonly string _pdfLinkText = "Open Initium Manual (PDF)";
         private readonly string _finishText = "Finish";
@@ -142,7 +142,7 @@ namespace TroubleshootingWizard
         private void wizardControl_loadManualClicked(object sender, System.EventArgs e)
         {
             var pageNumber = this._currentNode.Value.PageNumber;
-            System.Diagnostics.Process.Start(this._pdfReader, @"-page " + pageNumber + " " + this._pdfPath);
+            System.Diagnostics.Process.Start(this._pdfReader, @"-page " + pageNumber + " \"" + this._pdfPath + "\"");
         }
 
         private void InitiumTroubleshoot_Load(object sender, EventArgs e)
