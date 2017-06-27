@@ -58,5 +58,23 @@ namespace TestScenarios
             InitiumTroubleshoot wizard = new InitiumTroubleshoot("C:\\TroubleshootingWizard\\ReplaceChip.xml");
             wizard.ShowDialog();
         }
+
+        private void syringeCell_Click(object sender, EventArgs e)
+        {
+            InitiumTroubleshoot wizard = new InitiumTroubleshoot("C:\\TroubleshootingWizard\\SyringeCell.xml");
+            wizard.ShowDialog();
+        }
+
+        private void syringeChip_Click(object sender, EventArgs e)
+        {
+            InitiumTroubleshoot wizard = new InitiumTroubleshoot("C:\\TroubleshootingWizard\\SyringeChip.xml");
+            wizard.ShowDialog();
+        }
+
+        private void reservoirChip_Click(object sender, EventArgs e)
+        {
+            InitiumTroubleshoot wizard = new InitiumTroubleshoot("C:\\TroubleshootingWizard\\ReservoirChip.xml");
+            wizard.ShowDialog();
+        }
     }
 }

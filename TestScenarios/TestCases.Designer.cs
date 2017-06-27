@@ -35,6 +35,9 @@
             this.AutoSamplerSyringe = new System.Windows.Forms.Button();
             this.TestSyringe = new System.Windows.Forms.Button();
             this.ReplaceChip = new System.Windows.Forms.Button();
+            this.SyringeCell = new System.Windows.Forms.Button();
+            this.SyringeChip = new System.Windows.Forms.Button();
+            this.ReservoirChip = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SolventLevels
@@ -87,7 +90,7 @@
             this.TestSyringe.UseVisualStyleBackColor = true;
             this.TestSyringe.Click += new System.EventHandler(this.testSyringe_Click);
             // 
-            // UTI
+            // ReplaceChip
             // 
             this.ReplaceChip.Location = new System.Drawing.Point(368, 69);
             this.ReplaceChip.Name = "ReplaceChip";
@@ -97,11 +100,44 @@
             this.ReplaceChip.UseVisualStyleBackColor = true;
             this.ReplaceChip.Click += new System.EventHandler(this.uti_Click);
             // 
+            // SyringeCell
+            // 
+            this.SyringeCell.Location = new System.Drawing.Point(368, 129);
+            this.SyringeCell.Name = "SyringeCell";
+            this.SyringeCell.Size = new System.Drawing.Size(155, 41);
+            this.SyringeCell.TabIndex = 8;
+            this.SyringeCell.Text = "Syringe Cell";
+            this.SyringeCell.UseVisualStyleBackColor = true;
+            this.SyringeCell.Click += new System.EventHandler(this.syringeCell_Click);
+            // 
+            // SyringeChip
+            // 
+            this.SyringeChip.Location = new System.Drawing.Point(191, 129);
+            this.SyringeChip.Name = "SyringeChip";
+            this.SyringeChip.Size = new System.Drawing.Size(155, 41);
+            this.SyringeChip.TabIndex = 7;
+            this.SyringeChip.Text = "Syringe Chip";
+            this.SyringeChip.UseVisualStyleBackColor = true;
+            this.SyringeChip.Click += new System.EventHandler(this.syringeChip_Click);
+            // 
+            // ReservoirChip
+            // 
+            this.ReservoirChip.Location = new System.Drawing.Point(12, 129);
+            this.ReservoirChip.Name = "ReservoirChip";
+            this.ReservoirChip.Size = new System.Drawing.Size(155, 41);
+            this.ReservoirChip.TabIndex = 6;
+            this.ReservoirChip.Text = "Resevoir Chip";
+            this.ReservoirChip.UseVisualStyleBackColor = true;
+            this.ReservoirChip.Click += new System.EventHandler(this.reservoirChip_Click);
+            // 
             // TestCases
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 122);
+            this.ClientSize = new System.Drawing.Size(537, 186);
+            this.Controls.Add(this.SyringeCell);
+            this.Controls.Add(this.SyringeChip);
+            this.Controls.Add(this.ReservoirChip);
             this.Controls.Add(this.ReplaceChip);
             this.Controls.Add(this.TestSyringe);
             this.Controls.Add(this.AutoSamplerSyringe);
@@ -124,6 +160,9 @@
         private System.Windows.Forms.Button AutoSamplerSyringe;
         private System.Windows.Forms.Button TestSyringe;
         private System.Windows.Forms.Button ReplaceChip;
+        private System.Windows.Forms.Button SyringeCell;
+        private System.Windows.Forms.Button SyringeChip;
+        private System.Windows.Forms.Button ReservoirChip;
     }
 }
 

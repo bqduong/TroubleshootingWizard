@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<troubleshoot>
+    <node>
+        <id>0</id>
+        <parentId>-1</parentId>
+        <header>Root Node</header>
+        <description>Root Page - desctription text.</description>
+        <isExecuteProcess>false</isExecuteProcess> 
+        <actionCode></actionCode>
+        <imageLink>Resources\troubleshooting.png</imageLink>
+        <videoLink></videoLink>
+        <children>
+            <node>
+                <id>1</id>
+                <parentId>0</parentId>
+                <header>Tighten Fittings</header>
+                <description>Please tighten the fittings on the syringe, switching valve, and VROC chip.  Press 'Next' to run the flow test.</description>
+                <isExecuteProcess>false</isExecuteProcess> 
+                <actionCode></actionCode>
+                <imageLink>Resources\syringeCell.JPG</imageLink>
+                <videoLink></videoLink>
+                <pdfLink></pdfLink>
+                <children>     
+                    <node>
+                        <id>1001</id>
+                        <parentId>1</parentId>
+                        <header>Running Syringe-Chip Flow Test</header>
+                        <description>Please wait.</description>
+                        <isExecuteProcess>true</isExecuteProcess>
+                        <actionCode>10</actionCode>
+                        <imageLink>Resources\syringeChipFlow.gif</imageLink>
+                        <videoLink></videoLink>
+                        <children>
+                            <node>
+                                <id>1002</id>
+                                <parentId>1001</parentId>
+                                <header>Passed Syringe-Chip Flow Test</header>
+                                <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                <isExecuteProcess>false</isExecuteProcess> 
+                                <actionCode></actionCode>
+                                <imageLink></imageLink>
+                                <videoLink></videoLink>
+                                <children>                                                                        
+                                </children>
+                            </node>
+                            <node>                                        
+                                <id>1006</id>
+                                <parentId>1001</parentId>
+                                <header>Failed Flow Test</header>
+                                <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
+                                <isExecuteProcess>false</isExecuteProcess> 
+                                <actionCode></actionCode>
+                                <imageLink></imageLink>
+                                <videoLink></videoLink>
+                                <children>     
+                                </children>
+                            </node>                          
+                        </children>
+                    </node>           
+                </children>
+            </node>
+        </children>
+     </node>
+</troubleshoot>
