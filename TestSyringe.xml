@@ -30,7 +30,7 @@
                         <actionCode></actionCode>
                         <imageLink></imageLink>
                         <videoLink></videoLink>
-                        <selectable>Pluger, Syringe Assembly</selectable>
+                        <selectable>Plunger, Syringe Assembly</selectable>
                         <children>
                             <node>
                                 <id>4000</id>

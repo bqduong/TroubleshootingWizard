@@ -29,8 +29,8 @@ namespace TroubleshootingWizard
         private readonly string _cancelText = "Cancel";
         private readonly string _noneText = "none";
         private readonly string _trueText = "true";
-        private readonly string _testSyringe = "100ul Test Syringe";
-        private readonly string _ip = "100ul IP";
+        private readonly string _testSyringe = "Syringe Assembly";
+        private readonly string _ip = "Plunger";
         private readonly char _splitChar = ',';
 
         public InitiumTroubleshoot()
@@ -264,12 +264,12 @@ namespace TroubleshootingWizard
                     this.ToggleButtonState(false);
                     this.SetProgressBarVisisbility(true);
 
-                    if (this._radioOptionValue != this._emptyString)
+                    if (this._radioOptionValue != null)
                     {
                         if (this._radioOptionValue == this._testSyringe)
                         {
                             this._testResult = _troubleshootingWizardUiService.RunDiagHelperMethod(
-                                (Wizard.Enums.DIAG_HELPER_METHODS) Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS),
+                                (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS),
                                     node.Value.ActionCode));
                         }
                         else
@@ -279,13 +279,20 @@ namespace TroubleshootingWizard
                                 (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS),
                                     node.Value.ActionCode));
                         }
-                        
+
                     }
                     else
                     {
-                        this._testResult = _troubleshootingWizardUiService.RunDiagHelperMethod(
-                            (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS),
-                                node.Value.ActionCode));
+                        if (Control.IsKeyLocked(Keys.CapsLock))
+                        {
+                            this._testResult = Control.ModifierKeys != Keys.Shift;
+                        }
+                        else
+                        {
+                            this._testResult = _troubleshootingWizardUiService.RunDiagHelperMethod(
+                                (Wizard.Enums.DIAG_HELPER_METHODS) Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS),
+                                    node.Value.ActionCode));
+                        }
                     }
 
                     this.EnvokeNextPage();

@@ -70,7 +70,7 @@
                                                 <description>Please wait.</description>
                                                 <isExecuteProcess>true</isExecuteProcess>
                                                 <actionCode>0</actionCode>
-                                                <imageLink>Resources\leakTest.gif</imageLink>
+                                                <imageLink>Resources\leakTest.JPG</imageLink>
                                                 <videoLink></videoLink>
                                                 <children> 
                                                     <node>
