@@ -19,6 +19,8 @@
                 <actionCode></actionCode>
                 <imageLink>Resources\initium.JPG</imageLink>
                 <videoLink></videoLink>
+                <pdfLink></pdfLink>
+                <pageNumber>26</pageNumber>
                 <children>     
                     <node>
                         <id>1000</id>
@@ -30,11 +32,12 @@
                         <imageLink>Resources\solventBottles.JPG</imageLink>
                         <videoLink></videoLink>
                         <pdfLink></pdfLink>
+                        <pageNumber>26</pageNumber>
                         <children>     
                             <node>
                                 <id>1001</id>
                                 <parentId>1000</parentId>
-                                <header>Running Leak Test</header>
+                                <header>Running Solvent Leak Test</header>
                                 <description>Please wait.</description>
                                 <isExecuteProcess>true</isExecuteProcess>
                                 <actionCode>0</actionCode>
@@ -44,7 +47,7 @@
                                     <node>
                                         <id>1002</id>
                                         <parentId>1001</parentId>
-                                        <header>Passed Leak Test</header>
+                                        <header>Passed Solvent Leak Test</header>
                                         <description>Proceed to the next step in the diagnostic test or start of job.</description>
                                         <isExecuteProcess>false</isExecuteProcess> 
                                         <actionCode></actionCode>
@@ -56,7 +59,7 @@
                                     <node>                                        
                                         <id>1006</id>
                                         <parentId>1001</parentId>
-                                        <header>Failed Leak Test</header>
+                                        <header>Failed Solvent Leak Test</header>
                                         <description>Please tighten the fittings on the syringe and press 'Next' to run the leak test again.</description>
                                         <isExecuteProcess>false</isExecuteProcess> 
                                         <actionCode></actionCode>
@@ -66,7 +69,7 @@
                                             <node>
                                                 <id>1007</id>
                                                 <parentId>1006</parentId>
-                                                <header>Running Leak Test</header>
+                                                <header>Running Solvent Leak Test</header>
                                                 <description>Please wait.</description>
                                                 <isExecuteProcess>true</isExecuteProcess>
                                                 <actionCode>0</actionCode>

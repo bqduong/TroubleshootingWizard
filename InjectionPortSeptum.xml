@@ -20,6 +20,7 @@
                 <imageLink>Resources\testSyringeSeptumChange.gif</imageLink>
                 <videoLink></videoLink>
                 <pdfLink></pdfLink>
+                <pageNumber>33</pageNumber>
                 <children>     
                     <node>
                         <id>1000</id>
@@ -72,6 +73,8 @@
                                                 <actionCode></actionCode>
                                                 <imageLink>Resources\injectionPortSeptum.JPG</imageLink>
                                                 <videoLink></videoLink>
+                                                <pdfLink></pdfLink>
+                                                <pageNumber>33</pageNumber>
                                                 <children>  
                                                     <node>
                                                         <id>1005</id>

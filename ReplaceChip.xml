@@ -20,6 +20,7 @@
                 <imageLink>Resources\chipExchangeGif.gif</imageLink>
                 <videoLink></videoLink>
                 <pdfLink></pdfLink>
+                <pageNumber>32</pageNumber>
                 <children> 
                     <node>
                         <id>1002</id>
@@ -52,6 +53,8 @@
                                 <actionCode></actionCode>
                                 <imageLink>Resources\injectionPortSeptum.JPG</imageLink>
                                 <videoLink></videoLink>
+                                <pdfLink></pdfLink>
+                                <pageNumber>33</pageNumber>
                                 <children>  
                                     <node>
                                         <id>1005</id>

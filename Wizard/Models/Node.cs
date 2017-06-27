@@ -25,5 +25,7 @@ namespace Wizard.Models
         public string PdfLink { get; set; }
 
         public string Selectable { get; set; }
+
+        public string PageNumber { get; set; }
     }
 }

@@ -27,7 +27,8 @@ namespace Wizard.Utilities
                         ActionCode = (string)x.Element("actionCode"),
                         IsYesNo = (string)x.Element("isYesNo"),
                         PdfLink = (string)x.Element("pdfLink"),
-                        Selectable = (string)x.Element("selectable")
+                        Selectable = (string)x.Element("selectable"),
+                        PageNumber = (string)x.Element("pageNumber")
                     };
                 nodes.ToList();
 

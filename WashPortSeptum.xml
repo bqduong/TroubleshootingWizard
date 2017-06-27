@@ -30,6 +30,7 @@
                         <imageLink>Resources/washStationSeptumChange2.gif</imageLink>
                         <videoLink></videoLink>
                         <pdfLink></pdfLink>
+                        <pageNumber>33</pageNumber>
                         <children>     
                             <node>
                                 <id>1001</id>
@@ -131,6 +132,8 @@
                                                                                                         <actionCode></actionCode>
                                                                                                         <imageLink>Resources\washPortSeptum.JPG</imageLink>
                                                                                                         <videoLink></videoLink>
+                                                                                                        <pdfLink></pdfLink>
+                                                                                                        <pageNumber>33</pageNumber>
                                                                                                         <children>   
                                                                                                             <node>
                                                                                                                 <id>307</id>

@@ -20,11 +20,12 @@
                 <imageLink>Resources\syringeCell.JPG</imageLink>
                 <videoLink></videoLink>
                 <pdfLink></pdfLink>
+                <pageNumber>1</pageNumber>
                 <children>     
                     <node>
                         <id>1001</id>
                         <parentId>1</parentId>
-                        <header>Running Leak Test</header>
+                        <header>Running Syringe-Cell Leak Test</header>
                         <description>Please wait.</description>
                         <isExecuteProcess>true</isExecuteProcess>
                         <actionCode>10</actionCode>
@@ -34,7 +35,7 @@
                             <node>
                                 <id>1002</id>
                                 <parentId>1001</parentId>
-                                <header>Passed Leak Test</header>
+                                <header>Passed Syringe-Cell Leak Test</header>
                                 <description>Proceed to the next step in the diagnostic test or start of job.</description>
                                 <isExecuteProcess>false</isExecuteProcess> 
                                 <actionCode></actionCode>
@@ -46,7 +47,7 @@
                             <node>                                        
                                 <id>1006</id>
                                 <parentId>1001</parentId>
-                                <header>Failed Leak Test</header>
+                                <header>Failed Syringe-Cell Leak Test</header>
                                 <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
                                 <isExecuteProcess>false</isExecuteProcess> 
                                 <actionCode></actionCode>

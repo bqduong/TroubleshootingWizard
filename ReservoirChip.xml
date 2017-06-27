@@ -20,6 +20,7 @@
                 <imageLink>Resources\reservoirChip.JPG</imageLink>
                 <videoLink></videoLink>
                 <pdfLink></pdfLink>
+                <pageNumber>1</pageNumber>
                 <children>     
                     <node>
                         <id>1001</id>
@@ -27,7 +28,7 @@
                         <header>Running Reservoir-Chip Flow Test</header>
                         <description>Please wait.</description>
                         <isExecuteProcess>true</isExecuteProcess>
-                        <actionCode>10</actionCode>
+                        <actionCode>13</actionCode>
                         <imageLink>Resources\reservoirChipFlow.gif</imageLink>
                         <videoLink></videoLink>
                         <children>
@@ -46,7 +47,7 @@
                             <node>                                        
                                 <id>1006</id>
                                 <parentId>1001</parentId>
-                                <header>Failed Flow Test</header>
+                                <header>Failed Reservoir-Chip Test</header>
                                 <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
                                 <isExecuteProcess>false</isExecuteProcess> 
                                 <actionCode></actionCode>
