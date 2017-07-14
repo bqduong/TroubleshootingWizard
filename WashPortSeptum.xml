@@ -15,7 +15,7 @@
                 <parentId>0</parentId>
                 <header>Troubleshoot Wash Port</header>
                 <description>Move AutoSampler 50mm to the right (away from wash port).</description>
-                <isExecuteProcess>false</isExecuteProcess> 
+                <isExecuteProcess>true</isExecuteProcess> 
                 <actionCode></actionCode>
                 <imageLink></imageLink>
                 <videoLink></videoLink>
@@ -47,7 +47,7 @@
                                         <parentId>1001</parentId>
                                         <header>Confirm Wash Port Calibration</header>
                                         <description>Please confirm the wash port calibration of the AutoSampler.</description>
-                                        <isExecuteProcess>false</isExecuteProcess>
+                                        <isExecuteProcess>true</isExecuteProcess>
                                         <actionCode></actionCode>
                                         <imageLink>Resources\washPortASCalibration.JPG</imageLink>
                                         <videoLink></videoLink>
@@ -56,8 +56,8 @@
                                                 <id>200</id>
                                                 <parentId>1002</parentId>
                                                 <header>Wash Port Septum Leak Test</header>
-                                                <description>Pumping IPA to cleaning port for 30 seconds (P-source 4095; A4, S2, AS open).</description>
-                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                <description>Pumping IPA to cleaning port for 30 seconds.</description>
+                                                <isExecuteProcess>true</isExecuteProcess> 
                                                 <actionCode></actionCode>
                                                 <imageLink>Resources\systemDiagram.JPG</imageLink>
                                                 <videoLink></videoLink>
@@ -88,7 +88,7 @@
                                                                         <parentId>202</parentId>
                                                                         <header>Wash Port Septum Leak Test</header>
                                                                         <description>Lowering AutoSampler into the wash port, drying the path, and then returning the AutoSampler to its home position.</description>
-                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                        <isExecuteProcess>true</isExecuteProcess> 
                                                                         <actionCode></actionCode>
                                                                         <imageLink></imageLink>
                                                                         <videoLink></videoLink>
@@ -97,8 +97,8 @@
                                                                                 <id>204</id>
                                                                                 <parentId>203</parentId>
                                                                                 <header>Wash Port Septum Leak Test</header>
-                                                                                <description>Drying L4 path for 20 seconds (P-source 4095; A4, A3, DS, L3, L4 open).</description>
-                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                <description>Drying L4 path for 20 seconds.</description>
+                                                                                <isExecuteProcess>true</isExecuteProcess> 
                                                                                 <actionCode></actionCode>
                                                                                 <imageLink>Resources\systemDiagram.JPG</imageLink>
                                                                                 <videoLink></videoLink>
@@ -107,8 +107,8 @@
                                                                                         <id>205</id>
                                                                                         <parentId>204</parentId>
                                                                                         <header>Wash Port Septum Leak Test</header>
-                                                                                        <description>Moving the test syringe plunger forward.  Dry L3 path(backside cleaning) for 20 seconds (P-source 4095; A4, A3, DS, L3, L4 open).</description>
-                                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                                        <description>Moving the test syringe plunger forward.  Drying L3 path(backside cleaning) for 20 seconds.</description>
+                                                                                        <isExecuteProcess>true</isExecuteProcess> 
                                                                                         <actionCode></actionCode>
                                                                                         <imageLink>Resources\systemDiagram.JPG</imageLink>
                                                                                         <videoLink></videoLink>
@@ -149,8 +149,8 @@
                                                                                                                         <id>308</id>
                                                                                                                         <parentId>307</parentId>
                                                                                                                         <header>Wash Port Septum Leak Test</header>
-                                                                                                                        <description>Pumping IPA to cleaning port for 30 seconds (P-source 4095; A4, S2, AS open).</description>
-                                                                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                        <description>Pumping IPA to cleaning port for 30 seconds.</description>
+                                                                                                                        <isExecuteProcess>true</isExecuteProcess> 
                                                                                                                         <actionCode></actionCode>
                                                                                                                         <imageLink>Resources\systemDiagram.JPG</imageLink>
                                                                                                                         <videoLink></videoLink>
@@ -181,7 +181,7 @@
                                                                                                                                                 <parentId>310</parentId>
                                                                                                                                                 <header>Wash Port Septum Leak Test</header>
                                                                                                                                                 <description>Lowering AutoSampler into the wash port, drying the path, and then returning the AutoSampler to its home position.</description>
-                                                                                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                                <isExecuteProcess>true</isExecuteProcess> 
                                                                                                                                                 <actionCode></actionCode>
                                                                                                                                                 <imageLink></imageLink>
                                                                                                                                                 <videoLink></videoLink>
@@ -190,8 +190,8 @@
                                                                                                                                                         <id>312</id>
                                                                                                                                                         <parentId>311</parentId>
                                                                                                                                                         <header>Wash Port Septum Leak Test</header>
-                                                                                                                                                        <description>Drying L4 path for 20 seconds (P-source 4095; A4, A3, DS, L3, L4 open).</description>
-                                                                                                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                                        <description>Drying L4 path for 20 seconds.</description>
+                                                                                                                                                        <isExecuteProcess>true</isExecuteProcess> 
                                                                                                                                                         <actionCode></actionCode>
                                                                                                                                                         <imageLink>Resources\systemDiagram.JPG</imageLink>
                                                                                                                                                         <videoLink></videoLink>
@@ -200,8 +200,8 @@
                                                                                                                                                                 <id>313</id>
                                                                                                                                                                 <parentId>312</parentId>
                                                                                                                                                                 <header>Wash Port Septum Leak Test</header>
-                                                                                                                                                                <description>Moving the test syringe plunger forward.  Drying L3 path(backside cleaning) for 20 seconds (P-source 4095; A4, A3, DS, L3, L4 open).</description>
-                                                                                                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                                                <description>Moving the test syringe plunger forward.  Drying L3 path(backside cleaning) for 20 seconds.</description>
+                                                                                                                                                                <isExecuteProcess>true</isExecuteProcess> 
                                                                                                                                                                 <actionCode></actionCode>
                                                                                                                                                                 <imageLink>Resources\systemDiagram.JPG</imageLink>
                                                                                                                                                                 <videoLink></videoLink>
@@ -243,7 +243,7 @@
                                                                                                                                         <parentId>309</parentId>
                                                                                                                                         <header>Wash Port Septum Leak Test</header>
                                                                                                                                         <description>Lowering AutoSampler into the wash port, dry the path, and then returning the AutoSampler to its home position.</description>
-                                                                                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                        <isExecuteProcess>true</isExecuteProcess> 
                                                                                                                                         <actionCode></actionCode>
                                                                                                                                         <imageLink></imageLink>
                                                                                                                                         <videoLink></videoLink>
@@ -252,8 +252,8 @@
                                                                                                                                                 <id>501</id>
                                                                                                                                                 <parentId>500</parentId>
                                                                                                                                                 <header>Wash Port Septum Leak Test</header>
-                                                                                                                                                <description>Drying L4 path for 20 seconds (P-source 4095; A4, A3, DS, L3, L4 open).</description>
-                                                                                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                                <description>Drying L4 path for 20 seconds.</description>
+                                                                                                                                                <isExecuteProcess>true</isExecuteProcess> 
                                                                                                                                                 <actionCode></actionCode>
                                                                                                                                                 <imageLink>Resources\systemDiagram.JPG</imageLink>
                                                                                                                                                 <videoLink></videoLink>
@@ -262,8 +262,8 @@
                                                                                                                                                         <id>502</id>
                                                                                                                                                         <parentId>501</parentId>
                                                                                                                                                         <header>Wash Port Septum Leak Test</header>
-                                                                                                                                                        <description>Moving the test syringe plunger forward.  Drying L3 path(backside cleaning) for 20 seconds (P-source 4095; A4, A3, DS, L3, L4 open).</description>
-                                                                                                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                                                                        <description>Moving the test syringe plunger forward.  Drying L3 path(backside cleaning) for 20 seconds.</description>
+                                                                                                                                                        <isExecuteProcess>true</isExecuteProcess> 
                                                                                                                                                         <actionCode></actionCode>
                                                                                                                                                         <imageLink>Resources\systemDiagram.JPG</imageLink>
                                                                                                                                                         <videoLink></videoLink>
@@ -334,7 +334,7 @@
                                                                 <parentId>201</parentId>
                                                                 <header>Wash Port Septum Leak Test</header>
                                                                 <description>Lowering AutoSampler into the wash port, drying the path, and then returning the AutoSampler to its home position.</description>
-                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                <isExecuteProcess>true</isExecuteProcess> 
                                                                 <actionCode></actionCode>
                                                                 <imageLink></imageLink>
                                                                 <videoLink></videoLink>
@@ -343,8 +343,8 @@
                                                                         <id>601</id>
                                                                         <parentId>600</parentId>
                                                                         <header>Wash Port Septum Leak Test</header>
-                                                                        <description>Drying L4 path for 20 seconds (P-source 4095; A4, A3, DS, L3, L4 open).</description>
-                                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                                        <description>Drying L4 path for 20 seconds.</description>
+                                                                        <isExecuteProcess>true</isExecuteProcess> 
                                                                         <actionCode></actionCode>
                                                                         <imageLink>Resources\systemDiagram.JPG</imageLink>
                                                                         <videoLink></videoLink>
@@ -353,8 +353,8 @@
                                                                                 <id>602</id>
                                                                                 <parentId>601</parentId>
                                                                                 <header>Wash Port Septum Leak Test</header>
-                                                                                <description>Moving the test syringe plunger forward.  Drying L3 path(backside cleaning) for 20 seconds (P-source 4095; A4, A3, DS, L3, L4 open).</description>
-                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                <description>Moving the test syringe plunger forward.  Drying L3 path(backside cleaning) for 20 seconds.</description>
+                                                                                <isExecuteProcess>true</isExecuteProcess> 
                                                                                 <actionCode></actionCode>
                                                                                 <imageLink>Resources\systemDiagram.JPG</imageLink>
                                                                                 <videoLink></videoLink>

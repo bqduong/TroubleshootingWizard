@@ -37,7 +37,7 @@
                                 <parentId>1000</parentId>
                                 <header>Confirm Injection Port Calibration</header>
                                 <description>Please confirm the injection port calibration of the AutoSampler.</description>
-                                <isExecuteProcess>false</isExecuteProcess> 
+                                <isExecuteProcess>true</isExecuteProcess> 
                                 <actionCode></actionCode>
                                 <imageLink>Resources\injectionPortPosition.JPG</imageLink>
                                 <videoLink></videoLink>
@@ -81,7 +81,7 @@
                                                         <parentId>1004</parentId>
                                                         <header>Confirm Injection Port Calibration</header>
                                                         <description>Please confirm the injection port calibration of the AutoSampler.</description>
-                                                        <isExecuteProcess>false</isExecuteProcess> 
+                                                        <isExecuteProcess>true</isExecuteProcess> 
                                                         <actionCode></actionCode>
                                                         <imageLink>Resources\injectionPortPosition.JPG</imageLink>
                                                         <videoLink></videoLink>

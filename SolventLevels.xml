@@ -60,10 +60,10 @@
                                         <id>1006</id>
                                         <parentId>1001</parentId>
                                         <header>Failed Solvent Leak Test</header>
-                                        <description>Please tighten the fittings on the syringe and press 'Next' to run the leak test again.</description>
+                                        <description>Please tighten the fittings on the solvent bottles and press 'Next' to run the leak test again.</description>
                                         <isExecuteProcess>false</isExecuteProcess> 
                                         <actionCode></actionCode>
-                                        <imageLink>Resources\testSyringeAssembly.JPG</imageLink>
+                                        <imageLink>Resources\tightenSolventFittings.JPG</imageLink>
                                         <videoLink></videoLink>
                                         <children>          
                                             <node>
@@ -92,7 +92,7 @@
                                                         <id>1010</id>
                                                         <parentId>1007</parentId>
                                                         <header>Failed</header>
-                                                        <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
+                                                        <description>If there is enough solvent in the bottles, proceed to the start of the job.  After the job is complete, contact your admin to recalibrate the weight sensors.  If the sensors cannot be recalibrated, your admin should contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
                                                         <isExecuteProcess>false</isExecuteProcess>
                                                         <actionCode></actionCode>
                                                         <imageLink></imageLink>

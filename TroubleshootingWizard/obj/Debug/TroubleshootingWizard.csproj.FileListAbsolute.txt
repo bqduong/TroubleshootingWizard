@@ -75,3 +75,4 @@ C:\TroubleshootingWizard\TroubleshootingWizard\obj\Debug\TroubleshootingWizard.p
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\syringeCellLeakTest.gif
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\syringeCell.JPG
 C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\reservoirChip.JPG
+C:\TroubleshootingWizard\TroubleshootingWizard\bin\Debug\Resources\tightenSolventFittings.JPG

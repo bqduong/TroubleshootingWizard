@@ -3,6 +3,7 @@ using System.Linq;
 using System;
 using System.Collections.Generic;
 using System.Collections;
+using System.Windows.Forms;
 
 namespace TroubleshootingWizard
 {
@@ -166,8 +167,16 @@ namespace TroubleshootingWizard
             ((System.ComponentModel.ISupportInitialize)(this.wizardControl)).EndInit();
             this.ResumeLayout(false);
 
+            this.wizardControl.Finished += WizardControlOnFinished;
         }
 
+        private bool IsDiagPassed { get; set; }
+
+        private void WizardControlOnFinished(object sender, EventArgs eventArgs)
+        {
+            this.IsDiagPassed = true;
+            this.DialogResult = DialogResult.OK;
+        }
 
         #endregion
         private Vanara.Interop.DesktopWindowManager.GlassExtenderProvider glassExtenderProvider1;

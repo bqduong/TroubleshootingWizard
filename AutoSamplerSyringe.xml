@@ -37,7 +37,7 @@
                                 <parentId>1000</parentId>
                                 <header>Check Waste Tube Alignment</header>
                                 <description>Please check the alignment of the waste tube in the splash guard.</description>
-                                <isExecuteProcess>false</isExecuteProcess> 
+                                <isExecuteProcess>true</isExecuteProcess> 
                                 <actionCode></actionCode>
                                 <imageLink>Resources\wasteTubeC.JPG</imageLink>
                                 <videoLink></videoLink>

@@ -44,3 +44,4 @@ C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\syringeChipFlow.gif
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\syringeCellLeakTest.gif
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\syringeCell.JPG
 C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\reservoirChip.JPG
+C:\TroubleshootingWizard\TestScenarios\bin\Debug\Resources\tightenSolventFittings.JPG

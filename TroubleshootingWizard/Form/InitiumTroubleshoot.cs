@@ -273,6 +273,7 @@ namespace TroubleshootingWizard
                             this._testResult = _troubleshootingWizardUiService.RunDiagHelperMethod(
                                 (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS),
                                     node.Value.ActionCode));
+                            this._radioOptionValue = null;
                         }
                         else
                         {
@@ -280,6 +281,7 @@ namespace TroubleshootingWizard
                             this._testResult = _troubleshootingWizardUiService.RunDiagHelperMethod(
                                 (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS),
                                     node.Value.ActionCode));
+                            this._radioOptionValue = null;
                         }
 
                     }
@@ -287,13 +289,20 @@ namespace TroubleshootingWizard
                     {
                         if (Control.IsKeyLocked(Keys.CapsLock))
                         {
-                            this._testResult = Control.ModifierKeys != Keys.Shift;
+                            this._testResult = Control.ModifierKeys == Keys.Shift;
                         }
                         else
                         {
-                            this._testResult = _troubleshootingWizardUiService.RunDiagHelperMethod(
-                                (Wizard.Enums.DIAG_HELPER_METHODS) Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS),
-                                    node.Value.ActionCode));
+                            if (node.Value.ActionCode == "")
+                            {
+                                this._testResult = true;
+                            }
+                            else
+                            {
+                                this._testResult = _troubleshootingWizardUiService.RunDiagHelperMethod(
+                                    (Wizard.Enums.DIAG_HELPER_METHODS)Enum.Parse(typeof(Wizard.Enums.DIAG_HELPER_METHODS),
+                                        node.Value.ActionCode));
+                            }
                         }
                     }
 

@@ -17,7 +17,7 @@
                 <description>Follow the instructions in the manual to replace syringe.</description>
                 <isExecuteProcess>false</isExecuteProcess> 
                 <actionCode></actionCode>
-                <imageLink>Resources\testSyringe.JPG</imageLink>
+                <imageLink>Resources\testSyringeChangeout.gif</imageLink>
                 <videoLink></videoLink>
                 <pdfLink></pdfLink>
                 <pageNumber>27</pageNumber>
@@ -31,7 +31,7 @@
                         <actionCode></actionCode>
                         <imageLink></imageLink>
                         <videoLink></videoLink>
-                        <selectable>Plunger, Syringe Assembly</selectable>
+                        <selectable>Plunger,Syringe Assembly</selectable>
                         <children>
                             <node>
                                 <id>4000</id>
@@ -78,7 +78,7 @@
                                                                 <parentId>1003</parentId>
                                                                 <header>Confirm Injection Port Position</header>
                                                                 <description>Confirm injection port position of AutoSampler calibration.</description>
-                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                <isExecuteProcess>true</isExecuteProcess> 
                                                                 <actionCode></actionCode>
                                                                 <imageLink>Resources\injectionPortPosition.JPG</imageLink>
                                                                 <videoLink></videoLink>
@@ -101,66 +101,128 @@
                                                     </node>  
                                                 </children>
                                             </node>
-                                            <node>                                        
-                                                <id>1006</id>
+                                            <node>
+                                                <id>17</id>
                                                 <parentId>1001</parentId>
-                                                <header>Failed Syringe-Cell Test</header>
-                                                <description>Please tighten fittings on the syringe and press 'Next' to run the leak test again.</description>
+                                                <header>Move Plunger Forward</header>
+                                                <description>Please move the plunger forward.  Press 'Next' to run the leak test.</description>
                                                 <isExecuteProcess>false</isExecuteProcess> 
                                                 <actionCode></actionCode>
-                                                <imageLink>Resources\testSyringeAssembly.JPG</imageLink>
+                                                <imageLink></imageLink>
                                                 <videoLink></videoLink>
-                                                <children>          
+                                                <pdfLink></pdfLink>
+                                                <pageNumber>1</pageNumber>
+                                                <children>     
                                                     <node>
-                                                        <id>1007</id>
-                                                        <parentId>1006</parentId>
+                                                        <id>9001</id>
+                                                        <parentId>17</parentId>
                                                         <header>Running Syringe-Cell Leak Test</header>
                                                         <description>Please wait.</description>
                                                         <isExecuteProcess>true</isExecuteProcess>
                                                         <actionCode>10</actionCode>
                                                         <imageLink>Resources\syringeLeakTest.gif</imageLink>
                                                         <videoLink></videoLink>
-                                                        <children> 
+                                                        <children>
                                                             <node>
-                                                                <id>1008</id>
-                                                                <parentId>1007</parentId>
-                                                                <header>Confirm Injection Port Position</header>
-                                                                <description>Confirm injection port position of AutoSampler calibration.</description>
-                                                                <isExecuteProcess>false</isExecuteProcess> 
-                                                                <actionCode></actionCode>
-                                                                <imageLink>Resources\injectionPortPosition.JPG</imageLink>
-                                                                <videoLink></videoLink>
-                                                                <children>           
-                                                                    <node>
-                                                                        <id>1009</id>
-                                                                        <parentId>1008</parentId>
-                                                                        <header>Passed</header>
-                                                                        <description>Proceed to the next step in the diagnostic test or start of job.</description>
-                                                                        <isExecuteProcess>false</isExecuteProcess> 
-                                                                        <actionCode></actionCode>
-                                                                        <imageLink></imageLink>
-                                                                        <videoLink></videoLink>
-                                                                        <children>                                                                        
-                                                                        </children>
-                                                                    </node>
-                                                                </children>
-                                                            </node> 
-                                                            <node>
-                                                                <id>1010</id>
-                                                                <parentId>1007</parentId>
-                                                                <header>Failed</header>
-                                                                <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
+                                                                <id>9002</id>
+                                                                <parentId>9001</parentId>
+                                                                <header>Passed Syringe-Cell Leak Test</header>
+                                                                <description>Proceed to the next step in the diagnostic test or start of job.</description>
                                                                 <isExecuteProcess>false</isExecuteProcess> 
                                                                 <actionCode></actionCode>
                                                                 <imageLink></imageLink>
                                                                 <videoLink></videoLink>
-                                                                <children>                                                                                 
+                                                                <children>                                                                        
                                                                 </children>
-                                                            </node>   
+                                                            </node>
+                                                            <node>                                        
+                                                                <id>9006</id>
+                                                                <parentId>9001</parentId>
+                                                                <header>Failed Syringe-Cell Leak Test</header>
+                                                                <description>Please tighten the fittings on the syringe and switching valves.  Press 'Next' to run the leak test.</description>
+                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                <actionCode></actionCode>
+                                                                <imageLink>Resources\syringeCell.JPG</imageLink>
+                                                                <videoLink></videoLink>
+                                                                <children> 
+                                                                    <node>
+                                                                        <id>9221</id>
+                                                                        <parentId>9006</parentId>
+                                                                        <header>Running Syringe-Cell Leak Test</header>
+                                                                        <description>Please wait.</description>
+                                                                        <isExecuteProcess>true</isExecuteProcess>
+                                                                        <actionCode>10</actionCode>
+                                                                        <imageLink>Resources\syringeLeakTest.gif</imageLink>
+                                                                        <videoLink></videoLink>
+                                                                        <children>                     
+                                                                            <node>
+                                                                                <id>9222</id>
+                                                                                <parentId>9221</parentId>
+                                                                                <header>Passed Syringe-Cell Leak Test</header>
+                                                                                <description>Please move the syringe back to the home position.  Press 'Next' to run the leak test.</description>
+                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                <actionCode></actionCode>
+                                                                                <imageLink></imageLink>
+                                                                                <videoLink></videoLink>
+                                                                                <children>  
+                                                                                    <node>
+                                                                                        <id>9132</id>
+                                                                                        <parentId>9222</parentId>
+                                                                                        <header>Running Syringe-Cell Leak Test</header>
+                                                                                        <description>Please wait.</description>
+                                                                                        <isExecuteProcess>true</isExecuteProcess>
+                                                                                        <actionCode>10</actionCode>
+                                                                                        <imageLink>Resources\syringeLeakTest.gif</imageLink>
+                                                                                        <videoLink></videoLink>
+                                                                                        <children>      
+                                                                                            <node>                                        
+                                                                                                <id>9332</id>
+                                                                                                <parentId>9132</parentId>
+                                                                                                <header>Passed Syringe-Cell Leak Test</header>
+                                                                                                <description>Proceed to the next step in the diagnostic test or start of job.</description>
+                                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                <actionCode></actionCode>
+                                                                                                <imageLink></imageLink>
+                                                                                                <videoLink></videoLink>
+                                                                                                <children> 
+                                                                                                </children>
+                                                                                            </node>
+                                                                                            <node>                                        
+                                                                                                <id>9331</id>
+                                                                                                <parentId>9132</parentId>
+                                                                                                <header>Failed Syringe-Cell Leak Test</header>
+                                                                                                <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
+                                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                                <actionCode></actionCode>
+                                                                                                <imageLink></imageLink>
+                                                                                                <videoLink></videoLink>
+                                                                                                <children> 
+                                                                                                </children>
+                                                                                            </node>
+                                                                                        </children>
+                                                                                    </node>  
+                                                                                </children>
+                                                                            </node>
+                                                                            <node>                                        
+                                                                                <id>9223</id>
+                                                                                <parentId>9221</parentId>
+                                                                                <header>Failed Syringe-Cell Leak Test</header>
+                                                                                <description>Contact RheoSense for assistance.  (service@rheosense.com, 925.866.3801x2)</description>
+                                                                                <isExecuteProcess>false</isExecuteProcess> 
+                                                                                <actionCode></actionCode>
+                                                                                <imageLink></imageLink>
+                                                                                <videoLink></videoLink>
+                                                                                <children> 
+                                                                                </children>
+                                                                            </node>
+                                                                        </children>
+                                                                    </node>
+                                                                </children>
+                                                            </node>                          
                                                         </children>
-                                                    </node>    
+                                                    </node>           
                                                 </children>
-                                            </node>    
+                                            </node>  
                                         </children>
                                     </node>   
                                 </children>
